@@ -1,4 +1,4 @@
-/* https://github.com/mkdocs/mkdocs/blob/1.0.4/mkdocs/themes/readthedocs/js/theme.js#L79-L105 */
+/* https://github.com/mkdocs/mkdocs/blob/1.0.4/mkdocs/themes/readthedocs/js/tacc-theme.js#L79-L105 */
 /* All changes must start and end with comments " TACC: " and " /TACC " */
 
 // The code below is a copy of @seanmadsen code from:

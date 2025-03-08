@@ -1,6 +1,60 @@
-# TACC Core-Docs
+# TACC ReadTheDocs Theme for MkDocs
 
-(what could become) The Core Docs template &amp; theme used by TACC Portals.
+This repository contains the TACC ReadTheDocs theme for MkDocs, a custom theme based on the ReadTheDocs theme, customized for TACC documentation projects.
 
-> [!IMPORTANT]
-> This is **not** yet a working documentation site **nor** theme **nor** template. It is _currently_ just storage for public access to resources for all that from [TACC/TACC-Docs@v0.12.0](https://github.com/TACC/TACC-Docs/tree/v0.12.0).
+## Features
+
+- Customized ReadTheDocs theme with TACC styling
+- Support for TACC-specific features
+- Consistent styling across all TACC documentation projects
+
+## Installation
+
+To install the theme, run:
+
+```bash
+pip install mkdocs-tacc-readthedocs
+```
+
+## Usage
+
+To use the theme in your MkDocs project, add the following to your `mkdocs.yml`:
+
+```yaml
+theme:
+    name: tacc-readthedocs
+```
+
+## Documentation
+
+For more information, see the [documentation](https://tacc.github.io/Core-Docs/).
+
+## Development
+
+To develop the theme, clone this repository and install the theme in development mode:
+
+```bash
+git clone https://github.com/TACC/Core-Docs.git
+cd Core-Docs
+pip install -e .
+```
+
+Then, you can make changes to the theme and see them reflected in your MkDocs projects.
+
+## Building the Documentation
+
+To build the documentation, run:
+
+```bash
+mkdocs build
+```
+
+To serve the documentation locally, run:
+
+```bash
+mkdocs serve
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

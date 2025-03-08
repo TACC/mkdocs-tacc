@@ -9,7 +9,7 @@
       @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
 
       /* Import ReadTheDocs styles but in a bottom layer */
-      @import url("{{ 'css/theme.css'|url }}") layer(foundation.mkdocs);
+      @import url("{{ 'css/tacc-theme.css'|url }}") layer(foundation.mkdocs);
       @import url("{{ 'css/theme_extra.css'|url }}") layer(foundation.mkdocs);
 
       /* Undo ReadTheDocs styles for page content */
@@ -118,15 +118,10 @@
     {# TACC: #}{# To remove `docutils` class from tables #}
     {# <script src="{{ 'js/theme_extra.js'|url }}" defer></script> #}
     {# /TACC #}
-    <script src="{{ 'js/theme.js'|url }}" defer></script>
+    <script src="{{ 'js/tacc-theme.js'|url }}" defer></script>
     {%- for path in extra_javascript %}
       <script src="{{ path }}" defer></script>
     {%- endfor %}
-    {# TACC: #}{# To support extra JavaScript as modules #}
-    {%- for path in config.theme.tacc_javascript %}
-      <script src="{{ path|url }}" type="module"></script>
-    {%- endfor %}
-    {# /TACC #}
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable({{ 'true' if config.theme.sticky_navigation else 'false' }});

@@ -1,7 +1,8 @@
 /* FAQ: jQuery element selector is used cuz Firefox does not support :has() */
 
 /* To add class for nav items that have sub-navs */
-$('.wy-menu-vertical li:has(li)').each(function() { 
+$('.wy-menu-vertical li:has(li)').each(function() {
+
   this.classList.add('has-list');
 });
 
