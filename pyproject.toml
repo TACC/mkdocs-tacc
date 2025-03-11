@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mkdocs-tacc-readthedocs"
+version = "0.1.0"
+description = "TACC ReadTheDocs theme for MkDocs"
+package-mode = false
+authors = ["TACC <info@tacc.utexas.edu>"]
+maintainers = [
+  "TACC COA CMD <coa-cmd@tacc.utexas.edu>",
+  "TACC ACI WMA <wma-portals@tacc.utexas.edu>"
+]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/TACC/Core-Docs"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+mkdocs = {version = "1.4.3", extras = ["i18n"]}
+pymdown-extensions = "^10.4.0"
+mkdocs-exclude-search = "^0.6.5"
+mkdocs-macros-plugin = "^1.0.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."mkdocs.themes"]
+"tacc-readthedocs" = "tacc-readthedocs" 

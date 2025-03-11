@@ -1,6 +1,6 @@
-# Customization
+# How to Customize
 
-Customize the theme to match your project's needs.
+You can extend or rewrite parts of the theme.
 
 ## Stylesheets
 
@@ -50,3 +50,7 @@ To override a template:
         name: tacc-readthedocs
         custom_dir: overrides
     ```
+
+## Learn More
+
+See [MkDocs: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/).

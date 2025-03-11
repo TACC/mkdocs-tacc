@@ -1,6 +1,6 @@
-# Configuration
+# How to Configure
 
-Configure the theme to match your project's needs.
+Configure the the appearance and behavior.
 
 ## Basics
 
@@ -67,4 +67,6 @@ theme:
     nav_name: Documentation
 ```
 
-For more advanced customization, see [Customization](customization.md).
+## Customization
+
+See [Customization](customization.md).

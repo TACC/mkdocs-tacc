@@ -2,59 +2,65 @@
 
 This repository contains the TACC ReadTheDocs theme for MkDocs, a custom theme based on the ReadTheDocs theme, customized for TACC documentation projects.
 
-## Features
+It offers TACC-specific features, and [will be][tacc-docs-76] how TACC consistently styles documentation projects.
 
-- Customized ReadTheDocs theme with TACC styling
-- Support for TACC-specific features
-- Consistent styling across all TACC documentation projects
+[tacc-docs-76]: https://github.com/TACC/TACC-Docs/issues/76
 
-## Installation
+## How to Use
 
-To install the theme, run:
+1. Install the theme e.g.
 
-```bash
-pip install mkdocs-tacc-readthedocs
-```
+    ```bash
+    pip install mkdocs-tacc-readthedocs
+    ```
 
-## Usage
+2. Use the theme in your MkDocs project; add —
 
-To use the theme in your MkDocs project, add the following to your `mkdocs.yml`:
+    ```yaml
+    theme:
+        name: tacc-readthedocs
+    ```
 
-```yaml
-theme:
-    name: tacc-readthedocs
-```
+    — to `mkdocs.yml`
 
-## Documentation
+## Configuring
 
-For more information, see the [documentation](https://tacc.github.io/Core-Docs/).
+You can configure the appearance and behavior. [Read more](./docs/configure.md).
 
-## Development
+## Customizing
 
-To develop the theme, clone this repository and install the theme in development mode:
+You can extend or rewrite parts of the theme. [Read more](./docs/configure.md).
 
-```bash
-git clone https://github.com/TACC/Core-Docs.git
-cd Core-Docs
-pip install -e .
-```
+## Developing
 
-Then, you can make changes to the theme and see them reflected in your MkDocs projects.
+This project uses [Poetry] for dependency management.
 
-## Building the Documentation
+[Poetry]: https://python-poetry.org/
 
-To build the documentation, run:
+0. Clone this repository and install the dependencies, e.g.
 
-```bash
-mkdocs build
-```
+    ```bash
+    git clone https://github.com/TACC/Core-Docs.git
+    cd Core-Docs
+    poetry install --sync # or `pip install -e .`
+    poetry shell          # activate virtual environment
+    ```
 
-To serve the documentation locally, run:
+    > [!NOTE]
+    > If you don't have Poetry installed, you may use `pip` in development mode:
+    >
+    > ```bash
+    > pip install -e .
+    > ```
 
-```bash
-mkdocs serve
-```
+1. Serve the documentation:
 
-## License
+    ```bash
+    mkdocs serve # or `mkdocs build` per changeset
+    ```
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+2. Change theme; see changes reflected on your server.
+
+## Deploying
+
+This project is not yet deployed on any server.
