@@ -1,3 +1,10 @@
+site_name: TACC MkDocs Theme
+site_description: Styles for TACC Documentation
+site_author: Wesley Bomar
+# site_url: https://docs.tacc.utexas.edu
+repo_url: https://github.com/TACC/Core-Docs
+edit_uri: edit/main/docs/
+
 theme:
     name: tacc-readthedocs
 extra_css:
