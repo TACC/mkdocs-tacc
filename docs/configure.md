@@ -46,7 +46,7 @@ theme:
           to: /new-page/
 ```
 
-### Related Website Configuration
+### Related Website
 
 Link to a related non-documentation website:
 
@@ -66,6 +66,22 @@ theme:
     name: tacc-readthedocs
     nav_name: Documentation
 ```
+
+## Alternate Text
+
+The theme can change some of the default English text via optional internationalization (i18n) feature.
+
+| from | to | reason |
+| - | - | - |
+| "Edit on %(repo_name)s" | "Suggest an update via %(repo_name)s" | more accurately reflects contribution workflow of public repositories |
+
+To enable [all text changes](https://github.com/TACC/Core-Docs/main/tacc_readthedocs/locales/en/LC_MESSAGES/messages.po), install the theme with the i18n extra:
+
+| PIP | Poetry |
+| - | - |
+| `pip install mkdocs-tacc-readthedocs[i18n]` | `poetry add mkdocs-tacc-readthedocs --extras i18n` |
+
+If you install without the i18n extra, the default text "Edit on %(repo_name)s" will be used.
 
 ## Customization
 

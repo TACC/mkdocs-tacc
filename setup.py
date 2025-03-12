@@ -14,7 +14,7 @@ setup(
     include_package_data=True,
     entry_points={
         'mkdocs.themes': [
-            'tacc-readthedocs = tacc-readthedocs',
+            'tacc-readthedocs = tacc_readthedocs',
         ]
     },
     zip_safe=False

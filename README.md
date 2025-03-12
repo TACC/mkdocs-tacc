@@ -33,33 +33,31 @@ You can extend or rewrite parts of the theme. [Read more](./docs/configure.md).
 
 ## Developing
 
-This project uses [Poetry] for dependency management.
+This project uses [Poetry] (v2) for dependency management.
 
 [Poetry]: https://python-poetry.org/
 
-0. Clone this repository and install the dependencies, e.g.
+Clone this repository, install all dependencies, activate virtual environment, serve the documentation, e.g.
 
-    ```bash
-    git clone https://github.com/TACC/Core-Docs.git
-    cd Core-Docs
-    poetry install --sync # or `pip install -e .`
-    poetry shell          # activate virtual environment
-    ```
+```bash
+git clone https://github.com/TACC/Core-Docs.git
+cd Core-Docs
+poetry install --sync --all-extras
+poetry run mkdocs serve
+```
 
-    > [!NOTE]
-    > If you don't have Poetry installed, you may use `pip` in development mode:
-    >
-    > ```bash
-    > pip install -e .
-    > ```
-
-1. Serve the documentation:
-
-    ```bash
-    mkdocs serve # or `mkdocs build` per changeset
-    ```
-
-2. Change theme; see changes reflected on your server.
+> [!NOTE]
+> If you don't have Poetry installed, you may use `pip`, but we offer no peer support for this approach:
+>
+> ```bash
+> git clone https://github.com/TACC/Core-Docs.git
+> cd Core-Docs
+> python -m venv venv
+> source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+> pip install -e .
+> pip install mkdocs
+> mkdocs serve
+> ```
 
 ## Deploying
 

@@ -6,7 +6,7 @@ repo_url: https://github.com/TACC/Core-Docs
 edit_uri: edit/main/docs/
 
 theme:
-    name: tacc-readthedocs
+    name: tacc_readthedocs
 extra_css:
   - css/tacc-theme.css
 extra_javascript:
@@ -14,8 +14,8 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Configuration: configuration.md
-  - Customization: customization.md
+  - Configure: configure.md
+  - Customize: customize.md
   - Examples:
     - Basic: basic-example.md
     - TACC Docs: tacc-docs-example.md

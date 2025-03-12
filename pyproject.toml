@@ -1,31 +1,55 @@
 [tool.poetry]
+package-mode = true
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: MkDocs",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+]
+packages = [
+    { include = "tacc_readthedocs" }
+]
+
+[project]
 name = "mkdocs-tacc-readthedocs"
 version = "0.1.0"
 description = "TACC ReadTheDocs theme for MkDocs"
-package-mode = false
-authors = ["TACC <info@tacc.utexas.edu>"]
-maintainers = [
-  "TACC COA CMD <coa-cmd@tacc.utexas.edu>",
-  "TACC ACI WMA <wma-portals@tacc.utexas.edu>"
+authors = [
+  { name = "TACC COA CMD", email = "coa-cmd@tacc.utexas.edu" }
 ]
-license = "MIT"
+maintainers = [
+  { name = "TACC COA CMD", email = "coa-cmd@tacc.utexas.edu" },
+  { name = "TACC ACI WMA", email = "wma-portals@tacc.utexas.edu" }
+]
+license = { file = "LICENSE" }
 readme = "README.md"
-repository = "https://github.com/TACC/Core-Docs"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "mkdocs==1.4.3",
+  "pymdown-extensions>=10.4.0",
+  "mkdocs-exclude-search>=0.6.5",
+  "mkdocs-macros-plugin>=1.0.4"
+]
 
-[tool.poetry.dependencies]
-python = ">=3.10,<3.13"
-mkdocs = {version = "1.4.3", extras = ["i18n"]}
-pymdown-extensions = "^10.4.0"
-mkdocs-exclude-search = "^0.6.5"
-mkdocs-macros-plugin = "^1.0.4"
+[project.optional-dependencies]
+i18n = ["mkdocs[i18n]==1.4.3"]
 
-[tool.poetry.group.dev.dependencies]
-black = "^23.7.0"
-isort = "^5.12.0"
+[project.urls]
+# homepage = "https://docs.tacc.utexas.edu"
+# documentation = "https://docs.tacc.utexas.edu"
+github = "https://github.com/TACC/Core-Docs"
+issues = "https://github.com/TACC/Core-Docs/issues"
+changelog = "https://github.com/TACC/Core-Docs/releases"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.plugins."mkdocs.themes"]
-"tacc-readthedocs" = "tacc-readthedocs" 
+[project.entry-points."mkdocs.themes"]
+"tacc_readthedocs" = "tacc_readthedocs"
+
+[tool.hatch.build]
+include = ["/tacc_readthedocs"]
