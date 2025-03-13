@@ -21,7 +21,7 @@ extra_javascript:
 
 // Dynamically append scripts
 document.addEventListener('DOMContentLoaded', function () {
-    const siteUrl = document.querySelector('meta[name="site_url"]').getAttribute('content');
+    const siteUrl = document.location.origin;
 
     const scripts = [
         { path: 'addPageId.js' },
