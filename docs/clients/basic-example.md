@@ -21,7 +21,7 @@ theme:
 ```yaml
 extra_css:
   - css/tacc-theme.css # to retain TACC theme UI
-  - css/example-specific.css
+  - css/specific-to-your-project.css
 ```
 
 ## Custom JavaScript
@@ -29,5 +29,5 @@ extra_css:
 ```yaml
 extra_javascript:
   - js/tacc-theme.js # to retain TACC theme UX
-  - js/example-specific.js
+  - js/specific-to-your-project.js
 ```

@@ -6,20 +6,24 @@ repo_url: https://github.com/TACC/Core-Docs
 edit_uri: edit/main/docs/
 
 theme:
-    name: tacc_readthedocs
+  name: tacc_readthedocs
+  hljs_languages:
+    - yaml
+    - shell
 extra_css:
   - css/tacc-theme.css
 extra_javascript:
   - js/tacc-theme.js
 
 nav:
-  - Home: index.md
-  - Configure: configure.md
-  - Customize: customize.md
+  - Getting Started:
+    - Quick Start: index.md
+    - Configure: configure.md
+    - Customize: customize.md
   - Examples:
-    - Basic: basic-example.md
-    - TACC Docs: tacc-docs-example.md
-    - DS User Guide: ds-user-guide-example.md
+    - Basic: clients/basic-example.md
+    - TACC Docs: clients/tacc-docs-example.md
+    - DS User Guide: clients/ds-user-guide-example.md
 
 plugins:
   - search

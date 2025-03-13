@@ -10,7 +10,7 @@ A custom MkDocs theme based on the ReadTheDocs theme, customized for TACC docume
 
 ## Installation
 
-```bash
+```shell
 pip install mkdocs-tacc-readthedocs
 ```
 

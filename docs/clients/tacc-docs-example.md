@@ -30,7 +30,7 @@ theme:
 ```yaml
 extra_css:
   - css/tacc-theme.css # to retain TACC theme UI
-  - css/tacc-specific.css
+  - css/specific-to-tacc-docs.css
 ```
 
 ## Custom JavaScript
@@ -38,5 +38,5 @@ extra_css:
 ```yaml
 extra_javascript:
   - css/tacc-theme.js # to retain TACC theme UX
-  - js/tacc-specific.js
+  - js/specific-to-tacc-docs.js
 ```

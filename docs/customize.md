@@ -2,7 +2,7 @@
 
 You can extend or rewrite parts of the theme.
 
-_For generic detailed guide to customizing a MkDocs theme, refer to [MkDocs: User Guide: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/)._
+_MkDocs offers a [generic, detailed guide to customizing a MkDocs theme](https://www.mkdocs.org/user-guide/customizing-your-theme/){target="_blank"}._
 
 ## Stylesheets
 
@@ -53,6 +53,7 @@ To override a template:
         custom_dir: overrides
     ```
 
-## Learn More
+## More Options
 
-See [MkDocs: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/).
+- [MkDocs: User Guide: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/){target="_blank"}
+- [TACC/Core-Docs: Configuration](configure.md)

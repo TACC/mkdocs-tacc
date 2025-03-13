@@ -2,7 +2,7 @@
 
 You can configure the theme appearance and behavior.
 
-_For generic detailed guide to configuring a MkDocs theme, refer to [MkDocs: User Guide: Configuration](https://www.mkdocs.org/user-guide/configuration/)._
+_MkDocs offers a [generic, detailed guide to configuring a MkDocs theme](https://www.mkdocs.org/user-guide/configuration/){target="_blank"}._
 
 ## Basics
 
@@ -85,6 +85,7 @@ To enable [all text changes](https://github.com/TACC/Core-Docs/main/tacc_readthe
 
 If you install without the i18n extra, the default text "Edit on %(repo_name)s" will be used.
 
-## Customization
+## More Options
 
-See [Customization](customization.md).
+- [MkDocs: User Guide: Configuration](https://www.mkdocs.org/user-guide/configuration/){target="_blank"}
+- [TACC/Core-Docs: Customization](customize.md)

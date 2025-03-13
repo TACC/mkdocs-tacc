@@ -1,12 +1,14 @@
 # TACC ReadTheDocs Theme for MkDocs
 
-A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with [TACC styling and features](https://docs.tacc.utexas.edu/).
+A [MkDocs](https://www.mkdocs.org/){target="_blank"} theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs){target="_blank"} but with [TACC styling and features](https://docs.tacc.utexas.edu/){target="_blank"}.
 
 ## How to Use
 
+<!-- Sync these steps with /README.md -->
+
 1. Install the theme e.g.
 
-    ```bash
+    ```shell
     pip install mkdocs-tacc-readthedocs
     ```
 
@@ -19,16 +21,10 @@ A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs them
 
     — to `mkdocs.yml`
 
-## Configuring
+## How to Configure
 
-You can configure the appearance and behavior. [Read more](./docs/configure.md).
+You can [configure the appearance and behavior](configure.md).
 
-## Customizing
+## How to Customize
 
-You can extend or rewrite parts of the theme. [Read more](./docs/customize.md).
-
-## Usage
-
-- [Example](clients/example.md)
-- [DesignSafe User Guide](clients/ds-user-guide.md)
-- [TACC-Docs](clients/tacc-docs.md)
+You can [extend or rewrite parts of the theme](customize.md).

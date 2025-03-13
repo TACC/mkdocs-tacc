@@ -2,11 +2,13 @@
 
 A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with a [TACC styling and features](https://docs.tacc.utexas.edu/).
 
-## How to Use
+## Quick Start
+
+<!-- Sync these steps with /docs/index.md -->
 
 1. Install the theme e.g.
 
-    ```bash
+    ```shell
     pip install mkdocs-tacc-readthedocs
     ```
 
@@ -19,48 +21,16 @@ A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs them
 
     — to `mkdocs.yml`
 
-## Configuring
+Learn to [configure](./docs/configure.md) and [customize](./docs/customize.md).
 
-You can configure the appearance and behavior. [Read more](./docs/configure.md).
+## Known Clients
 
-## Customizing
+| Status | Repository |
+| - | - |
+| Active | None |
+| Upcoming | [TACC-Docs](https://github.com/TACC/TACC-Docs)<br>[DesignSafe-CI/DS-User-Guide](https://github.com/DesignSafe-CI/DS-User-Guide.md) |
+| Potential | [TACC/containers_at_tacc](https://github.com/TACC/containers_at_tacc)<br>[TACC/life_sciences_ml_at_tacc](https://github.com/TACC/life_sciences_ml_at_tacc) |
 
-You can extend or rewrite parts of the theme. [Read more](./docs/customize.md).
+## For Developers
 
-## Usage
-
-- [Example](clients/example.md)
-- [DesignSafe User Guide](clients/ds-user-guide.md)
-- [TACC-Docs](clients/tacc-docs.md)
-
-## Developing
-
-This project uses [Poetry] (v2) for dependency management.
-
-[Poetry]: https://python-poetry.org/
-
-Clone this repository, install all dependencies, activate virtual environment, serve the documentation, e.g.
-
-```bash
-git clone https://github.com/TACC/Core-Docs.git
-cd Core-Docs
-poetry install --sync --all-extras
-poetry run mkdocs serve
-```
-
-> [!NOTE]
-> If you don't have Poetry installed, you may use `pip`, but we offer no peer support for this approach:
->
-> ```bash
-> git clone https://github.com/TACC/Core-Docs.git
-> cd Core-Docs
-> python -m venv venv
-> source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-> pip install -e .
-> pip install mkdocs
-> mkdocs serve
-> ```
-
-## Deploying
-
-This project is not yet deployed on any server.
+We welcome your contribution. Learn [how to develop](./docs/customize.md).
