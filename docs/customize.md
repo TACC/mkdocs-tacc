@@ -2,6 +2,8 @@
 
 You can extend or rewrite parts of the theme.
 
+_For generic detailed guide to customizing a MkDocs theme, refer to [MkDocs: User Guide: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/)._
+
 ## Stylesheets
 
 Add your own CSS files to override the theme's default styles:

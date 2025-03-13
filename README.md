@@ -1,10 +1,6 @@
 # TACC ReadTheDocs Theme for MkDocs
 
-This repository contains the TACC ReadTheDocs theme for MkDocs, a custom theme based on the ReadTheDocs theme, customized for TACC documentation projects.
-
-It offers TACC-specific features, and [will be][tacc-docs-76] how TACC consistently styles documentation projects.
-
-[tacc-docs-76]: https://github.com/TACC/TACC-Docs/issues/76
+A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with a [TACC styling and features](https://docs.tacc.utexas.edu/).
 
 ## How to Use
 
@@ -29,7 +25,13 @@ You can configure the appearance and behavior. [Read more](./docs/configure.md).
 
 ## Customizing
 
-You can extend or rewrite parts of the theme. [Read more](./docs/configure.md).
+You can extend or rewrite parts of the theme. [Read more](./docs/customize.md).
+
+## Usage
+
+- [Example](clients/example.md)
+- [DesignSafe User Guide](clients/ds-user-guide.md)
+- [TACC-Docs](clients/tacc-docs.md)
 
 ## Developing
 

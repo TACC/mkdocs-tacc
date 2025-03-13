@@ -1,6 +1,8 @@
 # How to Configure
 
-Configure the the appearance and behavior.
+You can configure the theme appearance and behavior.
+
+_For generic detailed guide to configuring a MkDocs theme, refer to [MkDocs: User Guide: Configuration](https://www.mkdocs.org/user-guide/configuration/)._
 
 ## Basics
 
