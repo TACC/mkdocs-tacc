@@ -1,8 +1,10 @@
 # How to Customize
 
-You can extend or rewrite parts of the theme.
+You can expand or rewrite parts of the theme.
 
 _MkDocs offers a [generic, detailed guide to customizing a MkDocs theme](https://www.mkdocs.org/user-guide/customizing-your-theme/){target="_blank"}._
+
+[TOC]
 
 ## Stylesheets
 
@@ -57,3 +59,4 @@ To override a template:
 
 - [MkDocs: User Guide: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/){target="_blank"}
 - [TACC/Core-Docs: Configuration](configure.md)
+- [TACC/Core-Docs: Supported Extensions](extensions.md)

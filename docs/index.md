@@ -2,7 +2,9 @@
 
 A [MkDocs](https://www.mkdocs.org/){target="_blank"} theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs){target="_blank"} but with [TACC styling and features](https://docs.tacc.utexas.edu/){target="_blank"}.
 
-## How to Use
+[TOC]
+
+## How to Install
 
 <!-- Sync these steps with /README.md -->
 
@@ -19,12 +21,29 @@ A [MkDocs](https://www.mkdocs.org/){target="_blank"} theme based on MkDocs' own 
         name: tacc-readthedocs
     ```
 
-    — to `mkdocs.yml`
+    — to your `mkdocs.yml`.
 
-## How to Configure
+3. Include the [core extensions] —
+
+    ```yaml
+    markdown_extensions:
+    - toc:
+        permalink: ""
+        permalink_class: headerlink fa fa-link
+        permalink_title: Link to Heading
+        toc_depth: 2-6
+    ```
+
+    — in your `mkdocs.yml`.
+
+[core extensions]: extensions.md#core-extensions
+
+## Configure & Customize
 
 You can [configure the appearance and behavior](configure.md).
 
-## How to Customize
+You can [expand or rewrite parts of the theme](customize.md).
 
-You can [extend or rewrite parts of the theme](customize.md).
+## Supported Extensions
+
+This theme supports [many Markdown extensions](extensions.md).

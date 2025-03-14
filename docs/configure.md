@@ -4,6 +4,8 @@ You can configure the theme appearance and behavior.
 
 _MkDocs offers a [generic, detailed guide to configuring a MkDocs theme](https://www.mkdocs.org/user-guide/configuration/){target="_blank"}._
 
+[TOC]
+
 ## Basics
 
 ```yaml
@@ -89,3 +91,4 @@ If you install without the i18n extra, the default text "Edit on %(repo_name)s" 
 
 - [MkDocs: User Guide: Configuration](https://www.mkdocs.org/user-guide/configuration/){target="_blank"}
 - [TACC/Core-Docs: Customization](customize.md)
+- [TACC/Core-Docs: Supported Extensions](extensions.md)
