@@ -1,6 +1,6 @@
 # How to Configure "DS User Guide"
 
-How [DesignSafe-CI/DS-User-Guide][ds-user-guide] project should use this theme.
+How [DesignSafe-CI/DS-User-Guide][ds-user-guide]{target="_blank"} project should use this theme.
 
 [ds-user-guide]: https://github.com/DesignSafe-CI/DS-User-Guide
 
