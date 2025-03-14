@@ -88,7 +88,9 @@
     {%- if config.theme.nav_name %}
     <h1 class="nav-name">{{ config.theme.nav_name }}</h1>
     {%- endif %}
+    {%- if config.theme.cms_url %}
     <a href="{{ config.theme.cms_url }}" class="cms-link">{{ config.theme.cms_name }}</a>
+    {%- endif %}
     {# /TACC #}
   {%- endblock %}
 
@@ -122,11 +124,6 @@
     {%- for path in extra_javascript %}
       <script src="{{ path }}" defer></script>
     {%- endfor %}
-    {# TACC: #}{# To support extra JavaScript as modules #}
-    {%- for path in config.theme.tacc_javascript %}
-      <script src="{{ path|url }}" type="module"></script>
-    {%- endfor %}
-    {# /TACC #}
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable({{ 'true' if config.theme.sticky_navigation else 'false' }});

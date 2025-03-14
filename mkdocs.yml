@@ -1,48 +1,39 @@
+site_name: TACC MkDocs Theme
+site_description: Styles for TACC Documentation
+site_author: Wesley Bomar
+# site_url: https://docs.tacc.utexas.edu
+repo_url: https://github.com/TACC/Core-Docs
+edit_uri: edit/main/docs/
+
 theme:
-    name: readthedocs
-    language: en
-    logo: /img/tacc-logo-with-words.svg
-    nav_redirects: [] # TACC Feature
-    collapse_navigation: false
-    highlightjs: true
-    hljs_languages:
-        - bash
-        - plaintext
-        # for known clients
-        - python # (DesignSafe/DS-User-Guide)
-        - json # (DesignSafe/DS-User-Guide)
-    hljs_aliases: # TACC Feature
-        - name: cmd-line
-          lang: bash
-        - name: job-script
-          lang: bash
-        - name: syntax
-          lang: plaintext
-    custom_dir: themes/tacc-readthedocs
-    # These must be modules
-    # SEE: /themes/readthedocs/main.html @ "block scripts"
-    tacc_javascript:
-        - js/core/modules/setTargetForExternalLinks.js
-        - js/core/modules/styleLinksOutsideMainContent.js
-        - js/core/modules/swapImgSvgWithRawSvg.js
-        - js/core/modules/removeThemeClasses.js
-        - js/core/modules/changeNavMarkup.js
-
+  name: tacc_readthedocs
+  hljs_languages:
+    - yaml
+    - shell
+  # "ReadTheDocs" Theme Features
+  logo: img/logo.svg
+  # "TACC" Theme Features
+  cms_url: https://github.com/TACC/Core-Docs
+  cms_name: TACC/Core-Docs
 extra_css:
-    - css/core/bootstrap.css
-    - css/core/core-styles.css
-    - css/core/tacc-docs.css
-    - css/core/highlight-js.css
-    - css/core/permalink.css
-
-# To load custom global JavaScript (not recommended)
-# FAQ: Use JS modules when possible (see theme.tacc_javascript)
+  - css/tacc-theme.css
 extra_javascript:
-    - js/core/autoScrollNav.js
-    - js/core/addPageId.js
-    - js/core/redirectNavLinks.js
+  - js/tacc-theme.js
 
-# Python-Markdown extensions
+nav:
+  - Getting Started:
+    - Quick Start: index.md
+    - Configure: configure.md
+    - Customize: customize.md
+  - Examples:
+    - Basic: clients/basic-example.md
+    - TACC Docs: clients/tacc-docs-example.md
+    - DS User Guide: clients/ds-user-guide-example.md
+
+plugins:
+  - search
+  - macros # allows {% include ... %} (and macros)
+
 # https://python-markdown.github.io/extensions/
 markdown_extensions:
   - footnotes
@@ -79,7 +70,3 @@ markdown_extensions:
   # WARNING: Installing Pygments causes MkDocs build error
   # - pymdownx.highlight
   #     use_pygments: true
-
-plugins:
-  - search
-  - macros # allows {% include ... %} (and macros)
