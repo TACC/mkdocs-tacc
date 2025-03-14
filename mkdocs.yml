@@ -10,6 +10,11 @@ theme:
   hljs_languages:
     - yaml
     - shell
+  # "ReadTheDocs" Theme Features
+  logo: img/logo.svg
+  # "TACC" Theme Features
+  cms_url: https://github.com/TACC/Core-Docs
+  cms_name: TACC/Core-Docs
 extra_css:
   - css/tacc-theme.css
 extra_javascript:
