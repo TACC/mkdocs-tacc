@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { path: 'autoScrollNav.js' },
         { path: 'redirectNavLinks.js' },
         { type: 'module', path: 'modules/setTargetForExternalLinks.js' },
-        { type: 'module', path: 'modules/styleLinksOutsideMainContent.js' },
         { type: 'module', path: 'modules/swapImgSvgWithRawSvg.js' },
         { type: 'module', path: 'modules/removeThemeClasses.js' },
         { type: 'module', path: 'modules/changeNavMarkup.js' },
