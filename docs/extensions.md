@@ -25,49 +25,56 @@ Standard TACC documentation websites with this theme use:
 
 ```yaml
 markdown_extensions:
-  - footnotes
-  - def_list
+  - extra
   - admonition
-  - attr_list
-  - abbr
   - toc:
-      permalink: ""
+      permalink: "" # i.e. `true` but without "¶"
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading
       toc_depth: 2-6
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.tab
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.saneheaders
-  - pymdownx.blocks.details
-  - pymdownx.blocks.tab
-  - pymdownx.blocks.html
 ```
 
 ## Enhanced Extensions
 
 The TACC MkDocs Theme enhances the UI of these extensions:
 
-| from [Python-Markdown](https://python-markdown.github.io/extensions/) | Ref. | Description |
-| - | - | - |
-| extra: `abbr` | [demo](#abbreviations), [docs](https://python-markdown.github.io/extensions/abbreviations/) | Define abbreviations. |
-| extra: `attr_list` | [demo](#attribute-lists), [docs](https://python-markdown.github.io/extensions/attr_list/) | Add custom classes and IDs to paragraphs. |
-| extra: `def_list` | [demo](#definition-lists), [docs](https://python-markdown.github.io/extensions/definition_lists/) | Create definition lists. |
-| extra: `fenced_code` | [demo](#fenced-code-blocks), [docs](https://python-markdown.github.io/extensions/fenced_code_blocks/) | Create code blocks. |
-| extra: `footnotes` | [demo](#footnotes), [docs](https://python-markdown.github.io/extensions/footnotes/) | Create footnotes. |
-| extra: `md_in_html` | [demo](#markdown-in-html), [docs](https://python-markdown.github.io/extensions/md_in_html/) | Render Markdown in HTML. |
-| extra: `tables` | [demo](#tables), [docs](https://python-markdown.github.io/extensions/tables/) | Create simple tables. |
-| `admonition` | [demo](#admonition), [docs](https://python-markdown.github.io/extensions/admonition/) | Create note/alert boxes. |
-| `toc` | [demo](#table-of-contents), [docs](https://python-markdown.github.io/extensions/toc/) | Create table of contents.<br>Get section permalinks. |
+<style>
+    /* to prevent column header from wrapping ONLY in this table */
+    .ext-table-container th { white-space: nowrap; }
+    /* to prevent tables from stretching to fill row height */
+    .ext-table-container { align-items: start; }
+</style>
 
----
+<div class="grid ext-table-container" markdown="block">
 
-| of [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/#extensions) | Ref. | Description |
-| - | - | - |
-| `blocks.admonition` | [demo](#pymdownx-admonition), [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/admonition/) | Create note/alert boxes. |
-| `blocks.details` | [demo](#pymdownx-details), [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/details/) | Create collapsible content. |
-| `blocks.html` | [demo](#pymdownx-html), [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/html/) | Render raw HTML. |
-| `blocks.tab` | [demo](#pymdownx-tab), [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/tab/) | Create tabbed content. |
-| `tabbed` (old) | [demo](#pymdownx-tabbed), [docs](https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/) | Create tabbed content. |
+| from [Python-Markdown](https://python-markdown.github.io/extensions/) | Description |
+| - | - |
+| extra:&nbsp;`abbr`<br>[demo](#abbreviations) • [docs](https://python-markdown.github.io/extensions/abbreviations/) | Define abbreviations. |
+| extra:&nbsp;`attr_list`<br>[demo](#attribute-lists) • [docs](https://python-markdown.github.io/extensions/attr_list/) | Add custom classes and IDs to paragraphs. |
+| extra:&nbsp;`def_list`<br>[demo](#definition-lists) • [docs](https://python-markdown.github.io/extensions/definition_lists/) | Create definition lists. |
+| extra:&nbsp;`fenced_code`<br>[demo](#fenced-code-blocks) • [docs](https://python-markdown.github.io/extensions/fenced_code_blocks/) | Create code blocks. |
+| extra:&nbsp;`footnotes`<br>[demo](#footnotes) • [docs](https://python-markdown.github.io/extensions/footnotes/) | Create footnotes. |
+| extra:&nbsp;`md_in_html`<br>[demo](#markdown-in-html) • [docs](https://python-markdown.github.io/extensions/md_in_html/) | Render Markdown in HTML. |
+| extra:&nbsp;`tables`<br>[demo](#tables) • [docs](https://python-markdown.github.io/extensions/tables/) | Create simple tables. |
+| `admonition`<br>[demo](#admonition) • [docs](https://python-markdown.github.io/extensions/admonition/) | Create note/alert boxes. |
+| `toc`<br>[demo](#table-of-contents) • [docs](https://python-markdown.github.io/extensions/toc/) | Create table of contents.<br>Get section permalinks. |
+
+| of [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/#extensions) | Description |
+| - | - |
+| `blocks.admonition`<br>[demo](#pymdownx-admonition) • [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/admonition/) | Create note/alert boxes. |
+| `blocks.details`<br>[demo](#pymdownx-details) • [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/details/) | Create collapsible content. |
+| `blocks.html`<br>[demo](#pymdownx-html) • [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/html/) | Render raw HTML. |
+| `blocks.tab`<br>[demo](#pymdownx-tab) • [docs](https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/tab/) | Create tabbed content. |
+| `tabbed` [⚠️](#pymdownx-tabbed-warning)<br>[demo](#pymdownx-tabbed) • [docs](https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/) | Create tabbed content. |
+
+</div>
 
 ## Usage Examples
 
@@ -446,6 +453,7 @@ Content for second tab
 #### Tabbed {#pymdownx-tabbed}
 
 /// caution | Deprecated
+    attrs: { id: pymdownx-tabbed-warning }
 This extension is deprecated. Try the [`blocks.tab`](#pymdownx-tab) extension instead.
 ///
 
