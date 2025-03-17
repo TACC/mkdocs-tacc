@@ -6,7 +6,7 @@ A [MkDocs](https://www.mkdocs.org/){target="_blank"} theme based on MkDocs' own 
 
 ## How to Install
 
-<!-- Sync these steps with /README.md -->
+<!-- Keep these steps synced with /README.md -->
 
 1. Install the theme e.g.
 
