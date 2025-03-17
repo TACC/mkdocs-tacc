@@ -50,6 +50,8 @@ To test changes real-time on client repository:
     poetry add --editable ../Core-Docs # ¹
     ```
 
+<sub>¹ Where `../Core-Docs` is the path to your clone of this repository.</sub>
+
 > [!TIP]
 > If changes since that command are not reflected, try:
 >
@@ -57,5 +59,3 @@ To test changes real-time on client repository:
 > poetry remove mkdocs-tacc-readthedocs
 > poetry add --editable ../Core-Docs # ¹
 > ```
-
-<sub>¹ Where `../Core-Docs` is the path to your clone of this repository.</sub>
