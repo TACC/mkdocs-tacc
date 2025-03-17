@@ -32,6 +32,6 @@ extra_css:
 
 ```yaml
 extra_javascript:
-  - css/tacc-theme.js # to retain TACC theme UX
+  - js/tacc-theme.js # to retain TACC theme UX
   - js/specific-to-ds-user-guide.js
 ```
