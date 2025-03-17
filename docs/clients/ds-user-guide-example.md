@@ -25,13 +25,14 @@ theme:
 ```yaml
 extra_css:
   - css/tacc-theme.css # to retain TACC theme UI
-  - css/specific-to-ds-user-guide.css
+  - css/ds-docs.css
 ```
 
 ## Custom JavaScript
 
 ```yaml
 extra_javascript:
-  - css/tacc-theme.js # to retain TACC theme UX
-  - js/specific-to-ds-user-guide.js
+  - js/tacc-theme.mjs # to retain TACC theme UX
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 ```
