@@ -16,7 +16,6 @@ markdown_extensions:
       permalink: ""
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading
-      toc_depth: 2-6
 ```
 
 ## Tested Extensions
@@ -63,7 +62,7 @@ The TACC MkDocs Theme enhances the UI of these extensions:
 | extra:&nbsp;`md_in_html`<br>[demo](#markdown-in-html) • [docs](https://python-markdown.github.io/extensions/md_in_html/) | Render Markdown in HTML. |
 | extra:&nbsp;`tables`<br>[demo](#tables) • [docs](https://python-markdown.github.io/extensions/tables/) | Create simple tables. |
 | `admonition`<br>[demo](#admonition) • [docs](https://python-markdown.github.io/extensions/admonition/) | Create note/alert boxes. |
-| `toc`<br>[demo](#table-of-contents) • [docs](https://python-markdown.github.io/extensions/toc/) | Create table of contents.<br>Get section permalinks. |
+| `toc`<br>[demo](#toc) • [docs](https://python-markdown.github.io/extensions/toc/) | Create table of contents.<br>Get section permalinks. |
 
 | of [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/#extensions) | Description |
 | - | - |
@@ -280,7 +279,7 @@ I am in a `<div>` with markdown enabled.
 
 ///
 
-#### Table of Contents
+#### Table of Contents {#toc}
 
 /// html | div.grid
 
@@ -292,10 +291,16 @@ I am in a `<div>` with markdown enabled.
 
 ////
 //// hint | Result
-(on this page)
+(on this page) (truncated)
 
 <style id="toc-css">
-    .toc ul ul { display: none;}
+    /* to truncate deeply nested TOC items */
+    .toc ul ul ul li:first-child a { color: transparent; pointer-events: none; }
+    .toc ul ul ul li:first-child a::before { content: "..."; color: initial; }
+
+    /* to hide very deeply nested TOC items */
+    .toc ul ul ul ul,
+    .toc ul ul ul li:last-child { display: none; }
 </style>
 
 [TOC]

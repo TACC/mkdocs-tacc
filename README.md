@@ -29,7 +29,6 @@ A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www
           permalink: ""
           permalink_class: headerlink fa fa-link
           permalink_title: Link to Heading
-          toc_depth: 2-6
     ```
 
     — in your `mkdocs.yml`.

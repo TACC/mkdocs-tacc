@@ -46,7 +46,6 @@ markdown_extensions:
       permalink: "" # i.e. `true` but without "¶"
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading
-      toc_depth: 2-6
       # WARNING: Requires MkDocs v1.5
       # https://github.com/mkdocs/mkdocs/blob/1.5.0/pyproject.toml#L39
       # permalink_leading: true
