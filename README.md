@@ -28,9 +28,9 @@ Learn to [configure](./docs/configure.md) and [customize](./docs/customize.md).
 | Status | Repository |
 | - | - |
 | Active | None |
-| Upcoming | [TACC-Docs](https://github.com/TACC/TACC-Docs)<br>[DesignSafe-CI/DS-User-Guide](https://github.com/DesignSafe-CI/DS-User-Guide.md) |
+| Upcoming | [TACC-Docs](https://github.com/TACC/TACC-Docs)<br>[DesignSafe-CI/DS-User-Guide](https://github.com/DesignSafe-CI/DS-User-Guide) |
 | Potential | [TACC/containers_at_tacc](https://github.com/TACC/containers_at_tacc)<br>[TACC/life_sciences_ml_at_tacc](https://github.com/TACC/life_sciences_ml_at_tacc) |
 
 ## For Developers
 
-We welcome your contribution. Learn [how to develop](./docs/customize.md).
+Learn [how to **develop**](./DEVELOP.md) and [how to **deploy**](./DEPLOY.md).
