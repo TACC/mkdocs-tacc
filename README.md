@@ -4,7 +4,7 @@ A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www
 
 ## Quick Start
 
-<!-- Sync these steps with /docs/index.md -->
+<!-- Keep these steps synced with /docs/index.md -->
 
 1. Install the theme e.g.
 
