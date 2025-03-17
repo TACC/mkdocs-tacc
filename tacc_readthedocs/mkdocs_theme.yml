@@ -4,15 +4,16 @@ static_templates:
   - 404.html
 
 locale: en
-# ReadTheDocs Features
+# "ReadTheDocs" Theme Features
 # https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs
 collapse_navigation: false
 navigation_depth: 4
 highlightjs: true
 hljs_languages:
   - bash
+  - shell
   - plaintext
-# TACC Features
+# "TACC" Theme Features
 # cms_url: https://your.related-non-documentation.website
 # cms_name: Your Related non-Documentation Website
 # nav_redirects:

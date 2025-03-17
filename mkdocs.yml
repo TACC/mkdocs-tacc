@@ -23,8 +23,9 @@ extra_javascript:
 nav:
   - Getting Started:
     - Quick Start: index.md
-    - Configure: configure.md
-    - Customize: customize.md
+    - Configuration: configure.md
+    - Customization: customize.md
+    - Extensions: extensions.md
   - Examples:
     - Basic: clients/basic-example.md
     - TACC Docs: clients/tacc-docs-example.md
@@ -32,16 +33,13 @@ nav:
 
 plugins:
   - search
-  - macros # allows {% include ... %} (and macros)
 
-# https://python-markdown.github.io/extensions/
 markdown_extensions:
-  - footnotes
-  - def_list
+  # Python-Markdown Extensions
+  # https://python-markdown.github.io/extensions/
+  - extra
   - admonition
-  - attr_list
-  - abbr
-  # Enabled by MkDocs by default
+  # Python-Markdown Extensions: Enabled by MkDocs
   # https://github.com/mkdocs/mkdocs/blob/1.4.2/docs/user-guide/configuration.md#markdown_extensions
   # - meta
   - toc:
@@ -51,22 +49,12 @@ markdown_extensions:
       # WARNING: Requires MkDocs v1.5
       # https://github.com/mkdocs/mkdocs/blob/1.5.0/pyproject.toml#L39
       # permalink_leading: true
-  # - tables
-  # - fenced_code
-  # Extensions from PyMdown
+  # PyMDown Extensions
   # https://facelessuser.github.io/pymdown-extensions
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.tab
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.saneheaders
-  - pymdownx.blocks.details
-  - pymdownx.blocks.tab
-    # There is an alternative style that supports experimental mobile UX
-    # SEE: https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/#alternate-style
-  - pymdownx.blocks.html
-  # FAQ: The `pymdownx.highlight` is useful only if Pygments is installed
-  #      because Pygments would offer:
-  #      - build-time syntax highlight markup
-  #      - custom language tags and formatters
-  # WARNING: Installing Pygments causes MkDocs build error
-  # - pymdownx.highlight
-  #     use_pygments: true

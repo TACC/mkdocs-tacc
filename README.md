@@ -21,7 +21,21 @@ A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www
 
     — to `mkdocs.yml`
 
-Learn to [configure](./docs/configure.md) and [customize](./docs/customize.md).
+3. Include the [core extensions] —
+
+    ```yaml
+    markdown_extensions:
+      - toc:
+          permalink: ""
+          permalink_class: headerlink fa fa-link
+          permalink_title: Link to Heading
+    ```
+
+    — in your `mkdocs.yml`.
+
+[core extensions]: ./docs/extensions.md#core-extensions
+
+Learn to [configure](./docs/configure.md), [customize](./docs/customize.md), and [extend](./docs/extensions.md) your MkDocs site.
 
 ## Known Clients
 

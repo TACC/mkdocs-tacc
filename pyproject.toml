@@ -31,7 +31,6 @@ dependencies = [
   "mkdocs==1.4.3",
   "pymdown-extensions>=10.4.0",
   "mkdocs-exclude-search>=0.6.5",
-  "mkdocs-macros-plugin>=1.0.4"
 ]
 
 [project.optional-dependencies]
