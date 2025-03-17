@@ -28,9 +28,13 @@ A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs them
       - toc:
           permalink: ""
           permalink_class: headerlink fa fa-link
+          permalink_title: Link to Heading
+          toc_depth: 2-6
     ```
 
     — in your `mkdocs.yml`.
+
+[core extensions]: extensions.md#core-extensions
 
 Learn to [configure](./docs/configure.md), [customize](./docs/customize.md), and [extend](./docs/extensions.md) your MkDocs site.
 
