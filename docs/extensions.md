@@ -34,6 +34,7 @@ markdown_extensions:
       permalink: ""
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading
+      toc_depth: 2-6
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.saneheaders
