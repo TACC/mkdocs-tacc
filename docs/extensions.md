@@ -31,7 +31,6 @@ markdown_extensions:
       permalink: "" # i.e. `true` but without "¶"
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading
-      toc_depth: 2-6
   - pymdownx.blocks.admonition
   - pymdownx.blocks.details
   - pymdownx.blocks.html
@@ -45,7 +44,7 @@ markdown_extensions:
 
 The TACC MkDocs Theme enhances the UI of these extensions:
 
-<style>
+<style id="enhanced-extensions-css">
     /* to prevent column header from wrapping ONLY in this table */
     .ext-table-container th { white-space: nowrap; }
     /* to prevent tables from stretching to fill row height */
@@ -78,7 +77,7 @@ The TACC MkDocs Theme enhances the UI of these extensions:
 
 ## Usage Examples
 
-<style>
+<style id="usage-examples-css">
     /* to make grid use rows on narrow screens */
     .grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
@@ -295,7 +294,7 @@ I am in a `<div>` with markdown enabled.
 //// hint | Result
 (on this page)
 
-<style>
+<style id="toc-css">
     .toc ul ul { display: none;}
 </style>
 
