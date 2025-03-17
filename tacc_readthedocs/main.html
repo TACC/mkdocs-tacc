@@ -122,7 +122,13 @@
     {# /TACC #}
     <script src="{{ 'js/theme.js'|url }}" defer></script>
     {%- for path in extra_javascript %}
+      {# TACC: #}{# Implicitly use `type="module"` for ES modules #}
+      {% if path.endswith('.module.js') or path.endswith('.mjs') %}
+      <script src="{{ path }}" type="module"></script>
+      {% else %}
       <script src="{{ path }}" defer></script>
+      {% endif %}
+      {# /TACC #}
     {%- endfor %}
     <script defer>
         window.onload = function () {

@@ -22,7 +22,7 @@ Add your own JavaScript files to extend the theme's functionality:
 
 ```yaml
 extra_javascript:
-    - css/tacc-theme.js # load this first to retain TACC theme UX
+    - js/tacc-theme.mjs # load this first to retain TACC theme UX
     - js/custom.js
 ```
 
