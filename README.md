@@ -1,10 +1,10 @@
-# TACC ReadTheDocs Theme for MkDocs
+# TACC Documentation Theme & Guide & Demo for MkDocs
 
-A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with a [TACC styling and features](https://docs.tacc.utexas.edu/).
+A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www.mkdocs.org/) documentation theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with a [TACC styling and features](https://docs.tacc.utexas.edu/).
 
 ## Quick Start
 
-<!-- Sync these steps with /docs/index.md -->
+<!-- Keep these steps synced with /docs/index.md -->
 
 1. Install the theme e.g.
 
