@@ -5,6 +5,8 @@
 // https://github.com/mkdocs/mkdocs/issues/803
 // This makes auto scroll work on page reload not just nav within the same page.
 //
+const $ = window.jQuery;
+
 $(function() {
   /* TACC: Do not scroll if at an anchor */
   /* FAQ: Nav already (sometimes) scrolls to link of an anchor */
