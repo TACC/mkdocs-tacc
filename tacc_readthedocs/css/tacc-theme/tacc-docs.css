@@ -381,10 +381,13 @@
 
 
 
-  /* To add space between messages & messages and messages & content */
-  .admonition {
+  /* To add space between plugin blocks */
+  .admonition,
+  .tabbed-set {
     margin-block: 1em;
   }
+
+  /* To add space between messages & content */
   /* To remove empty paragraphs */
   /* SEE: /docs/code-examples.md */
   /* HELP: What markdown would avoid these? */
@@ -421,6 +424,15 @@
 
   /* To remove admonition title icon */
   .admonition-title::before { display: none; }
+
+
+
+  /* To give admonition block content a backgroud */
+  .admonition       div.tabbed-set,
+  .admonition.note  pre > code,
+  .admonition       table {
+    background-color: var(--global-color-background--app);
+  }
 
 
 
