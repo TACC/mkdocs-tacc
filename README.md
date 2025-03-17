@@ -25,9 +25,9 @@ A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs them
 
     ```yaml
     markdown_extensions:
-    - toc:
-        permalink: ""
-        permalink_class: headerlink fa fa-link
+      - toc:
+          permalink: ""
+          permalink_class: headerlink fa fa-link
     ```
 
     — in your `mkdocs.yml`.
