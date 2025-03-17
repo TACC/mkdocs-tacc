@@ -64,19 +64,20 @@ The TACC MkDocs Theme enhances the UI of these extensions:
 
 <h3>Table of Contents</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 [TOC]
 ```
 
-Result (on this page):
+**Result:**<br>
+(on this page)
 
 [TOC]
 
 <h3>Tables</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 | Header 1 | Header 2 |
@@ -85,7 +86,7 @@ Syntax:
 | Cell 3   | Cell 4   |
 ```
 
-Result:
+**Result:**
 
 | Header 1 | Header 2 |
 |----------|----------|
@@ -94,7 +95,7 @@ Result:
 
 <h3>Fenced Code Blocks</h3>
 
-Syntax:
+**Syntax:**
 
 ````markdown
 ```shell
@@ -102,7 +103,7 @@ echo "Hello, World!" > /tmp/output.txt
 ```
 ````
 
-Result:
+**Result:**
 
 ```shell
 echo "Hello, World!" > /tmp/output.txt
@@ -110,7 +111,7 @@ echo "Hello, World!" > /tmp/output.txt
 
 <h3>Definition Lists</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 Term
@@ -122,7 +123,7 @@ HTML
 : The standard markup language for web pages
 ```
 
-Result:
+**Result:**
 
 Term
 : Definition of the term
@@ -134,27 +135,35 @@ HTML
 
 <h3>Admonitions</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 !!! note "Optional Title"
-    This is a note admonition.
+    This is a note with a custom title.
 
 !!! warning
-    This is a warning admonition.
+    You can include blocks in admonitions, e.g.
+
+    ```shell
+    echo "Hello from an admonition!"
+    ```
 ```
 
-Result:
+**Result:**
 
 !!! note "Optional Title"
-    This is a note admonition.
+    This is a note with a custom title.
 
 !!! warning
-    This is a warning admonition.
+    You can include blocks in admonitions, e.g.
+
+    ```shell
+    echo "Hello from an admonition!"
+    ```
 
 <h3>Abbreviations</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 The HTML and CSS specifications are maintained by the W3C.
@@ -164,7 +173,7 @@ The HTML and CSS specifications are maintained by the W3C.
 *[W3C]: World Wide Web Consortium
 ```
 
-Result:
+**Result:**
 
 The HTML and CSS specifications are maintained by the W3C.
 
@@ -174,19 +183,21 @@ The HTML and CSS specifications are maintained by the W3C.
 
 <h3>Admonition</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
-/// admonition | "Custom Admonition"
+/// admonition | Optional Title
     type: note
 
-This is a custom-styled admonition box.
+This is a note with a custom title.
 ///
 ```
 
 ````markdown
-/// admonition | "Code Example"
+/// admonition
     type: warning
+
+You can include blocks in admonitions, e.g.
 
 ```shell
 echo "Hello from an admonition!"
@@ -194,16 +205,18 @@ echo "Hello from an admonition!"
 ///
 ````
 
-Result:
+**Result:**
 
 /// admonition | "Custom Admonition"
     type: note
 
-This is a custom-styled admonition box.
+This is a note with a custom title.
 ///
 
-/// admonition | "Code Example"
+/// admonition
     type: warning
+
+You can include blocks in admonitions, e.g.
 
 ```shell
 echo "Hello from an admonition!"
@@ -212,7 +225,7 @@ echo "Hello from an admonition!"
 
 <h3>Footnotes</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 Here's a sentence with a footnote.[^1]
@@ -220,7 +233,7 @@ Here's a sentence with a footnote.[^1]
 [^1]: This is the footnote content.
 ```
 
-Result:
+**Result:**
 
 Here's a sentence with a footnote.[^1]
 
@@ -228,21 +241,21 @@ Here's a sentence with a footnote.[^1]
 
 <h3>Attributes</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 This is a paragraph with custom class and ID. (Inspect element to see.)
 {: .class-name #custom-id }
 ```
 
-Result:
+**Result:**
 
 This is a paragraph with custom class and ID. (Inspect element to see.)
 {: .class-name #custom-id }
 
 <h3>Tabbed Content</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 === "Tab 1"
@@ -252,7 +265,7 @@ Syntax:
     Content for second tab
 ```
 
-Result:
+**Result:**
 
 === "Tab 1"
     Content for first tab
@@ -262,14 +275,14 @@ Result:
 
 <h3>Details/Summary</h3>
 
-Syntax:
+**Syntax:**
 
 ```markdown
 ??? "Click to expand"
     This content is collapsible.
 ```
 
-Result:
+**Result:**
 
 ??? "Click to expand"
     This content is collapsible.
