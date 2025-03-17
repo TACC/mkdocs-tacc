@@ -48,4 +48,4 @@ Learn to [configure](./docs/configure.md), [customize](./docs/customize.md), and
 
 ## For Developers
 
-We welcome your contribution. Learn [how to develop](./docs/customize.md).
+Learn [how to **develop**](./DEVELOP.md) and [how to **deploy**](./DEPLOY.md).
