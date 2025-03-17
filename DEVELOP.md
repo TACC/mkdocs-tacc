@@ -59,3 +59,7 @@ To test changes real-time on client repository:
 > poetry remove mkdocs-tacc-readthedocs
 > poetry add --editable ../Core-Docs # ¹
 > ```
+
+## Related
+
+- [How to Deploy](./DEPLOY.md)
