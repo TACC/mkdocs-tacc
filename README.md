@@ -34,7 +34,7 @@ A [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs them
 
     — in your `mkdocs.yml`.
 
-[core extensions]: extensions.md#core-extensions
+[core extensions]: ./docs/extensions.md#core-extensions
 
 Learn to [configure](./docs/configure.md), [customize](./docs/customize.md), and [extend](./docs/extensions.md) your MkDocs site.
 
