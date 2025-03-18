@@ -109,7 +109,7 @@ svg.logo [fill]:not([fill="none"]) {
   padding: var(--link-pad-vert) var(--link-pad-horz); /* overwrite theme.css */
 }
 .wy-menu-vertical li.on ul,
-.wy-menu-vertical li.current ul {
+.wy-menu-vertical li.current:has(li) ul {
   padding-left: var(--link-pad-horz);
   padding-bottom: 10px;
 }
@@ -134,11 +134,11 @@ svg.logo [fill]:not([fill="none"]) {
 .wy-menu-vertical li a {
   position: relative; /* support `position: absolute` child */
 }
-.wy-menu-vertical li:not(:has(ul)) a button.toctree-expand {
+.wy-menu-vertical li:not(:has(li)) a button.toctree-expand {
   display: none;
 }
 .wy-menu-vertical li a .fa,
-.wy-menu-vertical li:has(ul) a button.toctree-expand {
+.wy-menu-vertical li:has(li) a button.toctree-expand {
   margin-left: unset; /* to undo theme.css */
 
   position: absolute;
@@ -152,7 +152,7 @@ svg.logo [fill]:not([fill="none"]) {
   width: var(--button-width);
   text-align: center;
 }
-.wy-menu-vertical li:has(ul) a,
+.wy-menu-vertical li:has(li) a,
 .wy-menu-vertical li a:not(.internal) {
   padding-left: var(--button-space);
 }
