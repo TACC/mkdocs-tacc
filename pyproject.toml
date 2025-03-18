@@ -16,7 +16,7 @@ classifiers = [
 
 [project]
 name = "mkdocs-tacc"
-version = "0.1.0"
+version = "0.2.0"
 description = "TACC ReadTheDocs theme for MkDocs"
 authors = [
   { name = "TACC COA CMD", email = "coa-cmd@tacc.utexas.edu" }
