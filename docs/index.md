@@ -14,21 +14,21 @@ A [MkDocs](https://www.mkdocs.org/){target="_blank"} theme based on MkDocs' own 
     pip install mkdocs-tacc-readthedocs
     ```
 
-2. Use the theme in your MkDocs project; add —
+2. Use the theme in your MkDocs project; set —
 
     ```yaml
     theme:
         name: tacc-readthedocs
     ```
 
-    — to your `mkdocs.yml`.
+    — in your `mkdocs.yml`.
 
-3. Include the [core extensions] —
+3. Include _at least_ the [minimum set of extensions] —
 
     ```yaml
     markdown_extensions:
       - toc:
-          permalink: ""
+          permalink: "" # i.e. `true` but without "¶"
           permalink_class: headerlink fa fa-link
           permalink_title: Link to Heading
     ```
