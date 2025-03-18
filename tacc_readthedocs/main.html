@@ -103,10 +103,10 @@
     </script>
     {%- endif %}
     {# /TACC #}
-    {# TACC: #}{# To remove `docutils` class from tables #}
-    {# <script src="{{ 'js/theme_extra.js'|url }}" defer></script> #}
-    {# /TACC #}
+    {# TACC: #}{# To also load TACC scripts but NOT add `.docutils` to tables #}
     <script src="{{ 'js/theme.js'|url }}" defer></script>
+    <script src="{{ 'js/tacc-theme.mjs'|url }}" type="module"></script>
+    {# /TACC #}
     {%- for path in extra_javascript %}
       {# TACC: #}{# Implicitly use `type="module"` for ES modules #}
       {% if path.endswith('.module.js') or path.endswith('.mjs') %}

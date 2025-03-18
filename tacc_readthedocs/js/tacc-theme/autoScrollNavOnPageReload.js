@@ -1,12 +1,9 @@
-/* https://github.com/mkdocs/mkdocs/blob/1.0.4/mkdocs/themes/readthedocs/js/tacc-theme.js#L79-L105 */
-/* All changes must start and end with comments " TACC: " and " /TACC " */
+/* To make auto scroll work on page reload, not just nav within the same page */
 
-// The code below is a copy of @seanmadsen code from:
-// https://github.com/mkdocs/mkdocs/issues/803
-// This makes auto scroll work on page reload not just nav within the same page.
-//
 const $ = window.jQuery;
 
+/* https://github.com/mkdocs/mkdocs/blob/1.0.4/mkdocs/themes/readthedocs/js/theme.js#L79-L105 */
+/* All changes must start and end with comments " TACC: " and " /TACC " */
 $(function() {
   /* TACC: Do not scroll if at an anchor */
   /* FAQ: Nav already (sometimes) scrolls to link of an anchor */

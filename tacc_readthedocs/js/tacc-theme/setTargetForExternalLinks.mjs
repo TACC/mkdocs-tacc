@@ -1,3 +1,3 @@
-import findLinksAndSetTargets from 'https://cdn.jsdelivr.net/gh/TACC/Core-CMS@v3.9.2/taccsite_cms/static/site_cms/js/modules/setTargetForExternalLinks.js';
+import findLinksAndSetTargets from 'https://cdn.jsdelivr.net/gh/TACC/Core-CMS@v4.25.4/taccsite_cms/static/site_cms/js/modules/setTargetForExternalLinks.js';
 
-findLinksAndSetTargets();
+findLinksAndSetTargets( document.querySelectorAll('[role="main"] a') );
