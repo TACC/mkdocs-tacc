@@ -24,7 +24,6 @@ theme:
 
 ```yaml
 extra_css:
-  - css/tacc-theme.css # to retain TACC theme UI
   - css/ds-docs.css
 ```
 
@@ -32,10 +31,13 @@ extra_css:
 
 ```yaml
 extra_javascript:
-  - js/tacc-theme.mjs # to retain TACC theme UX
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
 ```
+
+/// tip |
+Try Markdown Extension `pymdownx.arithmatex` instead of `mathjax` to render LaTeX math equations.
+///
 
 ## Unique Markdown Extensions
 
@@ -44,3 +46,7 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 ```
+
+/// warning |
+Untested.
+///
