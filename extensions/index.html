@@ -1,0 +1,898 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Wesley Bomar" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Extensions - TACC MkDocs Theme</title>
+    
+    <style>
+      /* Layers not used in this block are used in later stylesheets */
+      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
+
+      /* Import ReadTheDocs styles but in a bottom layer */
+      @import url("../css/theme.css") layer(foundation.mkdocs);
+      @import url("../css/theme_extra.css") layer(foundation.mkdocs);
+
+      /* Undo ReadTheDocs styles for page content */
+      @layer foundation.tacc {
+        .rst-content :not(img) {
+          all: revert;
+        }
+      }
+    </style>
+    
+      
+      
+      <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-light.min.css") layer(foundation);
+      </style>
+      
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Extensions";
+        var mkdocs_page_input_path = "extensions.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <script type="module">
+      import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/core.min.js';
+      import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
+      import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
+      hljs.registerLanguage('yaml', yaml);
+      hljs.registerLanguage('shell', shell);
+      hljs.configure({
+        cssSelector: 'pre:is(.highlight, .codehilite) code'
+      });
+      hljs.highlightAll();
+    </script>
+     
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+      
+      
+      <a href=".." title="TACC MkDocs Theme (Logo)">
+      
+      
+      <img src="../img/logo.svg" class="logo" alt="TACC MkDocs Theme (Logo)"/>
+      
+    </a>
+
+    
+    <a href="https://github.com/TACC/Core-Docs" class="cms-link">TACC/Core-Docs</a>
+    
+
+
+
+
+<form id ="rtd-search-form" class="wy-form" action="../search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search docs" title="Type search term here" />
+</form>
+
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul class="current">
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href=".."
+        
+    
+>Quick Start</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="..#how-to-install">How to Install</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#configure-customize">Configure &amp; Customize</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#supported-extensions">Supported Extensions</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../configure/"
+        
+    
+>Configuration</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../configure/#basics">Basics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../configure/#advanced">Advanced</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../configure/#custom-language-aliases">Custom Language Aliases</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../configure/#navigation-redirects">Navigation Redirects</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../configure/#related-website">Related Website</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../configure/#navigation-name">Navigation Name</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../configure/#alternate-text">Alternate Text</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../configure/#more-options">More Options</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../customize/"
+        
+    
+>Customization</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#stylesheets">Stylesheets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#javascript">JavaScript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#templates">Templates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#more-options">More Options</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current">
+
+<a class="reference internal current"
+    
+        
+            href="./"
+        
+    
+>Extensions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#minimum">Minimum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#typical">Typical</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#demos">Demos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#from-python-markdown">from Python-Markdown</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#abbreviation">Abbreviation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#attribute-lists">Attribute Lists</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#definition-lists">Definition Lists</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#fenced-code-blocks">Fenced Code Blocks</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#footnotes">Footnotes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#markdown-in-html">Markdown in HTML</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#tables">Tables</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#admonitions">Admonitions</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#toc">Table of Contents</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#of-pymdown-extensions">of PyMdown Extensions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#pymdownx-admonition">Admonition</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pymdownx-details">Details/Summary</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pymdownx-html">HTML</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pymdownx-tab">Tab</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#pymdownx-tabbed">Tabbed</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Examples</span></p>
+              <ul>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../clients/basic-example/"
+        
+    
+>Basic</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/basic-example/#theme-configuration">Theme Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/basic-example/#custom-styling">Custom Styling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/basic-example/#custom-javascript">Custom JavaScript</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../clients/tacc-docs-example/"
+        
+    
+>TACC Docs</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/tacc-docs-example/#theme-configuration">Theme Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/tacc-docs-example/#custom-styling">Custom Styling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/tacc-docs-example/#custom-javascript">Custom JavaScript</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../clients/ds-user-guide-example/"
+        
+    
+>DS User Guide</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/ds-user-guide-example/#theme-configuration">Theme Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/ds-user-guide-example/#custom-styling">Custom Styling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/ds-user-guide-example/#custom-javascript">Custom JavaScript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../clients/ds-user-guide-example/#unique-markdown-extensions">Unique Markdown Extensions</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">TACC MkDocs Theme</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Getting Started &raquo;</li>
+      <li>Extensions</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/extensions.md" class="icon icon-github"> Suggest an update via GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+    
+    <div id="tacc-readthedocs">
+      <h1 id="markdown-extensions">Markdown Extensions<a class="headerlink fa fa-link" href="#markdown-extensions" title="Link to Heading"></a></h1>
+<p>You can extend the functionality of your MkDocs site.</p>
+<p><em>MkDocs offers a <a href="https://www.mkdocs.org/user-guide/configuration/#markdown_extensions" target="_blank">generic guide to extending a MkDocs site</a>.</em></p>
+<div class="toc">
+<ul>
+<li><a href="#markdown-extensions">Markdown Extensions</a><ul>
+<li><a href="#configuration">Configuration</a><ul>
+<li><a href="#minimum">Minimum</a></li>
+<li><a href="#typical">Typical</a></li>
+</ul>
+</li>
+<li><a href="#demos">Demos</a><ul>
+<li><a href="#from-python-markdown">from Python-Markdown</a><ul>
+<li><a href="#abbreviation">Abbreviation</a></li>
+<li><a href="#attribute-lists">Attribute Lists</a></li>
+<li><a href="#definition-lists">Definition Lists</a></li>
+<li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+<li><a href="#markdown-in-html">Markdown in HTML</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#admonitions">Admonitions</a></li>
+<li><a href="#toc">Table of Contents</a></li>
+</ul>
+</li>
+<li><a href="#of-pymdown-extensions">of PyMdown Extensions</a><ul>
+<li><a href="#pymdownx-admonition">Admonition</a></li>
+<li><a href="#pymdownx-details">Details/Summary</a></li>
+<li><a href="#pymdownx-html">HTML</a></li>
+<li><a href="#pymdownx-tab">Tab</a></li>
+<li><a href="#pymdownx-tabbed">Tabbed</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="configuration">Configuration<a class="headerlink fa fa-link" href="#configuration" title="Link to Heading"></a></h2>
+<h3 id="minimum">Minimum<a class="headerlink fa fa-link" href="#minimum" title="Link to Heading"></a></h3>
+<p>Users of TACC MkDocs Theme should enable these extensions:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># i.e. `true` but without &quot;¶&quot;</span>
+<span class="w">      </span><span class="nt">permalink_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">headerlink fa fa-link</span>
+<span class="w">      </span><span class="nt">permalink_title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Link to Heading</span>
+</code></pre></div>
+<h3 id="typical">Typical<a class="headerlink fa fa-link" href="#typical" title="Link to Heading"></a></h3>
+<p>Standard TACC documentation websites with this theme use:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">extra</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">admonition</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># i.e. `true` but without &quot;¶&quot;</span>
+<span class="w">      </span><span class="nt">permalink_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">headerlink fa fa-link</span>
+<span class="w">      </span><span class="nt">permalink_title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Link to Heading</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.blocks.admonition</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.blocks.details</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.blocks.html</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.blocks.tab</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pymdownx.saneheaders</span>
+</code></pre></div>
+<h2 id="demos">Demos<a class="headerlink fa fa-link" href="#demos" title="Link to Heading"></a></h2>
+<p>The TACC MkDocs Theme enhances the UI of these extensions:</p>
+<style id="demo-toc-css">
+    /* to prevent column header from wrapping ONLY in this table */
+    .demo-toc th { white-space: nowrap; }
+    /* to prevent tables from stretching to fill row height */
+    .demo-toc { align-items: start; }
+    /* to prevent tables from overlapping each other */
+    .demo-toc.grid > table { width: fit-content; }
+</style>
+
+<div class="grid demo-toc">
+<table>
+<thead>
+<tr>
+<th>from <a href="https://python-markdown.github.io/extensions/">Python-Markdown</a></th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#abbreviations">Abbreviations</a></td>
+<td><a href="https://python-markdown.github.io/extensions/abbreviations/">extra: <code>abbr</code></a></td>
+</tr>
+<tr>
+<td><a href="#html-attributes"><abbr title="Hypertext Markup Language">HTML</abbr> Attributes</a></td>
+<td><a href="https://python-markdown.github.io/extensions/attr_list/">extra: <code>attr_list</code></a></td>
+</tr>
+<tr>
+<td><a href="#definition-lists">Definition Lists</a></td>
+<td><a href="https://python-markdown.github.io/extensions/definition_lists/">extra: <code>def_list</code></a></td>
+</tr>
+<tr>
+<td><a href="#fenced-code-blocks">Code Blocks</a></td>
+<td><a href="https://python-markdown.github.io/extensions/fenced_code_blocks/">extra: <code>fenced_code</code></a></td>
+</tr>
+<tr>
+<td><a href="#footnotes">Footnotes</a></td>
+<td><a href="https://python-markdown.github.io/extensions/footnotes/">extra: <code>footnotes</code></a></td>
+</tr>
+<tr>
+<td><a href="#markdown-in-html">Markdown in <abbr title="Hypertext Markup Language">HTML</abbr></a></td>
+<td><a href="https://python-markdown.github.io/extensions/md_in_html/">extra: <code>md_in_html</code></a></td>
+</tr>
+<tr>
+<td><a href="#tables">Tables</a></td>
+<td><a href="https://python-markdown.github.io/extensions/tables/">extra: <code>tables</code></a></td>
+</tr>
+<tr>
+<td><a href="#admonitions">Alerts &amp; Notes</a></td>
+<td><a href="https://python-markdown.github.io/extensions/admonition/"><code>admonition</code></a></td>
+</tr>
+<tr>
+<td><a href="#toc">Table of Contents</a></td>
+<td><a href="https://python-markdown.github.io/extensions/toc/"><code>toc</code></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>of <a href="https://facelessuser.github.io/pymdown-extensions/#extensions">PyMdown Extensions</a></th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#pymdownx-admonition">Alerts &amp; Notes</a></td>
+<td><a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/admonition/"><code>blocks.admonition</code></a></td>
+</tr>
+<tr>
+<td><a href="#pymdownx-details">Collapsible Content</a></td>
+<td><a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/details/"><code>blocks.details</code></a></td>
+</tr>
+<tr>
+<td><a href="#pymdownx-html"><abbr title="Hypertext Markup Language">HTML</abbr> (via Blocks)</a></td>
+<td><a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/html/"><code>blocks.html</code></a></td>
+</tr>
+<tr>
+<td><a href="#pymdownx-tab">Tabs (via Blocks)</a></td>
+<td><a href="https://facelessuser.github.io/pymdown-extensions/extensions/blocks/plugins/tab/"><code>blocks.tab</code></a></td>
+</tr>
+<tr>
+<td><a href="#pymdownx-tabbed">Tabbed Content</a> <a href="#pymdownx-tabbed-warning">⚠️</a></td>
+<td><a href="https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/"><code>tabbed</code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<style id="usage-examples-css">
+    /* to make grid use rows on narrow screens */
+    .grid { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+
+    /* to reduce space between blocks in grid */
+    .grid { gap: 20px; }
+    .grid > :is(
+        pre,
+        .admonition,
+        .tabbed-set
+    ) { margin-block: 0; }
+</style>
+
+<h3 id="from-python-markdown">from <a href="https://python-markdown.github.io/extensions/">Python-Markdown</a><a class="headerlink fa fa-link" href="#from-python-markdown" title="Link to Heading"></a></h3>
+<h4 id="abbreviation">Abbreviation<a class="headerlink fa fa-link" href="#abbreviation" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>The HTML and CSS specifications are maintained by the W3C.
+
+*[HTML]: Hypertext Markup Language
+*[CSS]: Cascading Style Sheets
+*[W3C]: World Wide Web Consortium
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<p>The <abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> specifications are maintained by the <abbr title="World Wide Web Consortium">W3C</abbr>.</p>
+</div>
+<h4 id="attribute-lists">Attribute Lists<a class="headerlink fa fa-link" href="#attribute-lists" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>This is a paragraph with custom class and ID. (Inspect element to see.)
+{: .class-name <span class="ni">#custom</span>-id }
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<p class="class-name" id="custom-id">This is a paragraph with custom class and ID. (Inspect element to see.)</p>
+</div>
+<h4 id="definition-lists">Definition Lists<a class="headerlink fa fa-link" href="#definition-lists" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>Term
+: Definition of the term
+: Another definition
+
+HTML
+: Hypertext Markup Language
+: The standard markup language for web pages
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<dl>
+<dt>Term</dt>
+<dd>Definition of the term</dd>
+<dd>Another definition</dd>
+<dt><abbr title="Hypertext Markup Language">HTML</abbr></dt>
+<dd>Hypertext Markup Language</dd>
+<dd>The standard markup language for web pages</dd>
+</dl>
+</div>
+<h4 id="fenced-code-blocks">Fenced Code Blocks<a class="headerlink fa fa-link" href="#fenced-code-blocks" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code><span class="sb">```shell</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, World!&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/output.txt
+<span class="sb">```</span>
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello, World!&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/output.txt
+</code></pre></div>
+</div>
+<h4 id="footnotes">Footnotes<a class="headerlink fa fa-link" href="#footnotes" title="Link to Heading"></a></h4>
+<div class="grid">
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>A sentence with a footnote.[^1]
+
+[<span class="nl">^1</span>]: <span class="na">The footnote content.</span>
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<p>A sentence with a footnote.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+</div>
+</div>
+<h4 id="markdown-in-html">Markdown in <abbr title="Hypertext Markup Language">HTML</abbr><a class="headerlink fa fa-link" href="#markdown-in-html" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>&lt;div markdown=&quot;block&quot;&gt;
+
+I am in a <span class="sb">`&lt;div&gt;`</span> with markdown enabled.
+
+&lt;/div&gt;
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<div>
+<p>I am in a <code>&lt;div&gt;</code> with markdown enabled.</p>
+</div>
+</div>
+<h4 id="tables">Tables<a class="headerlink fa fa-link" href="#tables" title="Link to Heading"></a></h4>
+<div class="grid">
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>| Header 1 | Header 2 |
+|----------|----------|
+| Cell 1   | Cell 2   |
+| Cell 3   | Cell 4   |
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<table>
+<thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cell 1</td>
+<td>Cell 2</td>
+</tr>
+<tr>
+<td>Cell 3</td>
+<td>Cell 4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h4 id="admonitions">Admonitions<a class="headerlink fa fa-link" href="#admonitions" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>!!! note &quot;Custom Title&quot;
+    This is a note with a custom title.
+
+!!! warning
+    You can include blocks in admonitions, e.g.
+
+<span class="sb">    ```shell</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello from an admonition!&quot;</span>
+<span class="sb">    ```</span>
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<div class="admonition note">
+<p class="admonition-title">Custom Title</p>
+<p>This is a note with a custom title.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can include blocks in admonitions, e.g.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello from an admonition!&quot;</span>
+</code></pre></div>
+</div>
+</div>
+<h4 id="toc">Table of Contents<a class="headerlink fa fa-link" href="#toc" title="Link to Heading"></a></h4>
+<div class="grid">
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>[TOC]
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<p>(on this page) (truncated)</p>
+<style id="toc-css">
+    /* to hide deeply nested TOC items */
+    .toc ul ul ul ul { display: none; }
+</style>
+
+<div class="toc">
+<ul>
+<li><a href="#markdown-extensions">Markdown Extensions</a><ul>
+<li><a href="#configuration">Configuration</a><ul>
+<li><a href="#minimum">Minimum</a></li>
+<li><a href="#typical">Typical</a></li>
+</ul>
+</li>
+<li><a href="#demos">Demos</a><ul>
+<li><a href="#from-python-markdown">from Python-Markdown</a><ul>
+<li><a href="#abbreviation">Abbreviation</a></li>
+<li><a href="#attribute-lists">Attribute Lists</a></li>
+<li><a href="#definition-lists">Definition Lists</a></li>
+<li><a href="#fenced-code-blocks">Fenced Code Blocks</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+<li><a href="#markdown-in-html">Markdown in HTML</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#admonitions">Admonitions</a></li>
+<li><a href="#toc">Table of Contents</a></li>
+</ul>
+</li>
+<li><a href="#of-pymdown-extensions">of PyMdown Extensions</a><ul>
+<li><a href="#pymdownx-admonition">Admonition</a></li>
+<li><a href="#pymdownx-details">Details/Summary</a></li>
+<li><a href="#pymdownx-html">HTML</a></li>
+<li><a href="#pymdownx-tab">Tab</a></li>
+<li><a href="#pymdownx-tabbed">Tabbed</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="of-pymdown-extensions">of <a href="https://facelessuser.github.io/pymdown-extensions/#extensions">PyMdown Extensions</a><a class="headerlink fa fa-link" href="#of-pymdown-extensions" title="Link to Heading"></a></h3>
+<h4 id="pymdownx-admonition">Admonition<a class="headerlink fa fa-link" href="#pymdownx-admonition" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<details open="open">
+<summary>Simple Syntax</summary>
+<div class="grid">
+<div class="highlight"><pre><span></span><code>/// note | Custom Title
+This is a message with a custom title.
+///
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/// tip
+You can include blocks in admonitions, e.g.
+
+````shell
+echo &quot;Hello from an admonition!&quot;
+````
+///
+</code></pre></div>
+</div>
+</details>
+<details>
+<summary>Explicit Syntax</summary>
+<div class="grid">
+<div class="highlight"><pre><span></span><code>/// admonition | Custom Title
+    type: note
+
+This is a message with a custom title.
+///
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/// admonition
+    type: tip
+
+You can include blocks in admonitions, e.g.
+
+````shell
+echo &quot;Hello from an admonition!&quot;
+````
+///
+</code></pre></div>
+</div>
+</details>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<div class="grid">
+<div class="admonition note">
+<p class="admonition-title">Custom Title</p>
+<p>This is a note with a custom title.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can include blocks in admonitions, e.g.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Hello from an admonition!&quot;</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h4 id="pymdownx-details">Details/Summary<a class="headerlink fa fa-link" href="#pymdownx-details" title="Link to Heading"></a></h4>
+<div class="grid">
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>??? &quot;Click to expand&quot;
+    This content is collapsible.
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<p>??? "Click to expand"
+    This content is collapsible.</p>
+</div>
+</div>
+<h4 id="pymdownx-html"><abbr title="Hypertext Markup Language">HTML</abbr><a class="headerlink fa fa-link" href="#pymdownx-html" title="Link to Heading"></a></h4>
+<div class="grid">
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>/// html | div
+I am in a <span class="sb">`&lt;div&gt;`</span> with markdown enabled.
+///
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<div>
+<p>I am in a <code>&lt;div&gt;</code> with markdown enabled.</p>
+</div>
+</div>
+</div>
+<h4 id="pymdownx-tab">Tab<a class="headerlink fa fa-link" href="#pymdownx-tab" title="Link to Heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>/// tab | Tab 1
+Content for first tab
+///
+
+/// tab | Tab 2
+Content for second tab
+///
+</code></pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Tab 1</label><div class="tabbed-content">
+<p>Content for first tab</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Tab 2</label><div class="tabbed-content">
+<p>Content for second tab</p>
+</div>
+</div>
+</div>
+<h4 id="pymdownx-tabbed">Tabbed<a class="headerlink fa fa-link" href="#pymdownx-tabbed" title="Link to Heading"></a></h4>
+<div class="admonition caution" id="pymdownx-tabbed-warning">
+<p class="admonition-title">Deprecated</p>
+<p>This extension is deprecated. Try the <a href="#pymdownx-tab"><code>blocks.tab</code></a> extension instead.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Syntax</p>
+<div class="highlight"><pre><span></span><code>=== &quot;Tab 1&quot;
+    Content for first tab
+
+=== &quot;Tab 2&quot;
+    Content for second tab
+</code></pre></div>
+</div>
+<div class="grid">
+<div class="admonition hint">
+<p class="admonition-title">Result</p>
+<p>(if supported)</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Tab 1</label><div class="tabbed-content">
+<p>Content for first tab</p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Tab 2</label><div class="tabbed-content">
+<p>Content for second tab</p>
+</div>
+</div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Result</p>
+<p>(if disabled)</p>
+<p>=== "Tab 1"
+    Content for first tab</p>
+<p>=== "Tab 2"
+    Content for second tab</p>
+</div>
+</div>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The footnote content.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+    </div>
+    
+  
+            </div>
+          </div>
+
+
+<footer>
+  
+  
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  
+  
+  
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/TACC/Core-Docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../customize/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../clients/basic-example/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    
+    
+    
+    
+    
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+
+        // TACC: Top-level nav links do not open menu when text is clicked
+        const emptyNavLinksThatDoNotRespond = document.querySelectorAll(
+          '.wy-menu-vertical ul li.toctree-l1 > a:not([href])'
+        );
+        [ ...emptyNavLinksThatDoNotRespond ].forEach(link => {
+          link.addEventListener('click', () => {
+            SphinxRtdTheme.Navigation.toggleCurrent( $(link) );
+          });
+        });
+    </script>
+
+</body>
+</html>

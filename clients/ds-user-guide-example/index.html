@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Wesley Bomar" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>DS User Guide - TACC MkDocs Theme</title>
+    
+    <style>
+      /* Layers not used in this block are used in later stylesheets */
+      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
+
+      /* Import ReadTheDocs styles but in a bottom layer */
+      @import url("../../css/theme.css") layer(foundation.mkdocs);
+      @import url("../../css/theme_extra.css") layer(foundation.mkdocs);
+
+      /* Undo ReadTheDocs styles for page content */
+      @layer foundation.tacc {
+        .rst-content :not(img) {
+          all: revert;
+        }
+      }
+    </style>
+    
+      
+      
+      <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-light.min.css") layer(foundation);
+      </style>
+      
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "DS User Guide";
+        var mkdocs_page_input_path = "clients/ds-user-guide-example.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+    
+    <script type="module">
+      import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/core.min.js';
+      import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
+      import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
+      hljs.registerLanguage('yaml', yaml);
+      hljs.registerLanguage('shell', shell);
+      hljs.configure({
+        cssSelector: 'pre:is(.highlight, .codehilite) code'
+      });
+      hljs.highlightAll();
+    </script>
+     
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+      
+      
+      <a href="../.." title="TACC MkDocs Theme (Logo)">
+      
+      
+      <img src="../../img/logo.svg" class="logo" alt="TACC MkDocs Theme (Logo)"/>
+      
+    </a>
+
+    
+    <a href="https://github.com/TACC/Core-Docs" class="cms-link">TACC/Core-Docs</a>
+    
+
+
+
+
+<form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search docs" title="Type search term here" />
+</form>
+
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../.."
+        
+    
+>Quick Start</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../..#how-to-install">How to Install</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../..#configure-customize">Configure &amp; Customize</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../..#supported-extensions">Supported Extensions</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../../configure/"
+        
+    
+>Configuration</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../../configure/#basics">Basics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../configure/#advanced">Advanced</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../../configure/#custom-language-aliases">Custom Language Aliases</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../../configure/#navigation-redirects">Navigation Redirects</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../../configure/#related-website">Related Website</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../../configure/#navigation-name">Navigation Name</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../configure/#alternate-text">Alternate Text</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../configure/#more-options">More Options</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../../customize/"
+        
+    
+>Customization</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../../customize/#stylesheets">Stylesheets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../customize/#javascript">JavaScript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../customize/#templates">Templates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../customize/#more-options">More Options</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../../extensions/"
+        
+    
+>Extensions</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../../extensions/#configuration">Configuration</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../../extensions/#minimum">Minimum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../../extensions/#typical">Typical</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../../extensions/#demos">Demos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../../extensions/#from-python-markdown">from Python-Markdown</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#abbreviation">Abbreviation</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#attribute-lists">Attribute Lists</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#definition-lists">Definition Lists</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#fenced-code-blocks">Fenced Code Blocks</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#footnotes">Footnotes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#markdown-in-html">Markdown in HTML</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#tables">Tables</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#admonitions">Admonitions</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#toc">Table of Contents</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../../extensions/#of-pymdown-extensions">of PyMdown Extensions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#pymdownx-admonition">Admonition</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#pymdownx-details">Details/Summary</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#pymdownx-html">HTML</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#pymdownx-tab">Tab</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="../../extensions/#pymdownx-tabbed">Tabbed</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Examples</span></p>
+              <ul class="current">
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../basic-example/"
+        
+    
+>Basic</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../basic-example/#theme-configuration">Theme Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../basic-example/#custom-styling">Custom Styling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../basic-example/#custom-javascript">Custom JavaScript</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1">
+
+<a class="reference internal"
+    
+        
+            href="../tacc-docs-example/"
+        
+    
+>TACC Docs</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../tacc-docs-example/#theme-configuration">Theme Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../tacc-docs-example/#custom-styling">Custom Styling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../tacc-docs-example/#custom-javascript">Custom JavaScript</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current">
+
+<a class="reference internal current"
+    
+        
+            href="./"
+        
+    
+>DS User Guide</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#theme-configuration">Theme Configuration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#custom-styling">Custom Styling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#custom-javascript">Custom JavaScript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unique-markdown-extensions">Unique Markdown Extensions</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TACC MkDocs Theme</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+          <li>Examples &raquo;</li>
+      <li>DS User Guide</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/clients/ds-user-guide-example.md" class="icon icon-github"> Suggest an update via GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+    
+    <div id="tacc-readthedocs">
+      <h1 id="how-to-configure-ds-user-guide">How to Configure "DS User Guide"<a class="headerlink fa fa-link" href="#how-to-configure-ds-user-guide" title="Link to Heading"></a></h1>
+<p>How <a href="https://github.com/DesignSafe-CI/DS-User-Guide" target="_blank">DesignSafe-CI/DS-User-Guide</a> project should use this theme.</p>
+<h2 id="theme-configuration">Theme Configuration<a class="headerlink fa fa-link" href="#theme-configuration" title="Link to Heading"></a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc-readthedocs</span>
+<span class="w">  </span><span class="c1"># &quot;ReadTheDocs&quot; Theme Features</span>
+<span class="w">  </span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">img/NSF_NHERI-DS.svg</span>
+<span class="w">  </span><span class="nt">hljs_languages</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">json</span>
+<span class="w">  </span><span class="c1"># &quot;TACC&quot; Theme Features</span>
+<span class="w">  </span><span class="nt">cms_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://designsafe-ci.org/</span>
+<span class="w">  </span><span class="nt">cms_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">designsafe-ci.org</span>
+<span class="w">  </span><span class="nt">nav_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">User Guide</span>
+</code></pre></div>
+<h2 id="custom-styling">Custom Styling<a class="headerlink fa fa-link" href="#custom-styling" title="Link to Heading"></a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/ds-docs.css</span>
+</code></pre></div>
+<h2 id="custom-javascript">Custom JavaScript<a class="headerlink fa fa-link" href="#custom-javascript" title="Link to Heading"></a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://polyfill.io/v3/polyfill.min.js?features=es6</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js</span>
+</code></pre></div>
+<div class="admonition tip">
+<p>Try Markdown Extension <code>pymdownx.arithmatex</code> instead of <code>mathjax</code> to render LaTeX math equations.</p>
+</div>
+<h2 id="unique-markdown-extensions">Unique Markdown Extensions<a class="headerlink fa fa-link" href="#unique-markdown-extensions" title="Link to Heading"></a></h2>
+<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pymdownx.arithmatex</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">generic</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<div class="admonition warning">
+<p>Untested.</p>
+</div>
+    </div>
+    
+  
+            </div>
+          </div>
+
+
+<footer>
+  
+  
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  
+  
+  
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/TACC/Core-Docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../tacc-docs-example/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    
+    
+    
+    
+    
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+
+        // TACC: Top-level nav links do not open menu when text is clicked
+        const emptyNavLinksThatDoNotRespond = document.querySelectorAll(
+          '.wy-menu-vertical ul li.toctree-l1 > a:not([href])'
+        );
+        [ ...emptyNavLinksThatDoNotRespond ].forEach(link => {
+          link.addEventListener('click', () => {
+            SphinxRtdTheme.Navigation.toggleCurrent( $(link) );
+          });
+        });
+    </script>
+
+</body>
+</html>
