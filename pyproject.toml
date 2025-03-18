@@ -1,11 +1,11 @@
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.8.5,3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 package-mode = true
 classifiers = [
-    "Development Status :: 5 - Production/Stable",
+    "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",
     "Framework :: MkDocs",
     "Intended Audience :: Information Technology",
