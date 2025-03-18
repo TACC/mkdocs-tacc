@@ -1,6 +1,6 @@
-# TACC MkDocs Theme & Guide & Demo
+# MkDocs TACC Theme
 
-A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www.mkdocs.org/) documentation theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with a [TACC styling and features](https://docs.tacc.utexas.edu/).
+A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs).
 
 ## Quick Start
 
@@ -9,14 +9,14 @@ A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www
 1. Install the theme e.g.
 
     ```shell
-    pip install mkdocs-tacc-readthedocs
+    pip install mkdocs-tacc
     ```
 
 2. Use the theme in your MkDocs project; set —
 
     ```yaml
     theme:
-        name: tacc-readthedocs
+        name: tacc_readthedocs
     ```
 
     — in your `mkdocs.yml`.

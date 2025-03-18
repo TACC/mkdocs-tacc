@@ -8,7 +8,7 @@ How [TACC/TACC-Docs][tacc-docs]{target="_blank"} project should use this theme.
 
 ```yaml
 theme:
-  name: tacc-readthedocs
+  name: tacc_readthedocs
   # "ReadTheDocs" Theme Features
   logo: img/logo-with-text.svg
   analytics:
