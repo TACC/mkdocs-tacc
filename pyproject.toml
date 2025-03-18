@@ -1,3 +1,7 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
 package-mode = true
 classifiers = [
@@ -14,7 +18,7 @@ packages = [
 ]
 
 [project]
-name = "mkdocs-tacc-readthedocs"
+name = "mkdocs-tacc"
 version = "0.1.0"
 description = "TACC ReadTheDocs theme for MkDocs"
 authors = [
@@ -43,12 +47,5 @@ github = "https://github.com/TACC/Core-Docs"
 issues = "https://github.com/TACC/Core-Docs/issues"
 changelog = "https://github.com/TACC/Core-Docs/releases"
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
 [project.entry-points."mkdocs.themes"]
-"tacc_readthedocs" = "tacc_readthedocs"
-
-[tool.hatch.build]
-include = ["/tacc_readthedocs"]
+"tacc_readthedocs" = "mkdocs_tacc.tacc_readthedocs"

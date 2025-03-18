@@ -9,14 +9,14 @@ A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www
 1. Install the theme e.g.
 
     ```shell
-    pip install mkdocs-tacc-readthedocs
+    pip install mkdocs-tacc
     ```
 
 2. Use the theme in your MkDocs project; set —
 
     ```yaml
     theme:
-        name: tacc-readthedocs
+        name: tacc_readthedocs
     ```
 
     — in your `mkdocs.yml`.

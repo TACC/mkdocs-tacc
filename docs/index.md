@@ -11,14 +11,14 @@ A [MkDocs](https://www.mkdocs.org/){target="_blank"} theme based on MkDocs' own 
 1. Install the theme e.g.
 
     ```shell
-    pip install mkdocs-tacc-readthedocs
+    pip install mkdocs-tacc
     ```
 
 2. Use the theme in your MkDocs project; set —
 
     ```yaml
     theme:
-        name: tacc-readthedocs
+        name: tacc_readthedocs
     ```
 
     — in your `mkdocs.yml`.

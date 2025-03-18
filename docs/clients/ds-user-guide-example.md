@@ -8,7 +8,7 @@ How [DesignSafe-CI/DS-User-Guide][ds-user-guide]{target="_blank"} project should
 
 ```yaml
 theme:
-  name: tacc-readthedocs
+  name: tacc_readthedocs
   # "ReadTheDocs" Theme Features
   logo: img/NSF_NHERI-DS.svg
   hljs_languages:

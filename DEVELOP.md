@@ -56,7 +56,7 @@ To test changes real-time on client repository:
 > If changes since that command are not reflected, try:
 >
 > ```shell
-> poetry remove mkdocs-tacc-readthedocs
+> poetry remove mkdocs-tacc
 > poetry add --editable ../Core-Docs # ¹
 > ```
 

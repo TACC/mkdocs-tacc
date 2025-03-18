@@ -6,7 +6,7 @@ How a generic project might use this theme.
 
 ```yaml
 theme:
-  name: tacc-readthedocs
+  name: tacc_readthedocs
   # "ReadTheDocs" Theme Features
   logo: img/your-logo.svg
   navigation_depth: 4

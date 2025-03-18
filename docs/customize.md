@@ -49,7 +49,7 @@ To override a template:
 
     ```yaml
     theme:
-        name: tacc-readthedocs
+        name: tacc_readthedocs
         custom_dir: overrides
     ```
 

@@ -10,7 +10,7 @@ _MkDocs offers a [generic, detailed guide to configuring a MkDocs theme](https:/
 
 ```yaml
 theme:
-    name: tacc-readthedocs
+    name: tacc_readthedocs
     logo: img/logo.svg
 ```
 
@@ -30,7 +30,7 @@ Define custom language identifiers for code blocks:
 
 ```yaml
 theme:
-    name: tacc-readthedocs
+    name: tacc_readthedocs
     hljs_aliases:
         - name: cmd-line
           lang: bash
@@ -44,7 +44,7 @@ Set up redirects for navigation links:
 
 ```yaml
 theme:
-    name: tacc-readthedocs
+    name: tacc_readthedocs
     nav_redirects:
         - from: /old-page/
           to: /new-page/
@@ -56,7 +56,7 @@ Link to a related non-documentation website:
 
 ```yaml
 theme:
-    name: tacc-readthedocs
+    name: tacc_readthedocs
     cms_url: https://your.related-non-documentation.website
     cms_name: Your Related non-Documentation Website
 ```
@@ -67,7 +67,7 @@ Customize the navigation section name:
 
 ```yaml
 theme:
-    name: tacc-readthedocs
+    name: tacc_readthedocs
     nav_name: Documentation
 ```
 
@@ -83,7 +83,7 @@ To enable [all text changes](https://github.com/TACC/Core-Docs/main/tacc_readthe
 
 | PIP | Poetry |
 | - | - |
-| `pip install mkdocs-tacc-readthedocs[i18n]` | `poetry add mkdocs-tacc-readthedocs --extras i18n` |
+| `pip install mkdocs-tacc[i18n]` | `poetry add mkdocs-tacc --extras i18n` |
 
 If you install without the i18n extra, the default text "Edit on %(repo_name)s" will be used.
 
