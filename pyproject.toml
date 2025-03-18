@@ -13,9 +13,6 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Documentation",
 ]
-packages = [
-    { include = "tacc_readthedocs" }
-]
 
 [project]
 name = "mkdocs-tacc"
