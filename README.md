@@ -1,4 +1,4 @@
-# TACC Documentation Theme & Guide & Demo for MkDocs
+# TACC MkDocs Theme & Guide & Demo
 
 A guide and demo for [TACC](https://www.tacc.utexas.edu/)'s [MkDocs](https://www.mkdocs.org/) documentation theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs) but with a [TACC styling and features](https://docs.tacc.utexas.edu/).
 
