@@ -1,6 +1,6 @@
 # How to Configure "TACC Docs"
 
-How [TACC/TACC-Docs][tacc-docs] project should use this theme.
+How [TACC/TACC-Docs][tacc-docs]{target="_blank"} project should use this theme.
 
 [tacc-docs]: https://github.com/TACC/TACC-Docs
 
