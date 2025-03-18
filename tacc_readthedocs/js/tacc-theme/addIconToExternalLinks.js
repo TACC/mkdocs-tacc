@@ -1,8 +1,11 @@
 /* FAQ: jQuery element selector is used cuz Firefox does not support :has() */
 
+const ICON_LIB_CLASSNAME = 'fa';
+const ICON_GLYPH_CLASSNAME = 'fa-external-link';
+
 function createIcon() {
   const icon = document.createElement('i');
-        icon.classList.add('fa', 'fa-external-link');
+        icon.classList.add(ICON_LIB_CLASSNAME, ICON_GLYPH_CLASSNAME);
   return icon;
 }
 
@@ -24,7 +27,7 @@ document.querySelectorAll(`
   /* to style external links */
   const style = document.createElement('style');
   style.textContent = `
-  .rst-content a > .fa-external-link {
+  .rst-content a > .${ICON_GLYPH_CLASSNAME} {
       margin-left: 0.25em;
   }
   `;
