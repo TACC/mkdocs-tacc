@@ -15,8 +15,6 @@ theme:
   # "TACC" Theme Features
   cms_url: https://github.com/TACC/Core-Docs
   cms_name: TACC/Core-Docs
-extra_javascript:
-  - js/tacc-theme.mjs
 
 nav:
   - Getting Started:

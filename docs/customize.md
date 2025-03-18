@@ -12,7 +12,6 @@ Add your own CSS files to override the theme's default styles:
 
 ```yaml
 extra_css:
-    - css/tacc-theme.css # load this first to retain TACC theme UI
     - css/custom.css
 ```
 
@@ -22,7 +21,6 @@ Add your own JavaScript files to extend the theme's functionality:
 
 ```yaml
 extra_javascript:
-    - js/tacc-theme.mjs # load this first to retain TACC theme UX
     - js/custom.js
 ```
 
