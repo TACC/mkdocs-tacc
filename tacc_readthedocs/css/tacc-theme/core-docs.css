@@ -79,7 +79,6 @@ svg.logo [fill]:not([fill="none"]) {
   background: unset;
 }
 .wy-menu-vertical a:not(.current) {
-  color: var(--global-color-primary--x-dark);
   font-weight: var(--medium);
 }
 .wy-menu-vertical a.current {
