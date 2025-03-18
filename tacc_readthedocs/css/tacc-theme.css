@@ -1,5 +1,22 @@
-@import url('tacc-theme/bootstrap.css');
-@import url('tacc-theme/core-styles.css');
-@import url('tacc-theme/tacc-docs.css');
-@import url('tacc-theme/highlight-js.css');
-@import url('tacc-theme/permalink.css');
+@layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
+
+/* MkDocs' ReadTheDocs theme (not in this repo) */
+@import url("./theme.css") layer(foundation.mkdocs);
+@import url("./theme_extra.css") layer(foundation.mkdocs);
+
+/* TACC's Bootstrap snippets & ReadTheDocs overrides */
+@import url("./tacc-theme/readthedocs.css") layer(foundation.tacc);
+@import url('./tacc-theme/bootstrap.css') layer(foundation.tacc);
+
+/* TACC's Core-Styles & tweaks to it */
+@import url('https://cdn.jsdelivr.net/npm/@tacc/core-styles@2.37.4/dist/core-styles.base.css') layer(base);
+@import url('./tacc-theme/core-styles.base.css') layer(base);
+@import url('https://cdn.jsdelivr.net/npm/@tacc/core-styles@2.37.4/dist/core-styles.docs.css') layer(project);
+@import url('./tacc-theme/core-styles.docs.css') layer(project);
+
+/* TACC's miscellaneous doc styles */
+@import url('./tacc-theme/core-docs.css') layer(cosmetic);
+
+/* TACC's tweaks to any plugin styles */
+@import url('./tacc-theme/highlight-js.css');
+@import url('./tacc-theme/permalink.css');
