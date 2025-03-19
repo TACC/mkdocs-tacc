@@ -8,10 +8,22 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
 <!-- Keep these steps synced with /README.md -->
 
-1. Install the theme e.g.
+1. Install the theme (with as much or as little as you need) e.g.
 
     ```shell
     pip install mkdocs-tacc
+    ```
+
+    ```shell
+    pip install "mkdocs-tacc[i18n]" # to change text like "Edit on GitHub"
+    ```
+
+    ```shell
+    pip install "mkdocs-tacc[pymdown-extensions]" # for bonus Markdown syntax
+    ```
+
+    ```shell
+    pip install "mkdocs-tacc[all]" # for all features
     ```
 
 2. Use the theme in your MkDocs project; set —
