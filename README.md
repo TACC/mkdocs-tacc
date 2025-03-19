@@ -4,7 +4,7 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
 ## Quick Start
 
-<!-- Keep these steps synced with ./docs/index.md -->
+<!-- Keep these steps synced with /docs/index.md -->
 
 1. Install the theme e.g.
 
