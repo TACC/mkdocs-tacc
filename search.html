@@ -38,10 +38,12 @@
     
     <script type="module">
       import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/core.min.js';
-      import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
+      import bash from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/bash.min.js';
       import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
-      hljs.registerLanguage('yaml', yaml);
+      import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/plaintext.min.js';
+      hljs.registerLanguage('bash', bash);
       hljs.registerLanguage('shell', shell);
+      hljs.registerLanguage('plaintext', plaintext);
       hljs.configure({
         cssSelector: 'pre:is(.highlight, .codehilite) code'
       });
@@ -56,17 +58,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-      
-      
-      <a href="./." title="TACC MkDocs Theme (Logo)">
-      
-      
-      <img src="./img/logo.svg" class="logo" alt="TACC MkDocs Theme (Logo)"/>
-      
+      <a href="./." class="icon icon-home"> TACC MkDocs Theme
     </a>
 
     
-    <a href="https://github.com/TACC/Core-Docs" class="cms-link">TACC/Core-Docs</a>
     
 
 
