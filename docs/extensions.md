@@ -378,7 +378,7 @@ This is a note with a custom title.
 ///// tip
 You can include blocks in admonitions, e.g.
 
-```bash
+```shell
 echo "Hello from an admonition!"
 ```
 /////
