@@ -83,7 +83,7 @@ To enable [all text changes](https://github.com/TACC/mkdocs-tacc/main/tacc_readt
 
 | PIP | Poetry |
 | - | - |
-| `pip install mkdocs-tacc[i18n]` | `poetry add mkdocs-tacc --extras i18n` |
+| `pip install "mkdocs-tacc[i18n]"` | `poetry add mkdocs-tacc --extras i18n` |
 
 If you install without the i18n extra, the default text "Edit on %(repo_name)s" will be used.
 
