@@ -45,6 +45,6 @@ Learn to [configure](https://tacc.github.io/Core-Docs/configure/), [customize](h
 | Upcoming | [TACC-Docs](https://github.com/TACC/TACC-Docs)<br>[DesignSafe-CI/DS-User-Guide](https://github.com/DesignSafe-CI/DS-User-Guide) |
 | Potential | [TACC/containers_at_tacc](https://github.com/TACC/containers_at_tacc)<br>[TACC/life_sciences_ml_at_tacc](https://github.com/TACC/life_sciences_ml_at_tacc) |
 
-## For Developers
+## Contributing
 
-Learn [how to **develop**](./DEVELOP.md) and [how to **deploy**](./DEPLOY.md).
+We welcome contributions. [Read "How to Contribute"](./CONTRIBUTING.md).

@@ -8,3 +8,7 @@ Deploys rely on [GitHub Pages](https://pages.github.com/) and [MkDocs command `g
     ```
 2. Wait for [GitHub action](https://github.com/TACC/Core-Docs/actions) to complete.
 3. Load https://tacc.github.io/Core-Docs/.
+
+# Related
+
+- [How to Publish](./PUBLISHING.md)
