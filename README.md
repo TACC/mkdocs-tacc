@@ -2,40 +2,21 @@
 
 A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs).
 
-## Quick Start
+## How to Install
 
-<!-- Keep these steps synced with /docs/index.md -->
-
-1. Install the theme e.g.
+1. Install `mkdocs-tacc` (and optional dependencies) e.g.
 
     ```shell
-    pip install mkdocs-tacc
+    pip install "mkdocs-tacc[all]"
     ```
 
-2. Use the theme in your MkDocs project; set —
+2. In your `mkdocs.yml`:
 
-    ```yaml
-    theme:
-        name: tacc_readthedocs
-    ```
+    - Set theme name as `tacc_readthedocs`.
+    - Set [typical extensions for this theme](./docs/extensions.md#typical).
 
-    — in your `mkdocs.yml`.
-
-3. Include _at least_ the [minimum set of extensions][exts] —
-
-    ```yaml
-    markdown_extensions:
-      - toc:
-          permalink: "" # i.e. `true` but without "¶"
-          permalink_class: headerlink fa fa-link
-          permalink_title: Link to Heading
-    ```
-
-    — in your `mkdocs.yml`.
-
-[exts]: https://tacc.github.io/Core-Docs/extensions/#core-extensions
-
-Learn to [configure](https://tacc.github.io/Core-Docs/configure/), [customize](https://tacc.github.io/Core-Docs/customize/), and [extend](https://tacc.github.io/Core-Docs/extensions/) your MkDocs site.
+> [!NOTE]
+> We also offer [detailed instructions](https://tacc.github.io/Core-Docs/) instead.
 
 ## Known Clients
 
@@ -47,4 +28,4 @@ Learn to [configure](https://tacc.github.io/Core-Docs/configure/), [customize](h
 
 ## Contributing
 
-We welcome contributions. [Read "How to Contribute"](./CONTRIBUTING.md).
+We welcome contributions. Read ["How to Contribute"](./CONTRIBUTING.md).

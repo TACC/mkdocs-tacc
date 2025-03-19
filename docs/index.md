@@ -23,7 +23,7 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
     — in your `mkdocs.yml`.
 
-3. Include _at least_ the [minimum set of extensions][exts] —
+3. Include the [typical][exts-typ] or [minimal][exts-min] set of extensions — e.g.
 
     ```yaml
     markdown_extensions:
@@ -35,7 +35,8 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
     — in your `mkdocs.yml`.
 
-[exts]: extensions.md#core-extensions
+[exts-min]: extensions.md#minimal
+[exts-typ]: extensions.md#typical
 
 ## Configure & Customize
 

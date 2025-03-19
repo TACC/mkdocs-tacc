@@ -8,9 +8,9 @@ _MkDocs offers a [generic guide to extending a MkDocs site](https://www.mkdocs.o
 
 ## Configuration
 
-### Minimum
+### Minimal
 
-Users of TACC MkDocs Theme should enable these extensions:
+Users of this theme should **at least** enable **these** extensions:
 
 ```yaml
 markdown_extensions:
@@ -22,23 +22,30 @@ markdown_extensions:
 
 ### Typical
 
-Standard TACC documentation websites with this theme use:
+Typical users of this theme will **both** enable **all _these_** extensions —
 
 ```yaml
 markdown_extensions:
-  - extra
-  - admonition
-  - toc:
-      permalink: "" # i.e. `true` but without "¶"
-      permalink_class: headerlink fa fa-link
-      permalink_title: Link to Heading
-  - pymdownx.blocks.admonition
-  - pymdownx.blocks.details
-  - pymdownx.blocks.html
-  - pymdownx.blocks.tab
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.saneheaders
+    - extra
+    - admonition
+    - toc:
+        permalink: "" # i.e. `true` but without "¶"
+        permalink_class: headerlink fa fa-link
+        permalink_title: Link to Heading
+    # PyMdown Extensions
+    - pymdownx.blocks.admonition
+    - pymdownx.blocks.details
+    - pymdownx.blocks.html
+    - pymdownx.blocks.tab
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.saneheaders
+```
+
+— **and** install [PyMdown Extensions](https://facelessuser.github.io/pymdown-extensions/) via optional dependency, e.g.
+
+```shell
+pip install "mkdocs-tacc[pymdown-extensions]"
 ```
 
 ## Demos
