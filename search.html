@@ -27,9 +27,11 @@
       import bash from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/bash.min.js';
       import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
       import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/plaintext.min.js';
+      import markdown from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/markdown.min.js';
       hljs.registerLanguage('bash', bash);
       hljs.registerLanguage('shell', shell);
       hljs.registerLanguage('plaintext', plaintext);
+      hljs.registerLanguage('markdown', markdown);
       hljs.configure({
         cssSelector: 'pre:is(.highlight, .codehilite) code'
       });
@@ -44,10 +46,17 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-      <a href="./." class="icon icon-home"> TACC MkDocs Theme
+      
+      
+      <a href="./." title="TACC MkDocs Theme (Logo)">
+      
+      
+      <img src="./img/logo.svg" class="logo" alt="TACC MkDocs Theme (Logo)"/>
+      
     </a>
 
     
+    <a href="https://github.com/TACC/mkdocs-tacc" class="cms-link">TACC/mkdocs-tacc</a>
     
 
 
