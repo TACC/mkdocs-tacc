@@ -8,21 +8,7 @@
       <link rel="shortcut icon" href="img/favicon.ico" />
     <title>Quick Start - TACC MkDocs Theme</title>
     
-    <style>
-      /* Layers not used in this block are used in later stylesheets */
-      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
-
-      /* Import ReadTheDocs styles but in a bottom layer */
-      @import url("css/theme.css") layer(foundation.mkdocs);
-      @import url("css/theme_extra.css") layer(foundation.mkdocs);
-
-      /* Undo ReadTheDocs styles for page content */
-      @layer foundation.tacc {
-        .rst-content :not(img) {
-          all: revert;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="css/tacc-theme.css" />
     
       
       
@@ -288,7 +274,7 @@
           <li>Getting Started &raquo;</li>
       <li>Quick Start</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/index.md" class="icon icon-github"> Suggest an update via GitHub</a>
+          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -297,7 +283,7 @@
             <div class="section" itemprop="articleBody">
               
     
-    <div id="tacc-readthedocs">
+    <div id="tacc_readthedocs">
       <h1 id="mkdocs-tacc-theme">MkDocs TACC Theme<a class="headerlink fa fa-link" href="#mkdocs-tacc-theme" title="Link to Heading"></a></h1>
 <p>A <a href="https://www.tacc.utexas.edu/">TACC</a>-styled <a href="https://www.mkdocs.org/">MkDocs</a> theme based on MkDocs' own <a href="https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs">ReadTheDocs theme</a>.</p>
 <div class="toc">
@@ -316,24 +302,21 @@
 <ol>
 <li>
 <p>Install the theme e.g.</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-tacc
-</code></pre></div>
+<pre class="highlight"><code class="language-shell">pip install mkdocs-tacc</code></pre>
 </li>
 <li>
 <p>Use the theme in your MkDocs project; set —</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs</code></pre>
 <p>— in your <code>mkdocs.yml</code>.</p>
 </li>
 <li>
 <p>Include <em>at least</em> the [minimum set of extensions] —</p>
-<div class="highlight"><pre><span></span><code><span class="nt">markdown_extensions</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">toc</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">permalink</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># i.e. `true` but without &quot;¶&quot;</span>
-<span class="w">      </span><span class="nt">permalink_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">headerlink fa fa-link</span>
-<span class="w">      </span><span class="nt">permalink_title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Link to Heading</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">markdown_extensions:
+  - toc:
+      permalink: "" # i.e. `true` but without "¶"
+      permalink_class: headerlink fa fa-link
+      permalink_title: Link to Heading</code></pre>
 <p>— in your <code>mkdocs.yml</code>.</p>
 </li>
 </ol>
@@ -389,10 +372,14 @@
     
     
     
-    
-    
     <script src="js/theme.js" defer></script>
+    <script src="js/tacc-theme.mjs" type="module"></script>
+    
+      
+      
       <script src="search/main.js" defer></script>
+      
+      
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

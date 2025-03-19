@@ -8,21 +8,7 @@
       <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>Configuration - TACC MkDocs Theme</title>
     
-    <style>
-      /* Layers not used in this block are used in later stylesheets */
-      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
-
-      /* Import ReadTheDocs styles but in a bottom layer */
-      @import url("../css/theme.css") layer(foundation.mkdocs);
-      @import url("../css/theme_extra.css") layer(foundation.mkdocs);
-
-      /* Undo ReadTheDocs styles for page content */
-      @layer foundation.tacc {
-        .rst-content :not(img) {
-          all: revert;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../css/tacc-theme.css" />
     
       
       
@@ -288,7 +274,7 @@
           <li>Getting Started &raquo;</li>
       <li>Configuration</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/configure.md" class="icon icon-github"> Suggest an update via GitHub</a>
+          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/configure.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -297,7 +283,7 @@
             <div class="section" itemprop="articleBody">
               
     
-    <div id="tacc-readthedocs">
+    <div id="tacc_readthedocs">
       <h1 id="how-to-configure">How to Configure<a class="headerlink fa fa-link" href="#how-to-configure" title="Link to Heading"></a></h1>
 <p>You can configure the theme appearance and behavior.</p>
 <p><em>MkDocs offers a <a href="https://www.mkdocs.org/user-guide/configuration/" target="_blank">generic, detailed guide to configuring a MkDocs theme</a>.</em></p>
@@ -319,10 +305,9 @@
 </ul>
 </div>
 <h2 id="basics">Basics<a class="headerlink fa fa-link" href="#basics" title="Link to Heading"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">    </span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">img/logo.svg</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    logo: img/logo.svg</code></pre>
 <h2 id="advanced">Advanced<a class="headerlink fa fa-link" href="#advanced" title="Link to Heading"></a></h2>
 <table>
 <thead>
@@ -356,35 +341,31 @@
 </table>
 <h3 id="custom-language-aliases">Custom Language Aliases<a class="headerlink fa fa-link" href="#custom-language-aliases" title="Link to Heading"></a></h3>
 <p>Define custom language identifiers for code blocks:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">    </span><span class="nt">hljs_aliases</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmd-line</span>
-<span class="w">          </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">job-script</span>
-<span class="w">          </span><span class="nt">lang</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    hljs_aliases:
+        - name: cmd-line
+          lang: bash
+        - name: job-script
+          lang: bash</code></pre>
 <h3 id="navigation-redirects">Navigation Redirects<a class="headerlink fa fa-link" href="#navigation-redirects" title="Link to Heading"></a></h3>
 <p>Set up redirects for navigation links:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">    </span><span class="nt">nav_redirects</span><span class="p">:</span>
-<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/old-page/</span>
-<span class="w">          </span><span class="nt">to</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/new-page/</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    nav_redirects:
+        - from: /old-page/
+          to: /new-page/</code></pre>
 <h3 id="related-website">Related Website<a class="headerlink fa fa-link" href="#related-website" title="Link to Heading"></a></h3>
 <p>Link to a related non-documentation website:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">    </span><span class="nt">cms_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://your.related-non-documentation.website</span>
-<span class="w">    </span><span class="nt">cms_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Your Related non-Documentation Website</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    cms_url: https://your.related-non-documentation.website
+    cms_name: Your Related non-Documentation Website</code></pre>
 <h3 id="navigation-name">Navigation Name<a class="headerlink fa fa-link" href="#navigation-name" title="Link to Heading"></a></h3>
 <p>Customize the navigation section name:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">    </span><span class="nt">nav_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Documentation</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    nav_name: Documentation</code></pre>
 <h2 id="alternate-text">Alternate Text<a class="headerlink fa fa-link" href="#alternate-text" title="Link to Heading"></a></h2>
 <p>The theme can change some of the default English text via optional internationalization (i18n) feature.</p>
 <table>
@@ -474,10 +455,14 @@
     
     
     
-    
-    
     <script src="../js/theme.js" defer></script>
+    <script src="../js/tacc-theme.mjs" type="module"></script>
+    
+      
+      
       <script src="../search/main.js" defer></script>
+      
+      
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

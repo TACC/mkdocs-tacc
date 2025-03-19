@@ -8,21 +8,7 @@
       <link rel="shortcut icon" href="../../img/favicon.ico" />
     <title>Basic - TACC MkDocs Theme</title>
     
-    <style>
-      /* Layers not used in this block are used in later stylesheets */
-      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
-
-      /* Import ReadTheDocs styles but in a bottom layer */
-      @import url("../../css/theme.css") layer(foundation.mkdocs);
-      @import url("../../css/theme_extra.css") layer(foundation.mkdocs);
-
-      /* Undo ReadTheDocs styles for page content */
-      @layer foundation.tacc {
-        .rst-content :not(img) {
-          all: revert;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../../css/tacc-theme.css" />
     
       
       
@@ -288,7 +274,7 @@
           <li>Examples &raquo;</li>
       <li>Basic</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/clients/basic-example.md" class="icon icon-github"> Suggest an update via GitHub</a>
+          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/clients/basic-example.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -297,28 +283,25 @@
             <div class="section" itemprop="articleBody">
               
     
-    <div id="tacc-readthedocs">
+    <div id="tacc_readthedocs">
       <h1 id="how-to-configure-a-project">How to Configure a Project<a class="headerlink fa fa-link" href="#how-to-configure-a-project" title="Link to Heading"></a></h1>
 <p>How a generic project might use this theme.</p>
 <h2 id="theme-configuration">Theme Configuration<a class="headerlink fa fa-link" href="#theme-configuration" title="Link to Heading"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">  </span><span class="c1"># &quot;ReadTheDocs&quot; Theme Features</span>
-<span class="w">  </span><span class="nt">logo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">img/your-logo.svg</span>
-<span class="w">  </span><span class="nt">navigation_depth</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
-<span class="w">  </span><span class="c1"># &quot;TACC&quot; Theme Features</span>
-<span class="w">  </span><span class="nt">cms_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://your.related-non-documentation.website</span>
-<span class="w">  </span><span class="nt">cms_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Your Related non-Documentation Website</span>
-<span class="w">  </span><span class="nt">nav_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Documentation</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+  name: tacc_readthedocs
+  # "ReadTheDocs" Theme Features
+  logo: img/your-logo.svg
+  navigation_depth: 4
+  # "TACC" Theme Features
+  cms_url: https://your.related-non-documentation.website
+  cms_name: Your Related non-Documentation Website
+  nav_name: Documentation</code></pre>
 <h2 id="custom-styling">Custom Styling<a class="headerlink fa fa-link" href="#custom-styling" title="Link to Heading"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/specific-to-your-project.css</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">extra_css:
+  - css/specific-to-your-project.css</code></pre>
 <h2 id="custom-javascript">Custom JavaScript<a class="headerlink fa fa-link" href="#custom-javascript" title="Link to Heading"></a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">js/specific-to-your-project.js</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">extra_javascript:
+  - js/specific-to-your-project.js</code></pre>
     </div>
     
   
@@ -368,10 +351,14 @@
     
     
     
-    
-    
     <script src="../../js/theme.js" defer></script>
+    <script src="../../js/tacc-theme.mjs" type="module"></script>
+    
+      
+      
       <script src="../../search/main.js" defer></script>
+      
+      
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

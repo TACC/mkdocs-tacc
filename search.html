@@ -8,21 +8,7 @@
       <link rel="shortcut icon" href="./img/favicon.ico" />
     <title>TACC MkDocs Theme</title>
     
-    <style>
-      /* Layers not used in this block are used in later stylesheets */
-      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
-
-      /* Import ReadTheDocs styles but in a bottom layer */
-      @import url("./css/theme.css") layer(foundation.mkdocs);
-      @import url("./css/theme_extra.css") layer(foundation.mkdocs);
-
-      /* Undo ReadTheDocs styles for page content */
-      @layer foundation.tacc {
-        .rst-content :not(img) {
-          all: revert;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./css/tacc-theme.css" />
     
       
       
@@ -341,10 +327,14 @@
     
     
     
-    
-    
     <script src="./js/theme.js" defer></script>
+    <script src="./js/tacc-theme.mjs" type="module"></script>
+    
+      
+      
       <script src="./search/main.js" defer></script>
+      
+      
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

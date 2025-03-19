@@ -8,21 +8,7 @@
       <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>Customization - TACC MkDocs Theme</title>
     
-    <style>
-      /* Layers not used in this block are used in later stylesheets */
-      @layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
-
-      /* Import ReadTheDocs styles but in a bottom layer */
-      @import url("../css/theme.css") layer(foundation.mkdocs);
-      @import url("../css/theme_extra.css") layer(foundation.mkdocs);
-
-      /* Undo ReadTheDocs styles for page content */
-      @layer foundation.tacc {
-        .rst-content :not(img) {
-          all: revert;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="../css/tacc-theme.css" />
     
       
       
@@ -288,7 +274,7 @@
           <li>Getting Started &raquo;</li>
       <li>Customization</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/customize.md" class="icon icon-github"> Suggest an update via GitHub</a>
+          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/customize.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -297,7 +283,7 @@
             <div class="section" itemprop="articleBody">
               
     
-    <div id="tacc-readthedocs">
+    <div id="tacc_readthedocs">
       <h1 id="how-to-customize">How to Customize<a class="headerlink fa fa-link" href="#how-to-customize" title="Link to Heading"></a></h1>
 <p>You can expand or rewrite parts of the theme.</p>
 <p><em>MkDocs offers a <a href="https://www.mkdocs.org/user-guide/customizing-your-theme/" target="_blank">generic, detailed guide to customizing a MkDocs theme</a>.</em></p>
@@ -314,14 +300,12 @@
 </div>
 <h2 id="stylesheets">Stylesheets<a class="headerlink fa fa-link" href="#stylesheets" title="Link to Heading"></a></h2>
 <p>Add your own CSS files to override the theme's default styles:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">css/custom.css</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">extra_css:
+    - css/custom.css</code></pre>
 <h2 id="javascript">JavaScript<a class="headerlink fa fa-link" href="#javascript" title="Link to Heading"></a></h2>
 <p>Add your own JavaScript files to extend the theme's functionality:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">extra_javascript</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">js/custom.js</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">extra_javascript:
+    - js/custom.js</code></pre>
 <h2 id="templates">Templates<a class="headerlink fa fa-link" href="#templates" title="Link to Heading"></a></h2>
 <p>The theme overrides ReadTheDocs templates that you can override with your own:</p>
 <ul>
@@ -335,18 +319,16 @@
 <li>Create a directory called <code>overrides</code> in your docs directory.</li>
 <li>
 <p>Add your custom templates e.g.</p>
-<div class="highlight"><pre><span></span><code>docs/
+<pre class="highlight"><code>docs/
 ├── overrides/
 │   ├── main.html
-│   └── footer.html
-</code></pre></div>
+│   └── footer.html</code></pre>
 </li>
 <li>
 <p>Configure overrides via <code>mkdocs.yml</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tacc_readthedocs</span>
-<span class="w">    </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">overrides</span>
-</code></pre></div>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    custom_dir: overrides</code></pre>
 </li>
 </ol>
 <h2 id="more-options">More Options<a class="headerlink fa fa-link" href="#more-options" title="Link to Heading"></a></h2>
@@ -404,10 +386,14 @@
     
     
     
-    
-    
     <script src="../js/theme.js" defer></script>
+    <script src="../js/tacc-theme.mjs" type="module"></script>
+    
+      
+      
       <script src="../search/main.js" defer></script>
+      
+      
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

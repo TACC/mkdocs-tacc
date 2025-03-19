@@ -1,4 +1,4 @@
-/* mkdocs.base.yml: markdown_extensions: toc: permalink_class */
+/* TOC */
 /* https://python-markdown.github.io/extensions/toc/#usage */
 /* RFE: Support via Core-Styles class */
 
@@ -9,7 +9,7 @@
 
 @supports selector(:has(*)) {
 
-  /* To reposition permalink */
+  /* to reposition permalink */
   /* NOTE: Unnecessary if MkDocs config sets `permalink_leading: true` */
   /* https://github.com/mkdocs/mkdocs/blob/1.5.0/pyproject.toml#L39 */
   :has(> .headerlink) {
@@ -18,15 +18,15 @@
   .headerlink {
     position: absolute;
 
-    /* To add space between it and heading */
+    /* to add space between it and heading */
     --x-space: 0.5em;
     padding-right: var(--x-space);
 
-    /* To move to the left of the heading */
+    /* to move to the left of the heading */
     left: 0;
     --x-offset: calc( 1ch + var(--x-space) );
 
-    /* To vertically center */
+    /* to vertically center */
     top: 50%;
     --y-offset: 50%;
 
@@ -36,12 +36,12 @@
     );
   }
 
-  /* To use link color only on hover, otherwise use pale text color */
+  /* to use link color only on hover, otherwise use pale text color */
   .headerlink:not(:hover) {
     color: inherit;
     opacity: 0.5;
   }
-  /* To hide except on hover over it or heading */
+  /* to hide except on hover over it or heading */
   .headerlink:not(:hover, :hover > *) {
     opacity: 0;
   }
