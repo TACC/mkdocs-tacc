@@ -29,13 +29,22 @@ license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 dependencies = [
-  "mkdocs==1.4.3",
-  "pymdown-extensions>=10.4.0",
-  "mkdocs-exclude-search>=0.6.5",
+  "mkdocs==1.4.3"
 ]
 
 [project.optional-dependencies]
 i18n = ["mkdocs[i18n]==1.4.3"]
+pymdown-extensions = ["pymdown-extensions>=10.4.0"]
+all = ["mkdocs[i18n]==1.4.3", "pymdown-extensions>=10.4.0"]
+
+# FAQ: for Poetry 1.x compatibility (Poetry 2+ should use above format)
+[tool.poetry.dependencies]
+mkdocs = "==1.4.3"
+pymdown-extensions = {version = ">=10.4.0", optional = true}
+[tool.poetry.extras]
+i18n = [] # empty cuz Poetry 1.x cannot handle nested extra; use pip for `i18n`
+pymdown-extensions = ["pymdown-extensions"]
+all = ["pymdown-extensions"] # for consistency with `all` offered for PIP users
 
 [project.urls]
 # homepage = "https://docs.tacc.utexas.edu"
