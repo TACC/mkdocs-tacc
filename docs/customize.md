@@ -56,5 +56,5 @@ To override a template:
 ## More Options
 
 - [MkDocs: User Guide: Customizing Your Theme](https://www.mkdocs.org/user-guide/customizing-your-theme/){target="_blank"}
-- [TACC/Core-Docs: Configuration](configure.md)
-- [TACC/Core-Docs: Supported Extensions](extensions.md)
+- [TACC/mkdocs-tacc: Configuration](configure.md)
+- [TACC/mkdocs-tacc: Supported Extensions](extensions.md)

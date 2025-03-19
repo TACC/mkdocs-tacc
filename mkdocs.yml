@@ -2,7 +2,7 @@ site_name: TACC MkDocs Theme
 site_description: Styles for TACC Documentation
 site_author: Wesley Bomar
 # site_url: https://docs.tacc.utexas.edu
-repo_url: https://github.com/TACC/Core-Docs
+repo_url: https://github.com/TACC/mkdocs-tacc
 edit_uri: edit/main/docs/
 
 theme:
@@ -13,8 +13,8 @@ theme:
   # "ReadTheDocs" Theme Features
   logo: img/logo.svg
   # "TACC" Theme Features
-  cms_url: https://github.com/TACC/Core-Docs
-  cms_name: TACC/Core-Docs
+  cms_url: https://github.com/TACC/mkdocs-tacc
+  cms_name: TACC/mkdocs-tacc
 
 nav:
   - Getting Started:
@@ -27,8 +27,8 @@ nav:
     - TACC Docs: clients/tacc-docs-example.md
     - DS User Guide: clients/ds-user-guide-example.md
   - Community:
-    - How to Contribute: https://github.com/TACC/Core-Docs/blob/main/CONTRIBUTING.md
-    - Known Clients: https://github.com/TACC/Core-Docs/blob/main/README.md#known-clients
+    - How to Contribute: https://github.com/TACC/mkdocs-tacc/blob/main/CONTRIBUTING.md
+    - Known Clients: https://github.com/TACC/mkdocs-tacc/blob/main/README.md#known-clients
 
 plugins:
   - search
