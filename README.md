@@ -16,7 +16,7 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
     - Set [typical extensions for this theme](./docs/extensions.md#typical).
 
 > [!NOTE]
-> We also offer [detailed instructions](https://tacc.github.io/Core-Docs/) instead.
+> We also offer [detailed instructions](https://tacc.github.io/mkdocs-tacc/) instead.
 
 ## Known Clients
 

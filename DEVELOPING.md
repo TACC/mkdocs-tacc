@@ -14,7 +14,7 @@ Clone this repository, install all dependencies, activate virtual environment, s
 
 ```shell
 git clone https://github.com/TACC/mkdocs-tacc.git
-cd Core-Docs
+cd mkdocs-tacc
 poetry install --sync --all-extras
 poetry run mkdocs serve
 ```
@@ -24,7 +24,7 @@ poetry run mkdocs serve
 >
 > ```shell
 > git clone https://github.com/TACC/mkdocs-tacc.git
-> cd Core-Docs
+> cd mkdocs-tacc
 > python -m venv venv
 > source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 > pip install -e .
