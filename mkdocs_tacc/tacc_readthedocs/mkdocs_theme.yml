@@ -13,6 +13,7 @@ hljs_languages:
   - bash
   - shell
   - plaintext
+  - markdown
 # "TACC" Theme Features
 # cms_url: https://your.related-non-documentation.website
 # cms_name: Your Related non-Documentation Website
