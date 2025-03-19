@@ -79,7 +79,7 @@ The theme can change some of the default English text via optional international
 | - | - | - |
 | "Edit on %(repo_name)s" | "Suggest an update via %(repo_name)s" | more accurately reflects contribution workflow of public repositories |
 
-To enable [all text changes](https://github.com/TACC/Core-Docs/main/tacc_readthedocs/locales/en/LC_MESSAGES/messages.po), install the theme with the i18n extra:
+To enable [all text changes](https://github.com/TACC/mkdocs-tacc/main/tacc_readthedocs/locales/en/LC_MESSAGES/messages.po), install the theme with the i18n extra:
 
 | PIP | Poetry |
 | - | - |
@@ -90,5 +90,5 @@ If you install without the i18n extra, the default text "Edit on %(repo_name)s" 
 ## More Options
 
 - [MkDocs: User Guide: Configuration](https://www.mkdocs.org/user-guide/configuration/){target="_blank"}
-- [TACC/Core-Docs: Customization](customize.md)
-- [TACC/Core-Docs: Supported Extensions](extensions.md)
+- [TACC/mkdocs-tacc: Customization](customize.md)
+- [TACC/mkdocs-tacc: Supported Extensions](extensions.md)

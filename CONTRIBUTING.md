@@ -4,8 +4,8 @@ We are glad you are reading this. We welcome your contribution.
 
 Here are some important resources:
 
-* [Known Issues](https://github.com/TACC/Core-Docs/issues)
-* [Active Proposals](https://github.com/TACC/Core-Docs/pulls)
+* [Known Issues](https://github.com/TACC/mkdocs-tacc/issues)
+* [Active Proposals](https://github.com/TACC/mkdocs-tacc/pulls)
 * [How to Test](./TESTING.md)
 
 ## Step by Step
