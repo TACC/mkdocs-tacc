@@ -149,7 +149,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#minimum">Minimum</a>
+    <li class="toctree-l3"><a class="reference internal" href="#minimal">Minimal</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#typical">Typical</a>
     </li>
@@ -264,7 +264,7 @@
 <a class=""
     
         
-            href="https://github.com/TACC/Core-Docs/blob/main/CONTRIBUTING.md"
+            href="https://github.com/TACC/mkdocs-tacc/blob/main/CONTRIBUTING.md"
         
     
 >How to Contribute</a>
@@ -274,7 +274,7 @@
 <a class=""
     
         
-            href="https://github.com/TACC/Core-Docs/blob/main/README.md#known-clients"
+            href="https://github.com/TACC/mkdocs-tacc/blob/main/README.md#known-clients"
         
     
 >Known Clients</a>
@@ -297,7 +297,7 @@
           <li>Getting Started &raquo;</li>
       <li>Extensions</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/TACC/Core-Docs/edit/main/docs/extensions.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/TACC/mkdocs-tacc/edit/main/docs/extensions.md" class="icon icon-github"> Suggest an update via GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -314,7 +314,7 @@
 <ul>
 <li><a href="#markdown-extensions">Markdown Extensions</a><ul>
 <li><a href="#configuration">Configuration</a><ul>
-<li><a href="#minimum">Minimum</a></li>
+<li><a href="#minimal">Minimal</a></li>
 <li><a href="#typical">Typical</a></li>
 </ul>
 </li>
@@ -346,29 +346,32 @@
 </ul>
 </div>
 <h2 id="configuration">Configuration<a class="headerlink fa fa-link" href="#configuration" title="Link to Heading"></a></h2>
-<h3 id="minimum">Minimum<a class="headerlink fa fa-link" href="#minimum" title="Link to Heading"></a></h3>
-<p>Users of TACC MkDocs Theme should enable these extensions:</p>
+<h3 id="minimal">Minimal<a class="headerlink fa fa-link" href="#minimal" title="Link to Heading"></a></h3>
+<p>Users of this theme should <strong>at least</strong> enable <strong>these</strong> extensions:</p>
 <pre class="highlight"><code class="language-yaml">markdown_extensions:
   - toc:
       permalink: "" # i.e. `true` but without "¶"
       permalink_class: headerlink fa fa-link
       permalink_title: Link to Heading</code></pre>
 <h3 id="typical">Typical<a class="headerlink fa fa-link" href="#typical" title="Link to Heading"></a></h3>
-<p>Standard TACC documentation websites with this theme use:</p>
+<p>Typical users of this theme will <strong>both</strong> enable <strong>all <em>these</em></strong> extensions —</p>
 <pre class="highlight"><code class="language-yaml">markdown_extensions:
-  - extra
-  - admonition
-  - toc:
-      permalink: "" # i.e. `true` but without "¶"
-      permalink_class: headerlink fa fa-link
-      permalink_title: Link to Heading
-  - pymdownx.blocks.admonition
-  - pymdownx.blocks.details
-  - pymdownx.blocks.html
-  - pymdownx.blocks.tab
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - pymdownx.saneheaders</code></pre>
+    - extra
+    - admonition
+    - toc:
+        permalink: "" # i.e. `true` but without "¶"
+        permalink_class: headerlink fa fa-link
+        permalink_title: Link to Heading
+    # PyMdown Extensions
+    - pymdownx.blocks.admonition
+    - pymdownx.blocks.details
+    - pymdownx.blocks.html
+    - pymdownx.blocks.tab
+    - pymdownx.superfences
+    - pymdownx.inlinehilite
+    - pymdownx.saneheaders</code></pre>
+<p>— <strong>and</strong> install <a href="https://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions</a> via optional dependency, e.g.</p>
+<pre class="highlight"><code class="language-shell">pip install "mkdocs-tacc[pymdown-extensions]"</code></pre>
 <h2 id="demos">Demos<a class="headerlink fa fa-link" href="#demos" title="Link to Heading"></a></h2>
 <p>The TACC MkDocs Theme enhances the UI of these extensions:</p>
 <style id="demo-toc-css">
@@ -630,7 +633,7 @@ I am in a `&lt;div&gt;` with markdown enabled.
 <ul>
 <li><a href="#markdown-extensions">Markdown Extensions</a><ul>
 <li><a href="#configuration">Configuration</a><ul>
-<li><a href="#minimum">Minimum</a></li>
+<li><a href="#minimal">Minimal</a></li>
 <li><a href="#typical">Typical</a></li>
 </ul>
 </li>
@@ -841,7 +844,7 @@ Content for second tab
   <span class="rst-current-version" data-toggle="rst-current-version">
     
         <span>
-          <a href="https://github.com/TACC/Core-Docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/TACC/mkdocs-tacc" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
         </span>
     
     
