@@ -1,5 +1,5 @@
 [build-system]
-requires = ["poetry-core>=1.8.5,3.0.0"]
+requires = ["poetry-core>=1.8.5,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
@@ -16,7 +16,7 @@ classifiers = [
 
 [project]
 name = "mkdocs-tacc"
-version = "0.3.0"
+version = "0.3.1"
 description = "MkDocs TACC theme based on MkDocs' ReadTheDocs theme"
 authors = [
   { name = "TACC COA CMD", email = "coa-cmd@tacc.utexas.edu" }
