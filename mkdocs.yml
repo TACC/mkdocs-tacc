@@ -26,6 +26,9 @@ nav:
     - Basic: clients/basic-example.md
     - TACC Docs: clients/tacc-docs-example.md
     - DS User Guide: clients/ds-user-guide-example.md
+  - Community:
+    - How to Contribute: https://github.com/TACC/Core-Docs/blob/main/CONTRIBUTING.md
+    - Known Clients: https://github.com/TACC/Core-Docs/blob/main/README.md#known-clients
 
 plugins:
   - search
