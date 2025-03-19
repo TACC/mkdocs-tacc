@@ -4,7 +4,7 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
 ## Quick Start
 
-<!-- Keep these steps synced with /docs/index.md -->
+<!-- Keep these steps synced withhttps://tacc.github.io/Core-Docs/index.md -->
 
 1. Install the theme e.g.
 
@@ -33,9 +33,9 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
     — in your `mkdocs.yml`.
 
-[core extensions]: ./docs/extensions.md#core-extensions
+[core extensions]: https://tacc.github.io/Core-Docs/extensions/#core-extensions
 
-Learn to [configure](./docs/configure.md), [customize](./docs/customize.md), and [extend](./docs/extensions.md) your MkDocs site.
+Learn to [configure](https://tacc.github.io/Core-Docs/configure/), [customize](https://tacc.github.io/Core-Docs/customize/), and [extend](https://tacc.github.io/Core-Docs/extensions/) your MkDocs site.
 
 ## Known Clients
 
