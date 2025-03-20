@@ -24,10 +24,12 @@ extra_javascript:
     - js/custom.js
 ```
 
-## Templates
+## Templates & Assets
 
-The theme overrides ReadTheDocs templates that you can override with your own:
+Override templates and assets of [TACC theme](https://github.com/TACC/mkdocs-tacc/tree/main/mkdocs_tacc/tacc_readthedocs) or [ReadTheDocs theme](https://github.com/mkdocs/mkdocs/tree/1.4.2/mkdocs/themes/readthedocs) e.g.
 
+- **`img/logo.svg`**
+- `img/favicon.ico`
 - `main.html`
 - `nav.html`
 - `footer.html`

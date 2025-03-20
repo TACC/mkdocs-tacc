@@ -11,8 +11,8 @@ theme:
   logo: img/your-logo.svg
   navigation_depth: 4
   # "TACC" Theme Features
-  portal_url: https://your.related-non-documentation.website
-  portal_name: Your Related non-Documentation Website
+  portal_url: https://your-site.org
+  portal_name: your-site.org
   nav_name: Documentation
 ```
 

@@ -6,6 +6,10 @@ _MkDocs offers a [generic, detailed guide to configuring a MkDocs theme](https:/
 
 [TOC]
 
+<style id="table-style">
+    table:not(#alternate-text ~ *) td:first-child { font-weight: bold; }
+</style>
+
 ## Basics
 
 ```yaml
@@ -14,19 +18,24 @@ theme:
     logo: img/logo.svg
 ```
 
+| Property | Value | Description |
+| - | - | - |
+| `name` | `tacc_readthedocs` | Enable the TACC theme. |
+| `logo` | `img/logo.svg` | Path to a custom logo (or [overwrite the logo file](./customize.md#templates-assets)). |
+
 ## Advanced
 
-| Option | Description |
-|--------|-------------|
-| `hljs_aliases` | Custom language aliases for highlight.js code blocks |
-| `nav_redirects` | Redirect nav links to external pages |
-| `portal_url` | URL of the related non-documentation website |
-| `portal_name` | Name of the related non-documentation website |
-| `nav_name` | Custom name for the navigation section |
+| Property | Description |
+| - | - |
+| [`hljs_aliases`](#custom-language-aliases) | Custom language aliases for highlight.js code blocks |
+| [`nav_redirects`](#navigation-redirects) | Redirect nav links to external pages |
+| [`portal_url`](#related-website) | URL of a relevant website or portal |
+| [`portal_name`](#related-website) | Name of a relevant website or portal |
+| [`nav_name`](#navigation-name) | Custom name for the navigation section |
 
 ### Custom Language Aliases
 
-Define custom language identifiers for code blocks:
+Define custom language identifiers for code blocks e.g.
 
 ```yaml
 theme:
@@ -40,7 +49,7 @@ theme:
 
 ### Navigation Redirects
 
-Set up redirects for navigation links:
+Set up redirects for navigation links e.g.
 
 ```yaml
 theme:
@@ -52,7 +61,7 @@ theme:
 
 ### Related Website
 
-Link to a related non-documentation website:
+Link to a related non-documentation website e.g.
 
 ```yaml
 theme:
@@ -63,7 +72,7 @@ theme:
 
 ### Navigation Name
 
-Customize the navigation section name:
+Customize the navigation section name e.g.
 
 ```yaml
 theme:
