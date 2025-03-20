@@ -28,10 +28,12 @@
       import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
       import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/plaintext.min.js';
       import markdown from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/markdown.min.js';
+      import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
       hljs.registerLanguage('bash', bash);
       hljs.registerLanguage('shell', shell);
       hljs.registerLanguage('plaintext', plaintext);
       hljs.registerLanguage('markdown', markdown);
+      hljs.registerLanguage('yaml', yaml);
       hljs.configure({
         cssSelector: 'pre:is(.highlight, .codehilite) code'
       });
