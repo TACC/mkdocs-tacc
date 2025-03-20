@@ -4,27 +4,57 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
 [TOC]
 
+<style>
+dt::after {
+    content: ": ";
+    display: inline;
+}
+dd {
+    margin-left: 0;
+}
+dd:not(:last-child) {
+    margin-bottom: 1em;
+}
+dl strong {
+    font-weight: var(--medium);
+}
+</style>
+
 ## How to Install
 
-<!-- Keep these steps synced with /README.md -->
+1. Install the theme (with all or zero extra functionality).
 
-1. Install the theme (with as much or as little as you need) e.g.
+    /// tab | PIP
 
-    ```shell
-    pip install mkdocs-tacc
-    ```
+    For **all** features
+    : `pip install "mkdocs-tacc[all]"`
+    
+    To change **text**, like "Edit on GitHub"
+    : `pip install "mkdocs-tacc[i18n]"`
+    
+    For extra Markdown **syntax**
+    : `pip install "mkdocs-tacc[pymdown-extensions]"`
+    
+    For **minimal** install
+    : `pip install mkdocs-tacc`
 
-    ```shell
-    pip install "mkdocs-tacc[i18n]" # to change text like "Edit on GitHub"
-    ```
 
-    ```shell
-    pip install "mkdocs-tacc[pymdown-extensions]" # for bonus Markdown syntax
-    ```
+    ///
+    /// tab | Poetry
 
-    ```shell
-    pip install "mkdocs-tacc[all]" # for all features
-    ```
+    For **all** features
+    : `poetry add "mkdocs-tacc[all]"`
+    
+    To change **text**, like "Edit on GitHub"
+    : `poetry add "mkdocs-tacc[i18n]"`
+    
+    For extra Markdown **syntax**
+    : `poetry add "mkdocs-tacc[pymdown-extensions]"`
+    
+    For **minimal** install
+    : `poetry add mkdocs-tacc`
+
+    ///
 
 2. Use the theme in your MkDocs project; set —
 
