@@ -262,11 +262,6 @@ svg.logo [fill]:not([fill="none"]) {
   content: unset;
 }
 
-/* to hide the <hr> from ReadTheDocs theme markup */
-.rst-content [role="navigation"] hr {
-  display: none;
-}
-
 /* to hide the ≫ from ReadTheDocs theme markup */
 .rst-content [role="navigation"] li::before {
   margin-left: -1.25ch;

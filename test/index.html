@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Wesley Bomar" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Customization - TACC MkDocs Theme</title>
+    <title>Testing - TACC MkDocs Theme</title>
     
     <link rel="stylesheet" href="../css/tacc-theme.css" />
     
@@ -20,8 +20,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Customization";
-        var mkdocs_page_input_path = "customize.md";
+        var mkdocs_page_name = "Testing";
+        var mkdocs_page_input_path = "test.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -129,23 +129,23 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current">
+                  <li class="toctree-l1">
 
-<a class="reference internal current"
+<a class="reference internal"
     
         
-            href="./"
+            href="../customize/"
         
     
 >Customization</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#stylesheets">Stylesheets</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#stylesheets">Stylesheets</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#javascript">JavaScript</a>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#javascript">JavaScript</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#templates-assets">Templates &amp; Assets</a>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#templates-assets">Templates &amp; Assets</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#more-options">More Options</a>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#more-options">More Options</a>
     </li>
     </ul>
                   </li>
@@ -209,25 +209,25 @@
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1">
+                  <li class="toctree-l1 current">
 
-<a class="reference internal"
+<a class="reference internal current"
     
         
-            href="../test/"
+            href="./"
         
     
 >Testing</a>
-    <ul>
-    <li class="toctree-l2"><a class="reference internal" href="../test/#test-locally">Test Locally</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#test-locally">Test Locally</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="../test/#test-remotely">Test Remotely</a>
+    <li class="toctree-l2"><a class="reference internal" href="#test-remotely">Test Remotely</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="../test/#test-on-client">Test on Client</a>
+    <li class="toctree-l2"><a class="reference internal" href="#test-on-client">Test on Client</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="../test/#at-specific-revision">at Specific Revision</a>
+    <li class="toctree-l3"><a class="reference internal" href="#at-specific-revision">at Specific Revision</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="../test/#in-real-time">in Real-Time</a>
+    <li class="toctree-l3"><a class="reference internal" href="#in-real-time">in Real-Time</a>
     </li>
         </ul>
     </li>
@@ -331,9 +331,9 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Getting Started &raquo;</li>
-      <li>Customization</li>
+      <li>Testing</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/TACC/mkdocs-tacc/edit/main/docs/customize.md" class="icon icon-github"> Suggest an update via GitHub</a>
+          <a href="https://github.com/TACC/mkdocs-tacc/edit/main/docs/test.md" class="icon icon-github"> Suggest an update via GitHub</a>
     </li>
   </ul>
   <hr/>
@@ -343,61 +343,141 @@
               
     
     <div id="tacc_readthedocs">
-      <h1 id="how-to-customize">How to Customize<a class="headerlink fa fa-link" href="#how-to-customize" title="Link to Heading"></a></h1>
-<p>You can expand or rewrite parts of the theme.</p>
-<p><em>MkDocs offers a <a href="https://www.mkdocs.org/user-guide/customizing-your-theme/" target="_blank">generic, detailed guide to customizing a MkDocs theme</a>.</em></p>
+      <h1 id="how-to-test">How to Test<a class="headerlink fa fa-link" href="#how-to-test" title="Link to Heading"></a></h1>
 <div class="toc">
 <ul>
-<li><a href="#how-to-customize">How to Customize</a><ul>
-<li><a href="#stylesheets">Stylesheets</a></li>
-<li><a href="#javascript">JavaScript</a></li>
-<li><a href="#templates-assets">Templates &amp; Assets</a></li>
-<li><a href="#more-options">More Options</a></li>
+<li><a href="#how-to-test">How to Test</a><ul>
+<li><a href="#test-locally">Test Locally</a></li>
+<li><a href="#test-remotely">Test Remotely</a></li>
+<li><a href="#test-on-client">Test on Client</a><ul>
+<li><a href="#at-specific-revision">at Specific Revision</a></li>
+<li><a href="#in-real-time">in Real-Time</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
-<h2 id="stylesheets">Stylesheets<a class="headerlink fa fa-link" href="#stylesheets" title="Link to Heading"></a></h2>
-<p>Add your own CSS files to override the theme's default styles:</p>
-<pre class="highlight"><code class="language-yaml">extra_css:
-    - css/custom.css</code></pre>
-<h2 id="javascript">JavaScript<a class="headerlink fa fa-link" href="#javascript" title="Link to Heading"></a></h2>
-<p>Add your own JavaScript files to extend the theme's functionality:</p>
-<pre class="highlight"><code class="language-yaml">extra_javascript:
-    - js/custom.js</code></pre>
-<h2 id="templates-assets">Templates &amp; Assets<a class="headerlink fa fa-link" href="#templates-assets" title="Link to Heading"></a></h2>
-<p>Override templates and assets of <a href="https://github.com/TACC/mkdocs-tacc/tree/main/mkdocs_tacc/tacc_readthedocs">TACC theme</a> or <a href="https://github.com/mkdocs/mkdocs/tree/1.4.2/mkdocs/themes/readthedocs">ReadTheDocs theme</a> e.g.</p>
-<ul>
-<li><strong><code>img/logo.svg</code></strong></li>
-<li><code>img/favicon.ico</code></li>
-<li><code>main.html</code></li>
-<li><code>nav.html</code></li>
-<li><code>footer.html</code></li>
-<li><code>searchbox.html</code></li>
-</ul>
-<p>To override a template:</p>
+<h2 id="test-locally">Test Locally<a class="headerlink fa fa-link" href="#test-locally" title="Link to Heading"></a></h2>
+<p>You can test <code>mkdocs-tacc</code> locally with <a href="https://pip.pypa.io/">PIP</a> or <a href="https://python-poetry.org/">Poetry</a>.</p>
+<p>You can test <code>mkdocs-tacc</code> clients the same way; some also support <a href="https://docs.docker.com/">Docker</a> and <a href="https://www.gnu.org/software/make/">Make</a>. *</p>
+<div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">PIP</label><div class="tabbed-content">
 <ol>
-<li>Create a directory called <code>overrides</code> in your docs directory.</li>
 <li>
-<p>Add your custom templates e.g.</p>
-<pre class="highlight"><code>docs/
-├── overrides/
-│   ├── main.html
-│   └── footer.html</code></pre>
+<p>Ensure PIP is <strong>updated</strong>; <code>21.3+</code> recommended:</p>
+<pre class="highlight"><code class="language-shell">pip install --upgrade pip</code></pre>
 </li>
 <li>
-<p>Configure overrides via <code>mkdocs.yml</code>:</p>
-<pre class="highlight"><code class="language-yaml">theme:
-    name: tacc_readthedocs
-    custom_dir: overrides</code></pre>
+<p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<pre class="highlight"><code class="language-shell">python -m venv venv
+source venv/bin/activate
+pip install -e .
+mkdocs serve</code></pre>
 </li>
 </ol>
-<h2 id="more-options">More Options<a class="headerlink fa fa-link" href="#more-options" title="Link to Heading"></a></h2>
-<ul>
-<li><a href="https://www.mkdocs.org/user-guide/customizing-your-theme/" target="_blank">MkDocs: User Guide: Customizing Your Theme</a></li>
-<li><a href="../configure/">TACC/mkdocs-tacc: Configuration</a></li>
-<li><a href="../extensions/">TACC/mkdocs-tacc: Supported Extensions</a></li>
-</ul>
+<p>To <strong>deactivate</strong> environment: <code>deactivate</code></p>
+<p>To <strong>remove</strong> environment: <code>rm -rf venv</code></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Poetry</label><div class="tabbed-content">
+<ol>
+<li>
+<p>Ensure Poetry is <strong>updated</strong>; <code>1.5.0+</code> recommended:</p>
+<pre class="highlight"><code class="language-shell">poetry self update</code></pre>
+</li>
+<li>
+<p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<pre class="highlight"><code class="language-shell">poetry install --sync
+poetry run mkdocs serve</code></pre>
+</li>
+</ol>
+<p>To <strong>deactivate</strong> environment: <code>exit</code></p>
+<p>To <strong>remove</strong> environment: <code>poetry env remove --all</code></p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">* Docker</label><div class="tabbed-content">
+<ol>
+<li>
+<p>Ensure Docker is <strong>updated</strong>; <code>20.10.0+</code> recommended:</p>
+<pre class="highlight"><code class="language-shell">docker --version</code></pre>
+<p><small>Only checks version. Upgrade differs per platform.</small></p>
+</li>
+<li>
+<p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<pre class="highlight"><code class="language-shell">docker compose up</code></pre>
+</li>
+</ol>
+<p>To <strong>deactivate</strong> environment: <code>docker compose stop</code></p>
+<p>To <strong>remove</strong> environment: <code>docker compose down</code></p>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">* Make</label><div class="tabbed-content">
+<ol>
+<li>
+<p>Ensure Make is <strong>available</strong>:</p>
+<pre class="highlight"><code class="language-shell">make --version</code></pre>
+<p><small>Only checks version. Upgrade differs per platform.</small></p>
+</li>
+<li>
+<p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<pre class="highlight"><code class="language-shell">make start</code></pre>
+</li>
+</ol>
+<p>To <strong>deactivate</strong> environment: <code>Ctrl+C</code></p>
+<p>To <strong>remove</strong> environment: <code>make stop</code></p>
+</div>
+</div>
+<h2 id="test-remotely">Test Remotely<a class="headerlink fa fa-link" href="#test-remotely" title="Link to Heading"></a></h2>
+<p>Some clients will offer automatic, remote build and deploy for testing.</p>
+<h2 id="test-on-client">Test on Client<a class="headerlink fa fa-link" href="#test-on-client" title="Link to Heading"></a></h2>
+<h3 id="at-specific-revision">at Specific Revision<a class="headerlink fa fa-link" href="#at-specific-revision" title="Link to Heading"></a></h3>
+<p>To test changes end-to-end on client repository:</p>
+<ol>
+<li>Clone and/or enter client repository.</li>
+<li>
+<p>Install the theme at a specific version —</p>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">PIP</label><div class="tabbed-content">
+<pre class="highlight"><code class="language-shell">pip install mkdocs-tacc==0.5.0</code></pre>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Poetry</label><div class="tabbed-content">
+<pre class="highlight"><code class="language-shell">poetry add mkdocs-tacc@0.5.0</code></pre>
+</div>
+</div>
+<p>— or a specific branch –</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">PIP</label><div class="tabbed-content">
+<pre class="highlight"><code class="language-shell">pip install git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress</code></pre>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Poetry</label><div class="tabbed-content">
+<pre class="highlight"><code class="language-shell">poetry add git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress</code></pre>
+</div>
+</div>
+<p>— or other revision.</p>
+</li>
+</ol>
+<h3 id="in-real-time">in Real-Time<a class="headerlink fa fa-link" href="#in-real-time" title="Link to Heading"></a></h3>
+<p>To test changes real-time on client repository:</p>
+<ol>
+<li>Clone and/or enter client repository.</li>
+<li>
+<p>Install the theme in editable mode, e.g.</p>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">PIP</label><div class="tabbed-content">
+<pre class="highlight"><code class="language-shell">pip install -e ../mkdocs-tacc</code></pre>
+<p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
+<div class="admonition tip">
+<p class="admonition-title">If changes since that command are not reflected, try:</p>
+<pre class="highlight"><code class="language-shell">pip uninstall mkdocs-tacc
+pip install -e ../mkdocs-tacc</code></pre>
+</div>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Poetry</label><div class="tabbed-content">
+<pre class="highlight"><code class="language-shell">poetry add --editable ../mkdocs-tacc</code></pre>
+<p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
+<div class="admonition tip">
+<p class="admonition-title">If changes since that command are not reflected, try:</p>
+<pre class="highlight"><code class="language-shell">poetry remove mkdocs-tacc
+poetry add --editable ../mkdocs-tacc # ¹</code></pre>
+</div>
+</div>
+</div>
+</li>
+</ol>
     </div>
     
   
@@ -438,10 +518,10 @@
         </span>
     
     
-      <span><a href="../configure/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../extensions/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../extensions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../clients/basic-example/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
