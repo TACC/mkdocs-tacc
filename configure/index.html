@@ -140,7 +140,7 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../customize/#javascript">JavaScript</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="../customize/#templates">Templates</a>
+    <li class="toctree-l2"><a class="reference internal" href="../customize/#templates-assets">Templates &amp; Assets</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../customize/#more-options">More Options</a>
     </li>
@@ -336,43 +336,68 @@
 </li>
 </ul>
 </div>
+<style id="table-style">
+    table:not(#alternate-text ~ *) td:first-child { font-weight: bold; }
+</style>
+
 <h2 id="basics">Basics<a class="headerlink fa fa-link" href="#basics" title="Link to Heading"></a></h2>
 <pre class="highlight"><code class="language-yaml">theme:
     name: tacc_readthedocs
     logo: img/logo.svg</code></pre>
-<h2 id="advanced">Advanced<a class="headerlink fa fa-link" href="#advanced" title="Link to Heading"></a></h2>
 <table>
 <thead>
 <tr>
-<th>Option</th>
+<th>Property</th>
+<th>Value</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>hljs_aliases</code></td>
+<td><code>name</code></td>
+<td><code>tacc_readthedocs</code></td>
+<td>Enable the TACC theme.</td>
+</tr>
+<tr>
+<td><code>logo</code></td>
+<td><code>img/logo.svg</code></td>
+<td>Path to a custom logo (or <a href="../customize/#templates-assets">overwrite the logo file</a>).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced">Advanced<a class="headerlink fa fa-link" href="#advanced" title="Link to Heading"></a></h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#custom-language-aliases"><code>hljs_aliases</code></a></td>
 <td>Custom language aliases for highlight.js code blocks</td>
 </tr>
 <tr>
-<td><code>nav_redirects</code></td>
+<td><a href="#navigation-redirects"><code>nav_redirects</code></a></td>
 <td>Redirect nav links to external pages</td>
 </tr>
 <tr>
-<td><code>portal_url</code></td>
-<td>URL of the related non-documentation website</td>
+<td><a href="#related-website"><code>portal_url</code></a></td>
+<td>URL of a relevant website or portal</td>
 </tr>
 <tr>
-<td><code>portal_name</code></td>
-<td>Name of the related non-documentation website</td>
+<td><a href="#related-website"><code>portal_name</code></a></td>
+<td>Name of a relevant website or portal</td>
 </tr>
 <tr>
-<td><code>nav_name</code></td>
+<td><a href="#navigation-name"><code>nav_name</code></a></td>
 <td>Custom name for the navigation section</td>
 </tr>
 </tbody>
 </table>
 <h3 id="custom-language-aliases">Custom Language Aliases<a class="headerlink fa fa-link" href="#custom-language-aliases" title="Link to Heading"></a></h3>
-<p>Define custom language identifiers for code blocks:</p>
+<p>Define custom language identifiers for code blocks e.g.</p>
 <pre class="highlight"><code class="language-yaml">theme:
     name: tacc_readthedocs
     hljs_aliases:
@@ -381,20 +406,20 @@
         - name: job-script
           lang: bash</code></pre>
 <h3 id="navigation-redirects">Navigation Redirects<a class="headerlink fa fa-link" href="#navigation-redirects" title="Link to Heading"></a></h3>
-<p>Set up redirects for navigation links:</p>
+<p>Set up redirects for navigation links e.g.</p>
 <pre class="highlight"><code class="language-yaml">theme:
     name: tacc_readthedocs
     nav_redirects:
         - from: /old-page/
           to: /new-page/</code></pre>
 <h3 id="related-website">Related Website<a class="headerlink fa fa-link" href="#related-website" title="Link to Heading"></a></h3>
-<p>Link to a related non-documentation website:</p>
+<p>Link to a related non-documentation website e.g.</p>
 <pre class="highlight"><code class="language-yaml">theme:
     name: tacc_readthedocs
     portal_url: https://your.related-non-documentation.website
     portal_name: Your Related non-Documentation Website</code></pre>
 <h3 id="navigation-name">Navigation Name<a class="headerlink fa fa-link" href="#navigation-name" title="Link to Heading"></a></h3>
-<p>Customize the navigation section name:</p>
+<p>Customize the navigation section name e.g.</p>
 <pre class="highlight"><code class="language-yaml">theme:
     name: tacc_readthedocs
     nav_name: Documentation</code></pre>
