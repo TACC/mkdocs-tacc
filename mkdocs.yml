@@ -17,12 +17,16 @@ theme:
   portal_url: https://github.com/TACC/mkdocs-tacc
   portal_name: TACC/mkdocs-tacc
 
+extra_css:
+  - assets/extra.css
+
 nav:
   - Getting Started:
     - Quick Start: index.md
     - Configuration: configure.md
     - Customization: customize.md
     - Extensions: extensions.md
+    - Testing: test.md
   - Examples:
     - Basic: clients/basic-example.md
     - TACC Docs: clients/tacc-docs-example.md
