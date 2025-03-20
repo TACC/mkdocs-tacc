@@ -14,11 +14,11 @@ Here are some important resources:
     <sup>(unless you are a direct collaborator)</sup>
 2. [Edit][edit] relevant files that need update.\
     <sup>([upload images](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository) as necessary)</sup>
-4. [Commit][commit] your changes.\
+3. [Commit][commit] your changes.\
     <sup>(write [clear commit messages](#writing-commit-messages))</sup>
-5. [Test][test] your changes.\
+4. [Test][test] your changes.\
     <sup>(if comfortable using a command prompt)</sup>
-6. [Request][request] a review.\
+5. [Request][request] a review.\
     <sup>(a.k.a. create a "Pull Request")</sup>
 
 [issues]: https://github.com/TACC/mkdocs-tacc/issues
