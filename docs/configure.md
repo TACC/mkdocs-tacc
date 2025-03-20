@@ -20,8 +20,8 @@ theme:
 |--------|-------------|
 | `hljs_aliases` | Custom language aliases for highlight.js code blocks |
 | `nav_redirects` | Redirect nav links to external pages |
-| `cms_url` | URL of the related non-documentation website |
-| `cms_name` | Name of the related non-documentation website |
+| `portal_url` | URL of the related non-documentation website |
+| `portal_name` | Name of the related non-documentation website |
 | `nav_name` | Custom name for the navigation section |
 
 ### Custom Language Aliases
@@ -57,8 +57,8 @@ Link to a related non-documentation website:
 ```yaml
 theme:
     name: tacc_readthedocs
-    cms_url: https://your.related-non-documentation.website
-    cms_name: Your Related non-Documentation Website
+    portal_url: https://your.related-non-documentation.website
+    portal_name: Your Related non-Documentation Website
 ```
 
 ### Navigation Name

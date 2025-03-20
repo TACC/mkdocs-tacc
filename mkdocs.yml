@@ -12,10 +12,10 @@ theme:
     - shell
     - markdown
   # "ReadTheDocs" Theme Features
-  logo: img/logo.svg
+  logo: img/logo-tacc.svg
   # "TACC" Theme Features
-  cms_url: https://github.com/TACC/mkdocs-tacc
-  cms_name: TACC/mkdocs-tacc
+  portal_url: https://github.com/TACC/mkdocs-tacc
+  portal_name: TACC/mkdocs-tacc
 
 nav:
   - Getting Started:

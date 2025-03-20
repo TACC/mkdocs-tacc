@@ -15,8 +15,8 @@ theme:
     - python
     - json
   # "TACC" Theme Features
-  cms_url: https://designsafe-ci.org/
-  cms_name: designsafe-ci.org
+  portal_url: https://designsafe-ci.org/
+  portal_name: designsafe-ci.org
   nav_name: User Guide
 ```
 
