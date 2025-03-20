@@ -11,8 +11,8 @@ theme:
   logo: img/your-logo.svg
   navigation_depth: 4
   # "TACC" Theme Features
-  cms_url: https://your.related-non-documentation.website
-  cms_name: Your Related non-Documentation Website
+  portal_url: https://your.related-non-documentation.website
+  portal_name: Your Related non-Documentation Website
   nav_name: Documentation
 ```
 
