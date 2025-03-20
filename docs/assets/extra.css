@@ -11,5 +11,5 @@
 
 /* to emphasize second level of TOC */
 .toc > ul > li > ul > li > a {
-    font-weight: var(--bold);
+    font-weight: var(--medium);
 }
