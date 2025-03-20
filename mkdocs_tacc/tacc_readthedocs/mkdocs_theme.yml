@@ -15,6 +15,7 @@ hljs_languages:
   - shell
   - plaintext
   - markdown
+  - yaml
 # "TACC" Theme Features
 portal_url: https://your-site.org
 portal_name: your-site.org
