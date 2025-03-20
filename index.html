@@ -355,16 +355,51 @@
 </li>
 </ul>
 </div>
-<h2 id="how-to-install">How to Install<a class="headerlink fa fa-link" href="#how-to-install" title="Link to Heading"></a></h2>
-<!-- Keep these steps synced with /README.md -->
+<style>
+dt::after {
+    content: ": ";
+    display: inline;
+}
+dd {
+    margin-left: 0;
+}
+dd:not(:last-child) {
+    margin-bottom: 1em;
+}
+dl strong {
+    font-weight: var(--medium);
+}
+</style>
 
+<h2 id="how-to-install">How to Install<a class="headerlink fa fa-link" href="#how-to-install" title="Link to Heading"></a></h2>
 <ol>
 <li>
-<p>Install the theme (with as much or as little as you need) e.g.</p>
-<pre class="highlight"><code class="language-shell">pip install mkdocs-tacc</code></pre>
-<pre class="highlight"><code class="language-shell">pip install "mkdocs-tacc[i18n]" # to change text like "Edit on GitHub"</code></pre>
-<pre class="highlight"><code class="language-shell">pip install "mkdocs-tacc[pymdown-extensions]" # for bonus Markdown syntax</code></pre>
-<pre class="highlight"><code class="language-shell">pip install "mkdocs-tacc[all]" # for all features</code></pre>
+<p>Install the theme (with all or zero extra functionality).</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">PIP</label><div class="tabbed-content">
+<dl>
+<dt>For <strong>all</strong> features</dt>
+<dd><code>pip install "mkdocs-tacc[all]"</code></dd>
+<dt>To change <strong>text</strong>, like "Edit on GitHub"</dt>
+<dd><code>pip install "mkdocs-tacc[i18n]"</code></dd>
+<dt>For extra Markdown <strong>syntax</strong></dt>
+<dd><code>pip install "mkdocs-tacc[pymdown-extensions]"</code></dd>
+<dt>For <strong>minimal</strong> install</dt>
+<dd><code>pip install mkdocs-tacc</code></dd>
+</dl>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Poetry</label><div class="tabbed-content">
+<dl>
+<dt>For <strong>all</strong> features</dt>
+<dd><code>poetry add "mkdocs-tacc[all]"</code></dd>
+<dt>To change <strong>text</strong>, like "Edit on GitHub"</dt>
+<dd><code>poetry add "mkdocs-tacc[i18n]"</code></dd>
+<dt>For extra Markdown <strong>syntax</strong></dt>
+<dd><code>poetry add "mkdocs-tacc[pymdown-extensions]"</code></dd>
+<dt>For <strong>minimal</strong> install</dt>
+<dd><code>poetry add mkdocs-tacc</code></dd>
+</dl>
+</div>
+</div>
 </li>
 <li>
 <p>Use the theme in your MkDocs project; set —</p>
