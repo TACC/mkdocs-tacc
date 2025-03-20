@@ -2,6 +2,7 @@
 
 Publish relies on [Poetry](https://python-poetry.org/).
 
+0. **Update `pyproject.toml` version.**
 1. Run
     ```shell
     poetry publish --build --dry-run
