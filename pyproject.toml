@@ -47,8 +47,8 @@ pymdown-extensions = ["pymdown-extensions"]
 all = ["pymdown-extensions"] # for consistency with `all` offered for PIP users
 
 [project.urls]
-# homepage = "https://docs.tacc.utexas.edu"
-# documentation = "https://docs.tacc.utexas.edu"
+homepage = "https://tacc.github.io/mkdocs-tacc"
+documentation = "https://tacc.github.io/mkdocs-tacc"
 github = "https://github.com/TACC/mkdocs-tacc"
 issues = "https://github.com/TACC/mkdocs-tacc/issues"
 changelog = "https://github.com/TACC/mkdocs-tacc/releases"
