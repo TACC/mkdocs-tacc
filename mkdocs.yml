@@ -26,6 +26,7 @@ nav:
     - Configuration: configure.md
     - Customization: customize.md
     - Extensions: extensions.md
+    - Testing: test.md
   - Examples:
     - Basic: clients/basic-example.md
     - TACC Docs: clients/tacc-docs-example.md

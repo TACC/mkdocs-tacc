@@ -23,7 +23,7 @@ Here are some important resources:
 
 [issues]: https://github.com/TACC/mkdocs-tacc/issues
 [proposals]: https://github.com/TACC/mkdocs-tacc/pulls
-[test]: ./TESTING.md
+[test]: https://tacc.github.io/mkdocs-tacc/test/
 
 [fork]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
 [edit]: https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files
