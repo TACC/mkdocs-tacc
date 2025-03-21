@@ -442,10 +442,10 @@ poetry run mkdocs serve</code></pre>
 </div>
 <p>— or a specific branch –</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">PIP</label><div class="tabbed-content">
-<pre class="highlight"><code class="language-shell">pip install git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress</code></pre>
+<pre class="highlight"><code class="language-shell">pip install "mkdocs-tacc[all] @ git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress"</code></pre>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Poetry</label><div class="tabbed-content">
-<pre class="highlight"><code class="language-shell">poetry add git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress</code></pre>
+<pre class="highlight"><code class="language-shell">poetry add "mkdocs-tacc[all] @ git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress"</code></pre>
 </div>
 </div>
 <p>— or other revision.</p>
@@ -530,7 +530,7 @@ poetry add --editable ../mkdocs-tacc # ¹</code></pre>
     
     
     <script src="../js/theme.js" defer></script>
-    <script src="../js/tacc-theme.mjs" type="module"></script>
+    <script src="../js/tacc-theme.module.js" type="module"></script>
     
       
       
