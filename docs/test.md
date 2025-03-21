@@ -126,14 +126,14 @@ To test changes end-to-end on client repository:
     /// tab | PIP
 
     ```shell
-    pip install git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress
+    pip install "mkdocs-tacc[all] @ git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress"
     ```
 
     ///
     /// tab | Poetry
 
     ```shell
-    poetry add git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress
+    poetry add "mkdocs-tacc[all] @ git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress"
     ```
 
     ///
