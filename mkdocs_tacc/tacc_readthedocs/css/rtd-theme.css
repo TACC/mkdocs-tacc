@@ -1,5 +1,5 @@
-@layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
+@layer foundation.rtd, foundation.tacc, base, project, cosmetic;
 
 /* MkDocs' ReadTheDocs theme (not in this repo) */
-@import url("./theme.css") layer(foundation.mkdocs);
-@import url("./theme_extra.css") layer(foundation.mkdocs);
+@import url("./theme.css") layer(foundation.rtd);
+@import url("./theme_extra.css") layer(foundation.rtd);

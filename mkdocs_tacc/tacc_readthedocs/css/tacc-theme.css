@@ -1,4 +1,4 @@
-@layer foundation.mkdocs, foundation.tacc, base, project, cosmetic;
+@layer foundation.rtd, foundation.tacc, base, project, cosmetic;
 
 /* TACC's add Bootstrap patterns & undo ReadTheDocs styles */
 @import url("./tacc-theme/readthedocs-revert.css") layer(foundation.tacc);
