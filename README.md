@@ -1,10 +1,10 @@
 # MkDocs TACC Theme
 
-A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) theme based on MkDocs' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs).
+A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) theme based on **MkDocs**' own [ReadTheDocs theme](https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs).
 
 ## How to Install
 
-1. Install `mkdocs-tacc` (and optional dependencies) e.g.
+1. Install the theme (and optional dependencies) e.g.
 
     ```shell
     pip install "mkdocs-tacc[all]"
