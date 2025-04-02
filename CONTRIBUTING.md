@@ -11,7 +11,7 @@ Here are some important resources:
 ## Step by Step
 
 1. [Fork][fork] this repository.\
-    <sup>(unless you are a direct collaborator)</sup>
+    <sup>(**unless** you are a direct collaborator)</sup>
 2. [Edit][edit] relevant files that need update.\
     <sup>([upload images](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository) as necessary)</sup>
 3. [Commit][commit] your changes.\
