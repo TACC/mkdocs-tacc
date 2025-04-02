@@ -29,9 +29,16 @@ theme:
 | - | - |
 | [`hljs_aliases`](#custom-language-aliases) | Custom language aliases for highlight.js code blocks |
 | [`nav_redirects`](#navigation-redirects) | Redirect nav links to external pages |
+| [`logo_svg_inject`](#logo-svg-inject) | Inject the `.svg` logo as `<svg>` markup |
 | [`portal_url`](#related-website) | URL of a relevant website or portal |
 | [`portal_name`](#related-website) | Name of a relevant website or portal |
 | [`nav_name`](#navigation-name) | Custom name for the navigation section |
+
+/// admonition
+    type: note
+
+To see default values, inspect [`mkdocs_theme.yml`](https://github.com/TACC/mkdocs-tacc/blob/main/mkdocs_tacc/tacc_readthedocs/mkdocs_theme.yml){target="_blank"} at the version you installed.
+///
 
 ### Custom Language Aliases
 
@@ -57,6 +64,16 @@ theme:
     nav_redirects:
         - from: /old-page/
           to: /new-page/
+```
+
+### Logo SVG Inject
+
+If logo is an `.svg` file, inject its `<svg>` content so your CSS can style it.
+
+```yaml
+theme:
+    name: tacc_readthedocs
+    logo_svg_inject: true
 ```
 
 ### Related Website
