@@ -17,6 +17,7 @@ hljs_languages:
   - markdown
   - yaml
 # "TACC" Theme Features
+logo_svg_inject: true
 portal_url: https://your-site.org
 portal_name: your-site.org
 # nav_redirects:
