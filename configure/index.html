@@ -56,12 +56,17 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
+    
+    
+    
       
       
-      <a href=".." title="TACC MkDocs Theme (Logo)">
+      <a href=".." class="logo" title="TACC MkDocs Theme (Logo)">
       
       
-      <img src="../img/logo.svg" class="logo" alt="TACC MkDocs Theme (Logo)"/>
+      
+      <load-file replaceWith src="../img/logo.svg"></load-file>
+      
       
     </a>
 
@@ -116,6 +121,8 @@
     <li class="toctree-l3"><a class="reference internal" href="#custom-language-aliases">Custom Language Aliases</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#navigation-redirects">Navigation Redirects</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#logo-svg-inject">Logo SVG Inject</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#related-website">Related Website</a>
     </li>
@@ -353,6 +360,7 @@
 <li><a href="#advanced">Advanced</a><ul>
 <li><a href="#custom-language-aliases">Custom Language Aliases</a></li>
 <li><a href="#navigation-redirects">Navigation Redirects</a></li>
+<li><a href="#logo-svg-inject">Logo SVG Inject</a></li>
 <li><a href="#related-website">Related Website</a></li>
 <li><a href="#navigation-name">Navigation Name</a></li>
 </ul>
@@ -410,6 +418,10 @@
 <td>Redirect nav links to external pages</td>
 </tr>
 <tr>
+<td><a href="#logo-svg-inject"><code>logo_svg_inject</code></a></td>
+<td>Inject the <code>.svg</code> logo as <code>&lt;svg&gt;</code> markup</td>
+</tr>
+<tr>
 <td><a href="#related-website"><code>portal_url</code></a></td>
 <td>URL of a relevant website or portal</td>
 </tr>
@@ -423,6 +435,10 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To see default values, inspect <a href="https://github.com/TACC/mkdocs-tacc/blob/main/mkdocs_tacc/tacc_readthedocs/mkdocs_theme.yml" target="_blank"><code>mkdocs_theme.yml</code></a> at the version you installed.</p>
+</div>
 <h3 id="custom-language-aliases">Custom Language Aliases<a class="headerlink fa fa-link" href="#custom-language-aliases" title="Link to Heading"></a></h3>
 <p>Define custom language identifiers for code blocks e.g.</p>
 <pre class="highlight"><code class="language-yaml">theme:
@@ -439,6 +455,11 @@
     nav_redirects:
         - from: /old-page/
           to: /new-page/</code></pre>
+<h3 id="logo-svg-inject">Logo SVG Inject<a class="headerlink fa fa-link" href="#logo-svg-inject" title="Link to Heading"></a></h3>
+<p>If logo is an <code>.svg</code> file, inject its <code>&lt;svg&gt;</code> content so your CSS can style it.</p>
+<pre class="highlight"><code class="language-yaml">theme:
+    name: tacc_readthedocs
+    logo_svg_inject: true</code></pre>
 <h3 id="related-website">Related Website<a class="headerlink fa fa-link" href="#related-website" title="Link to Heading"></a></h3>
 <p>Link to a related non-documentation website e.g.</p>
 <pre class="highlight"><code class="language-yaml">theme:
