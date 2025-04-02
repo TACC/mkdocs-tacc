@@ -150,7 +150,7 @@ To test changes real-time on client repository:
     /// tab | PIP
 
     ```shell
-    pip install -e ../mkdocs-tacc
+    pip install -e "../mkdocs-tacc[all]"
     ```
 
     <small>Where `../mkdocs-tacc` is the path to your clone of this repository.</small>
@@ -159,7 +159,7 @@ To test changes real-time on client repository:
 
     ```shell
     pip uninstall mkdocs-tacc
-    pip install -e ../mkdocs-tacc
+    pip install -e "../mkdocs-tacc[all]"
     ```
 
     ////
@@ -168,7 +168,7 @@ To test changes real-time on client repository:
     /// tab | Poetry
 
     ```shell
-    poetry add --editable ../mkdocs-tacc
+    poetry add --editable ../mkdocs-tacc --extras=all
     ```
 
     <small>Where `../mkdocs-tacc` is the path to your clone of this repository.</small>
@@ -177,7 +177,7 @@ To test changes real-time on client repository:
 
     ```shell
     poetry remove mkdocs-tacc
-    poetry add --editable ../mkdocs-tacc
+    poetry add --editable ../mkdocs-tacc --extras=all
     ```
 
     ////
