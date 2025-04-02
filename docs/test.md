@@ -177,7 +177,7 @@ To test changes real-time on client repository:
 
     ```shell
     poetry remove mkdocs-tacc
-    poetry add --editable ../mkdocs-tacc # ¹
+    poetry add --editable ../mkdocs-tacc
     ```
 
     ////
