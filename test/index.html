@@ -458,21 +458,21 @@ poetry run mkdocs serve</code></pre>
 <li>
 <p>Install the theme in editable mode, e.g.</p>
 <div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">PIP</label><div class="tabbed-content">
-<pre class="highlight"><code class="language-shell">pip install -e ../mkdocs-tacc</code></pre>
+<pre class="highlight"><code class="language-shell">pip install -e "../mkdocs-tacc[all]"</code></pre>
 <p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
 <div class="admonition tip">
 <p class="admonition-title">If changes since that command are not reflected, try:</p>
 <pre class="highlight"><code class="language-shell">pip uninstall mkdocs-tacc
-pip install -e ../mkdocs-tacc</code></pre>
+pip install -e "../mkdocs-tacc[all]"</code></pre>
 </div>
 </div>
 <input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Poetry</label><div class="tabbed-content">
-<pre class="highlight"><code class="language-shell">poetry add --editable ../mkdocs-tacc</code></pre>
+<pre class="highlight"><code class="language-shell">poetry add --editable ../mkdocs-tacc --extras=all</code></pre>
 <p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
 <div class="admonition tip">
 <p class="admonition-title">If changes since that command are not reflected, try:</p>
 <pre class="highlight"><code class="language-shell">poetry remove mkdocs-tacc
-poetry add --editable ../mkdocs-tacc # ¹</code></pre>
+poetry add --editable ../mkdocs-tacc --extras=all</code></pre>
 </div>
 </div>
 </div>
