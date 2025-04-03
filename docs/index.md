@@ -20,7 +20,23 @@ dl strong {
 }
 </style>
 
-## How to Install
+## How to Create a New Project
+
+/// hint
+
+For those with no documentation project yet or who want to start fresh.
+
+///
+
+Follow the steps in [Create a New MkDocs-TACC Project](https://github.com/TACC/mkdocs-tacc/#create-a-new-mkdocs-tacc-project).
+
+## How to Install on Existing Project
+
+/// note
+
+These steps assume you have an existing [MkDocs](https://www.mkdocs.org/) project.
+
+///
 
 1. Install the theme (with all or zero extra functionality).
 
