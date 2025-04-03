@@ -6,7 +6,6 @@ static_templates:
 locale: en
 # "ReadTheDocs" Theme Features
 logo: img/logo.svg
-# https://www.mkdocs.org/user-guide/choosing-your-theme/#readthedocs
 collapse_navigation: false
 navigation_depth: 4
 highlightjs: true
