@@ -32,16 +32,12 @@
     
     <script type="module">
       import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/core.min.js';
-      import bash from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/bash.min.js';
-      import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
-      import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/plaintext.min.js';
-      import markdown from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/markdown.min.js';
       import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
-      hljs.registerLanguage('bash', bash);
-      hljs.registerLanguage('shell', shell);
-      hljs.registerLanguage('plaintext', plaintext);
-      hljs.registerLanguage('markdown', markdown);
+      import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
+      import markdown from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/markdown.min.js';
       hljs.registerLanguage('yaml', yaml);
+      hljs.registerLanguage('shell', shell);
+      hljs.registerLanguage('markdown', markdown);
       hljs.configure({
         cssSelector: 'pre:is(.highlight, .codehilite) code'
       });
@@ -65,13 +61,13 @@
       
       
       
-      <load-file replaceWith src="../../img/logo.svg"></load-file>
+      <load-file replaceWith src="../../img/logo-tacc.svg"></load-file>
       
       
     </a>
 
     
-    <a href="https://your-site.org" class="cms-link">your-site.org</a>
+    <a href="https://github.com/TACC/mkdocs-tacc" class="cms-link">TACC/mkdocs-tacc</a>
     
 
 
@@ -96,7 +92,9 @@
     
 >Quick Start</a>
     <ul>
-    <li class="toctree-l2"><a class="reference internal" href="../..#how-to-install">How to Install</a>
+    <li class="toctree-l2"><a class="reference internal" href="../..#how-to-create-a-new-project">How to Create a New Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../..#how-to-install-on-existing-project">How to Install on Existing Project</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="../..#configure-customize">Configure &amp; Customize</a>
     </li>
