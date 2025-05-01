@@ -6,18 +6,19 @@ Publish relies on [Poetry](https://python-poetry.org/).
     ```sh
     poetry version N.N.N
     ```
-2. Create GitHub release.
-3. Run
+2. Commit version bump.
+3. Create GitHub release.
+4. Run
     ```shell
     poetry publish --build --dry-run
     ```
-4. Review the output.
-5. Run
+5. Review the output.
+6. Run
     ```shell
     poetry publish --build
     ```
-6. Wait for console to log success.
-7. Load https://pypi.org/project/mkdocs-tacc/.
+7. Wait for console to log success.
+8. Load https://pypi.org/project/mkdocs-tacc/.
 
 # Related
 
