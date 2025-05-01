@@ -3,7 +3,7 @@
 Publish relies on [Poetry](https://python-poetry.org/).
 
 1. Update `pyproject.toml` version e.g.
-    ```sh
+    ```shell
     poetry version N.N.N
     ```
 2. Commit version bump.
