@@ -32,12 +32,16 @@
     
     <script type="module">
       import hljs from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/core.min.js';
-      import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
+      import bash from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/bash.min.js';
       import shell from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/shell.min.js';
+      import plaintext from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/plaintext.min.js';
       import markdown from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/markdown.min.js';
-      hljs.registerLanguage('yaml', yaml);
+      import yaml from 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/es/languages/yaml.min.js';
+      hljs.registerLanguage('bash', bash);
       hljs.registerLanguage('shell', shell);
+      hljs.registerLanguage('plaintext', plaintext);
       hljs.registerLanguage('markdown', markdown);
+      hljs.registerLanguage('yaml', yaml);
       hljs.configure({
         cssSelector: 'pre:is(.highlight, .codehilite) code'
       });
@@ -61,13 +65,13 @@
       
       
       
-      <load-file replaceWith src="../img/logo-tacc.svg"></load-file>
+      <load-file replaceWith src="../img/logo.svg"></load-file>
       
       
     </a>
 
     
-    <a href="https://github.com/TACC/mkdocs-tacc" class="cms-link">TACC/mkdocs-tacc</a>
+    <a href="https://your-site.org" class="cms-link">your-site.org</a>
     
 
 
