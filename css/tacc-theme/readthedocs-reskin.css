@@ -75,6 +75,10 @@
 .wy-menu-vertical li.on a {
     background: unset; /* to undo theme.css */
 }
+/* to distinguish nav heading from nav active link */
+.wy-menu-vertical li.current > a:not(:has(+ ul li.current)) {
+    background: #e3e3e3; /* copied from .wy-menu-vertical li.current */;
+}
 
 
 /* to separate sections of navigation */

@@ -373,15 +373,17 @@
 <div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">PIP</label><div class="tabbed-content">
 <ol>
 <li>
-<p>Ensure PIP is <strong>updated</strong>; <code>21.3+</code> recommended:</p>
-<pre class="highlight"><code class="language-shell">pip install --upgrade pip</code></pre>
+<p>PIP should be <strong>at least</strong> version <code>21.3</code>.</p>
+<p><pre class="highlight"><code class="language-shell">pip --version</code></pre>
+<small>Only checks current version. Upgrade command is different.</small></p>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
 <pre class="highlight"><code class="language-shell">python -m venv venv
 source venv/bin/activate
-pip install -e .
+pip install -e ".[all]"
 mkdocs serve</code></pre>
+<p><small>A <code>mkdocs-tacc</code> client may require <code>install</code> of additional or different dependencies. See its documentation.</small></p>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>deactivate</code></p>
@@ -390,13 +392,15 @@ mkdocs serve</code></pre>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Poetry</label><div class="tabbed-content">
 <ol>
 <li>
-<p>Ensure Poetry is <strong>updated</strong>; <code>1.5.0+</code> recommended:</p>
-<pre class="highlight"><code class="language-shell">poetry self update</code></pre>
+<p>Poetry should be <strong>at least</strong> version <code>1.5.0</code>.</p>
+<pre class="highlight"><code class="language-shell">poetry --version</code></pre>
+<p><small>Only checks current version. Upgrade command is different.</small></p>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
-<pre class="highlight"><code class="language-shell">poetry install --sync
+<pre class="highlight"><code class="language-shell">poetry install --sync --extras "all"
 poetry run mkdocs serve</code></pre>
+<p><small>A <code>mkdocs-tacc</code> client may require <code>install</code> of additional or different dependencies. See its documentation.</small></p>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>exit</code></p>
@@ -405,13 +409,14 @@ poetry run mkdocs serve</code></pre>
 <input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">* Docker</label><div class="tabbed-content">
 <ol>
 <li>
-<p>Ensure Docker is <strong>updated</strong>; <code>20.10.0+</code> recommended:</p>
+<p>Docker should be <strong>at least</strong> version <code>20.10.0</code>.</p>
 <pre class="highlight"><code class="language-shell">docker --version</code></pre>
-<p><small>Only checks version. Upgrade differs per platform.</small></p>
+<p><small>Only checks current version. Upgrade command is different.</small></p>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
 <pre class="highlight"><code class="language-shell">docker compose up</code></pre>
+<p><small>A <code>mkdocs-tacc</code> client may rely on a different command. See its documentation.</small></p>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>docker compose stop</code></p>
@@ -422,11 +427,11 @@ poetry run mkdocs serve</code></pre>
 <li>
 <p>Ensure Make is <strong>available</strong>:</p>
 <pre class="highlight"><code class="language-shell">make --version</code></pre>
-<p><small>Only checks version. Upgrade differs per platform.</small></p>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
 <pre class="highlight"><code class="language-shell">make start</code></pre>
+<p><small>A <code>mkdocs-tacc</code> client may rely on a different command. See its documentation.</small></p>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>Ctrl+C</code></p>
