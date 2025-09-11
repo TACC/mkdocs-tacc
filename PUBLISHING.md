@@ -2,18 +2,23 @@
 
 Publish relies on [Poetry](https://python-poetry.org/).
 
-0. **Update `pyproject.toml` version.**
-1. Run
+1. Update `pyproject.toml` version e.g.
+    ```shell
+    poetry version N.N.N
+    ```
+2. Commit version bump.
+3. Create GitHub release.
+4. Run
     ```shell
     poetry publish --build --dry-run
     ```
-2. Review the output.
-3. Run
+5. Review the output.
+6. Run
     ```shell
     poetry publish --build
     ```
-4. Wait for console to log success.
-5. Load https://pypi.org/project/mkdocs-tacc/.
+7. Wait for console to log success.
+8. Load https://pypi.org/project/mkdocs-tacc/.
 
 # Related
 

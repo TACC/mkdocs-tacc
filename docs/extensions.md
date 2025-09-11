@@ -100,7 +100,7 @@ The TACC MkDocs Theme enhances the UI of these extensions:
 
 ### from [Python-Markdown](https://python-markdown.github.io/extensions/)
 
-#### Abbreviation
+#### Abbreviations
 
 /// note | Syntax
 
@@ -123,7 +123,7 @@ The HTML and CSS specifications are maintained by the W3C.
 
 ///
 
-#### Attribute Lists
+#### HTML Attributes i.e. Attribute Lists { #html-attributes }
 
 /// note | Syntax
 

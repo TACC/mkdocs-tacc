@@ -17,20 +17,10 @@
 
 /* to set automatic size for an SVG logo */
 
-/* FAQ: The `img` in selectors is removed so `svg` is also supported */
-/* NOTE: Selectors from theme.css */
-.wy-side-nav-search .wy-dropdown > a /*img*/.logo,
-.wy-side-nav-search > a /*img*/.logo {
+.wy-side-nav-search .wy-dropdown > a.logo :is(img, svg),
+.wy-side-nav-search > a.logo :is(img, svg) {
   width: 100%;
   padding: unset;
-}
-
-
-/* to recolor SVG logo */
-
-/* CAVEAT: Assumes a monochrome design */
-svg.logo [fill]:not([fill="none"]) {
-  fill: var(--global-color-primary--xx-dark);
 }
 
 
@@ -84,6 +74,10 @@ svg.logo [fill]:not([fill="none"]) {
 .wy-menu-vertical li.current > a,
 .wy-menu-vertical li.on a {
     background: unset; /* to undo theme.css */
+}
+/* to distinguish nav heading from nav active link */
+.wy-menu-vertical li.current > a:not(:has(+ ul li.current)) {
+    background: #e3e3e3; /* copied from .wy-menu-vertical li.current */;
 }
 
 
@@ -211,10 +205,10 @@ svg.logo [fill]:not([fill="none"]) {
 
 /* to remove space (margin, padding, whitespace) around logo */
 .wy-side-nav-search a,
-.wy-side-nav-search svg.logo {
+.wy-side-nav-search a.logo > svg {
   display: block;
 }
-.wy-side-nav-search > a:has(.logo) {
+.wy-side-nav-search > a.logo {
   padding-block: unset; /* to undo theme.css */
 }
 
