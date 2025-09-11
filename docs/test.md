@@ -10,20 +10,23 @@ You can test `mkdocs-tacc` clients the same way; some also support [Docker](http
 
 /// tab | PIP
 
-0. Ensure PIP is **updated**; `21.3+` recommended:
+0. PIP should be **at least** version `21.3`.
 
     ```shell
-    pip install --upgrade pip
+    pip --version
     ```
+    <small>Only checks current version. Upgrade command is different.</small>
 
 1. To **install** dependencies and **serve** docs in isolation:
 
     ```shell
     python -m venv venv
     source venv/bin/activate
-    pip install -e .
+    pip install -e ".[all]"
     mkdocs serve
     ```
+
+    <small>A `mkdocs-tacc` client may require `install` of additional or different dependencies. See its documentation.</small>
 
 To **deactivate** environment: `deactivate`
 
@@ -32,18 +35,22 @@ To **remove** environment: `rm -rf venv`
 ///
 /// tab | Poetry
 
-0. Ensure Poetry is **updated**; `1.5.0+` recommended:
+0. Poetry should be **at least** version `1.5.0`.
 
     ```shell
-    poetry self update
+    poetry --version
     ```
+
+    <small>Only checks current version. Upgrade command is different.</small>
 
 1. To **install** dependencies and **serve** docs in isolation:
 
     ```shell
-    poetry install --sync
+    poetry install --sync --extras "all"
     poetry run mkdocs serve
     ```
+
+    <small>A `mkdocs-tacc` client may require `install` of additional or different dependencies. See its documentation.</small>
 
 To **deactivate** environment: `exit`
 
@@ -52,19 +59,21 @@ To **remove** environment: `poetry env remove --all`
 ///
 /// tab | \* Docker
 
-0. Ensure Docker is **updated**; `20.10.0+` recommended:
+0. Docker should be **at least** version `20.10.0`.
 
     ```shell
     docker --version
     ```
 
-    <small>Only checks version. Upgrade differs per platform.</small>
+    <small>Only checks current version. Upgrade command is different.</small>
 
 1. To **install** dependencies and **serve** docs in isolation:
 
     ```shell
     docker compose up
     ```
+
+    <small>A `mkdocs-tacc` client may rely on a different command. See its documentation.</small>
 
 To **deactivate** environment: `docker compose stop`
 
@@ -79,13 +88,13 @@ To **remove** environment: `docker compose down`
     make --version
     ```
 
-    <small>Only checks version. Upgrade differs per platform.</small>
-
 1. To **install** dependencies and **serve** docs in isolation:
 
     ```shell
     make start
     ```
+
+    <small>A `mkdocs-tacc` client may rely on a different command. See its documentation.</small>
 
 To **deactivate** environment: `Ctrl+C`
 
