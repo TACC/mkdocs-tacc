@@ -4,9 +4,9 @@
 
 ## Test Locally
 
-You can test `mkdocs-tacc` locally with [PIP](https://pip.pypa.io/) or [Poetry](https://python-poetry.org/).
+You can test `mkdocs-tacc` or `mkdocs-tacc` clients locally with [PIP](https://pip.pypa.io/) or [Poetry](https://python-poetry.org/).
 
-You can test `mkdocs-tacc` clients the same way; some also support [Docker](https://docs.docker.com/) and [Make](https://www.gnu.org/software/make/). \*
+Some clients also support [Docker](https://docs.docker.com/) and [Make](https://www.gnu.org/software/make/). \*
 
 /// tab | PIP
 
@@ -19,6 +19,10 @@ You can test `mkdocs-tacc` clients the same way; some also support [Docker](http
 
 1. To **install** dependencies and **serve** docs in isolation:
 
+    //// tab | Test `mkdocs-tacc` Repo
+
+    <small>To test client instead, use **Test on Client Repo** tab.</small>
+
     ```shell
     python -m venv venv
     source venv/bin/activate
@@ -26,7 +30,20 @@ You can test `mkdocs-tacc` clients the same way; some also support [Docker](http
     mkdocs serve
     ```
 
-    <small>A `mkdocs-tacc` client may require `install` of additional or different dependencies. See its documentation.</small>
+    ////
+    //// tab | Test on Client Repo
+        select: True
+
+    <small>The client repo might required additional or different commands. Check its documentation.</small>
+
+    ```shell
+    python -m venv venv
+    source venv/bin/activate
+    pip install -e "."
+    mkdocs serve
+    ```
+
+    ////
 
 To **deactivate** environment: `deactivate`
 
@@ -45,12 +62,27 @@ To **remove** environment: `rm -rf venv`
 
 1. To **install** dependencies and **serve** docs in isolation:
 
+    //// tab | Test `mkdocs-tacc` Repo
+
+    <small>To test client instead, use **Test on Client Repo** tab.</small>
+
     ```shell
     poetry install --sync --extras "all"
     poetry run mkdocs serve
     ```
 
-    <small>A `mkdocs-tacc` client may require `install` of additional or different dependencies. See its documentation.</small>
+    ////
+    //// tab | Test on Client Repo
+        select: True
+
+    <small>The client repo might required additional or different commands. Check its documentation.</small>
+
+    ```shell
+    poetry install --sync
+    poetry run mkdocs serve
+    ```
+
+    ////
 
 To **deactivate** environment: `exit`
 
@@ -69,11 +101,11 @@ To **remove** environment: `poetry env remove --all`
 
 1. To **install** dependencies and **serve** docs in isolation:
 
+    <small>The client repo might required additional or different commands. Check its documentation.</small>
+
     ```shell
     docker compose up
     ```
-
-    <small>A `mkdocs-tacc` client may rely on a different command. See its documentation.</small>
 
 To **deactivate** environment: `docker compose stop`
 
@@ -90,11 +122,11 @@ To **remove** environment: `docker compose down`
 
 1. To **install** dependencies and **serve** docs in isolation:
 
+    <small>The client repo might required additional or different commands. Check its documentation.</small>
+
     ```shell
     make start
     ```
-
-    <small>A `mkdocs-tacc` client may rely on a different command. See its documentation.</small>
 
 To **deactivate** environment: `Ctrl+C`
 
@@ -108,12 +140,33 @@ Some clients will offer automatic, remote build and deploy for testing.
 
 ## Test on Client
 
-### at Specific Revision
+### Test on Client Locally
 
-To test changes end-to-end on client repository:
+/// note |
+
+As you follow [**Test Locally**](#test-locally) instructions, use **Test Client Repo** tab.
+
+//// tab | Test `mkdocs-tacc` Repo
+
+Ignore this tab. **Read the other tab.**
+
+////
+//// tab | Test on Client Repo
+    select: True
+
+**Read this tab.** Ignore the other tab.
+
+////
+
+///
+
+
+### Test Theme at Specific Revision
+
+To test a specific revision of `mkdocs-tacc` on a client repository:
 
 0. Clone and/or enter client repository.
-1. Install the theme at a specific version —
+1. Install the theme at a specific revision (e.g. a version) —
 
     /// tab | PIP
 
@@ -130,7 +183,7 @@ To test changes end-to-end on client repository:
 
     ///
 
-    — or a specific branch –
+    — or a specific branch —
 
     /// tab | PIP
 
@@ -149,9 +202,9 @@ To test changes end-to-end on client repository:
 
     — or other revision.
 
-### in Real-Time
+### Test Theme in Real-Time
 
-To test changes real-time on client repository:
+To test `mkdocs-tacc` theme changes in real-time on a client repository:
 
 0. Clone and/or enter client repository.
 1. Install the theme in editable mode, e.g.
@@ -164,7 +217,9 @@ To test changes real-time on client repository:
 
     <small>Where `../mkdocs-tacc` is the path to your clone of this repository.</small>
 
-    //// tip | If changes since that command are not reflected, try:
+    //// tip |
+
+    If changes since that command are not reflected, try:
 
     ```shell
     pip uninstall mkdocs-tacc
@@ -192,4 +247,3 @@ To test changes real-time on client repository:
     ////
 
     ///
-
