@@ -234,9 +234,11 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#test-on-client">Test on Client</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#at-specific-revision">at Specific Revision</a>
+    <li class="toctree-l3"><a class="reference internal" href="#test-on-client-locally">Test on Client Locally</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#in-real-time">in Real-Time</a>
+    <li class="toctree-l3"><a class="reference internal" href="#test-theme-at-specific-revision">Test Theme at Specific Revision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#test-theme-in-real-time">Test Theme in Real-Time</a>
     </li>
         </ul>
     </li>
@@ -359,8 +361,9 @@
 <li><a href="#test-locally">Test Locally</a></li>
 <li><a href="#test-remotely">Test Remotely</a></li>
 <li><a href="#test-on-client">Test on Client</a><ul>
-<li><a href="#at-specific-revision">at Specific Revision</a></li>
-<li><a href="#in-real-time">in Real-Time</a></li>
+<li><a href="#test-on-client-locally">Test on Client Locally</a></li>
+<li><a href="#test-theme-at-specific-revision">Test Theme at Specific Revision</a></li>
+<li><a href="#test-theme-in-real-time">Test Theme in Real-Time</a></li>
 </ul>
 </li>
 </ul>
@@ -368,8 +371,8 @@
 </ul>
 </div>
 <h2 id="test-locally">Test Locally<a class="headerlink fa fa-link" href="#test-locally" title="Link to Heading"></a></h2>
-<p>You can test <code>mkdocs-tacc</code> locally with <a href="https://pip.pypa.io/">PIP</a> or <a href="https://python-poetry.org/">Poetry</a>.</p>
-<p>You can test <code>mkdocs-tacc</code> clients the same way; some also support <a href="https://docs.docker.com/">Docker</a> and <a href="https://www.gnu.org/software/make/">Make</a>. *</p>
+<p>You can test <code>mkdocs-tacc</code> or <code>mkdocs-tacc</code> clients locally with <a href="https://pip.pypa.io/">PIP</a> or <a href="https://python-poetry.org/">Poetry</a>.</p>
+<p>Some clients also support <a href="https://docs.docker.com/">Docker</a> and <a href="https://www.gnu.org/software/make/">Make</a>. *</p>
 <div class="tabbed-set" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">PIP</label><div class="tabbed-content">
 <ol>
 <li>
@@ -379,11 +382,21 @@
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<div class="tabbed-set" data-tabs="2:2"><input id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Test <code>mkdocs-tacc</code> Repo</label><div class="tabbed-content">
+<p><small>To test client instead, use <strong>Test on Client Repo</strong> tab.</small></p>
 <pre class="highlight"><code class="language-shell">python -m venv venv
 source venv/bin/activate
 pip install -e ".[all]"
 mkdocs serve</code></pre>
-<p><small>A <code>mkdocs-tacc</code> client may require <code>install</code> of additional or different dependencies. See its documentation.</small></p>
+</div>
+<input checked="checked" id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Test on Client Repo</label><div class="tabbed-content">
+<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
+<pre class="highlight"><code class="language-shell">python -m venv venv
+source venv/bin/activate
+pip install -e "."
+mkdocs serve</code></pre>
+</div>
+</div>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>deactivate</code></p>
@@ -398,9 +411,17 @@ mkdocs serve</code></pre>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<div class="tabbed-set" data-tabs="3:2"><input id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Test <code>mkdocs-tacc</code> Repo</label><div class="tabbed-content">
+<p><small>To test client instead, use <strong>Test on Client Repo</strong> tab.</small></p>
 <pre class="highlight"><code class="language-shell">poetry install --sync --extras "all"
 poetry run mkdocs serve</code></pre>
-<p><small>A <code>mkdocs-tacc</code> client may require <code>install</code> of additional or different dependencies. See its documentation.</small></p>
+</div>
+<input checked="checked" id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Test on Client Repo</label><div class="tabbed-content">
+<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
+<pre class="highlight"><code class="language-shell">poetry install --sync
+poetry run mkdocs serve</code></pre>
+</div>
+</div>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>exit</code></p>
@@ -415,8 +436,8 @@ poetry run mkdocs serve</code></pre>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
 <pre class="highlight"><code class="language-shell">docker compose up</code></pre>
-<p><small>A <code>mkdocs-tacc</code> client may rely on a different command. See its documentation.</small></p>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>docker compose stop</code></p>
@@ -430,8 +451,8 @@ poetry run mkdocs serve</code></pre>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
+<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
 <pre class="highlight"><code class="language-shell">make start</code></pre>
-<p><small>A <code>mkdocs-tacc</code> client may rely on a different command. See its documentation.</small></p>
 </li>
 </ol>
 <p>To <strong>deactivate</strong> environment: <code>Ctrl+C</code></p>
@@ -441,46 +462,57 @@ poetry run mkdocs serve</code></pre>
 <h2 id="test-remotely">Test Remotely<a class="headerlink fa fa-link" href="#test-remotely" title="Link to Heading"></a></h2>
 <p>Some clients will offer automatic, remote build and deploy for testing.</p>
 <h2 id="test-on-client">Test on Client<a class="headerlink fa fa-link" href="#test-on-client" title="Link to Heading"></a></h2>
-<h3 id="at-specific-revision">at Specific Revision<a class="headerlink fa fa-link" href="#at-specific-revision" title="Link to Heading"></a></h3>
-<p>To test changes end-to-end on client repository:</p>
+<h3 id="test-on-client-locally">Test on Client Locally<a class="headerlink fa fa-link" href="#test-on-client-locally" title="Link to Heading"></a></h3>
+<div class="admonition note">
+<p>As you follow <a href="#test-locally"><strong>Test Locally</strong></a> instructions, use <strong>Test Client Repo</strong> tab.</p>
+<div class="tabbed-set" data-tabs="4:2"><input id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Test <code>mkdocs-tacc</code> Repo</label><div class="tabbed-content">
+<p>Ignore this tab. <strong>Read the other tab.</strong></p>
+</div>
+<input checked="checked" id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Test on Client Repo</label><div class="tabbed-content">
+<p><strong>Read this tab.</strong> Ignore the other tab.</p>
+</div>
+</div>
+</div>
+<h3 id="test-theme-at-specific-revision">Test Theme at Specific Revision<a class="headerlink fa fa-link" href="#test-theme-at-specific-revision" title="Link to Heading"></a></h3>
+<p>To test a specific revision of <code>mkdocs-tacc</code> on a client repository:</p>
 <ol>
 <li>Clone and/or enter client repository.</li>
 <li>
-<p>Install the theme at a specific version —</p>
-<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">PIP</label><div class="tabbed-content">
+<p>Install the theme at a specific revision (e.g. a version) —</p>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">PIP</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">pip install mkdocs-tacc==0.5.0</code></pre>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Poetry</label><div class="tabbed-content">
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Poetry</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">poetry add mkdocs-tacc@0.5.0</code></pre>
 </div>
 </div>
-<p>— or a specific branch –</p>
-<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">PIP</label><div class="tabbed-content">
+<p>— or a specific branch —</p>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">PIP</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">pip install "mkdocs-tacc[all] @ git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress"</code></pre>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Poetry</label><div class="tabbed-content">
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">Poetry</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">poetry add "mkdocs-tacc[all] @ git+https://github.com/TACC/mkdocs-tacc.git#work-in-progress"</code></pre>
 </div>
 </div>
 <p>— or other revision.</p>
 </li>
 </ol>
-<h3 id="in-real-time">in Real-Time<a class="headerlink fa fa-link" href="#in-real-time" title="Link to Heading"></a></h3>
-<p>To test changes real-time on client repository:</p>
+<h3 id="test-theme-in-real-time">Test Theme in Real-Time<a class="headerlink fa fa-link" href="#test-theme-in-real-time" title="Link to Heading"></a></h3>
+<p>To test <code>mkdocs-tacc</code> theme changes in real-time on a client repository:</p>
 <ol>
 <li>Clone and/or enter client repository.</li>
 <li>
 <p>Install the theme in editable mode, e.g.</p>
-<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">PIP</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">PIP</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">pip install -e "../mkdocs-tacc[all]"</code></pre>
 <p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
 <div class="admonition tip">
-<p class="admonition-title">If changes since that command are not reflected, try:</p>
+<p>If changes since that command are not reflected, try:</p>
 <pre class="highlight"><code class="language-shell">pip uninstall mkdocs-tacc
 pip install -e "../mkdocs-tacc[all]"</code></pre>
 </div>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Poetry</label><div class="tabbed-content">
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Poetry</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">poetry add --editable ../mkdocs-tacc --extras=all</code></pre>
 <p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
 <div class="admonition tip">
