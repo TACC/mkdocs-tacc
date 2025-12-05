@@ -142,17 +142,21 @@ Some clients will offer automatic, remote build and deploy for testing.
 
 ### Test on Client Locally
 
-Use **Test Client Repo** tab as you follow [Test Locally](#test-locally) instructions.
+/// note |
 
-/// tab | Test `mkdocs-tacc` Repo
+As you follow [**Test Locally**](#test-locally) instructions, use **Test Client Repo** tab.
+
+//// tab | Test `mkdocs-tacc` Repo
 
 Ignore this tab. **Read the other tab.**
 
-///
-/// tab | Test on Client Repo
+////
+//// tab | Test on Client Repo
     select: True
 
 **Read this tab.** Ignore the other tab.
+
+////
 
 ///
 
@@ -213,7 +217,9 @@ To test `mkdocs-tacc` theme changes in real-time on a client repository:
 
     <small>Where `../mkdocs-tacc` is the path to your clone of this repository.</small>
 
-    //// tip | If changes since that command are not reflected, try:
+    //// tip |
+
+    If changes since that command are not reflected, try:
 
     ```shell
     pip uninstall mkdocs-tacc
