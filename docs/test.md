@@ -140,7 +140,7 @@ Some clients will offer automatic, remote build and deploy for testing.
 
 ## Test on Client
 
-### Test on Client Locally
+### Test Theme on Client
 
 /// note |
 
