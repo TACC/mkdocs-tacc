@@ -10,7 +10,7 @@ How [DesignSafe-CI/DS-User-Guide][ds-user-guide]{target="_blank"} project should
 theme:
   name: tacc_readthedocs
   # "ReadTheDocs" Theme Features
-  logo: img/NSF_NHERI-DS.svg
+  logo: img/logo.svg
   hljs_languages:
     - python
     - json
@@ -31,22 +31,13 @@ extra_css:
 
 ```yaml
 extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js # for pymdownx.arithmatex
 ```
-
-/// tip |
-Try Markdown Extension `pymdownx.arithmatex` instead of `mathjax` to render LaTeX math equations.
-///
 
 ## Unique Markdown Extensions
 
 ```yaml
 markdown_extensions:
   - pymdownx.arithmatex:
-      generic: true
+      generic: true # for mathjax
 ```
-
-/// warning |
-Untested.
-///
