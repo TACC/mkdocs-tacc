@@ -21,25 +21,25 @@ Some clients also support [Docker](https://docs.docker.com/) and [Make](https://
 
     //// tab | Test `mkdocs-tacc` Repo
 
-    <small>To test client instead, use **Test on Client Repo** tab.</small>
+    <small>To test client instead, use **Test Client Repo** tab.</small>
 
     ```shell
     python -m venv venv
     source venv/bin/activate
-    pip install -e ".[all]"
+    pip install -e ".[all]" # The -e is optional; see "Test Theme in Real-Time"
     mkdocs serve
     ```
 
     ////
-    //// tab | Test on Client Repo
+    //// tab | Test Client Repo
         select: True
 
-    <small>The client repo might required additional or different commands. Check its documentation.</small>
+    <small>The client repo might require additional or different commands. Check its documentation.</small>
 
     ```shell
     python -m venv venv
     source venv/bin/activate
-    pip install -e "."
+    pip install "."
     mkdocs serve
     ```
 
@@ -64,7 +64,7 @@ To **remove** environment: `rm -rf venv`
 
     //// tab | Test `mkdocs-tacc` Repo
 
-    <small>To test client instead, use **Test on Client Repo** tab.</small>
+    <small>To test client instead, use **Test Client Repo** tab.</small>
 
     ```shell
     poetry install --sync --extras "all"
@@ -72,10 +72,10 @@ To **remove** environment: `rm -rf venv`
     ```
 
     ////
-    //// tab | Test on Client Repo
+    //// tab | Test Client Repo
         select: True
 
-    <small>The client repo might required additional or different commands. Check its documentation.</small>
+    <small>The client repo might require additional or different commands. Check its documentation.</small>
 
     ```shell
     poetry install --sync
@@ -101,7 +101,7 @@ To **remove** environment: `poetry env remove --all`
 
 1. To **install** dependencies and **serve** docs in isolation:
 
-    <small>The client repo might required additional or different commands. Check its documentation.</small>
+    <small>The client repo might require additional or different commands. Check its documentation.</small>
 
     ```shell
     docker compose up
@@ -122,7 +122,7 @@ To **remove** environment: `docker compose down`
 
 1. To **install** dependencies and **serve** docs in isolation:
 
-    <small>The client repo might required additional or different commands. Check its documentation.</small>
+    <small>The client repo might require additional or different commands. Check its documentation.</small>
 
     ```shell
     make start
@@ -151,7 +151,7 @@ As you follow [**Test Locally**](#test-locally) instructions, use **Test Client 
 Ignore this tab. **Read the other tab.**
 
 ////
-//// tab | Test on Client Repo
+//// tab | Test Client Repo
     select: True
 
 **Read this tab.** Ignore the other tab.
@@ -215,7 +215,7 @@ To test `mkdocs-tacc` theme changes in real-time on a client repository:
     pip install -e "../mkdocs-tacc[all]"
     ```
 
-    <small>Where `../mkdocs-tacc` is the path to your clone of this repository.</small>
+    <small>Where `../mkdocs-tacc` is the path to your clone of the `mkdocs-tacc` repository.</small>
 
     //// tip |
 
@@ -235,7 +235,7 @@ To test `mkdocs-tacc` theme changes in real-time on a client repository:
     poetry add --editable ../mkdocs-tacc --extras=all
     ```
 
-    <small>Where `../mkdocs-tacc` is the path to your clone of this repository.</small>
+    <small>Where `../mkdocs-tacc` is the path to your clone of the `mkdocs-tacc` repository.</small>
 
     //// tip | If changes since that command are not reflected, try:
 

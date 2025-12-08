@@ -4,6 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 package-mode = true
+packages = [{include = "mkdocs_tacc"}]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Environment :: Web Environment",

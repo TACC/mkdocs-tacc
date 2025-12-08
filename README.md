@@ -9,9 +9,16 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
 
 1. Create a repository from our [`mkdocs-tacc-client`](https://github.com/TACC/mkdocs-tacc-client) template. [How?][create-from-template]
 2. In your new repository:
-    - Change [all instances of `mkdocs-tacc-client`](https://github.com/search?q=repo%3ATACC%2Fmkdocs-tacc-client+%22mkdocs-tacc-client%22&type=code) to `your-project-name`.
-    - Change [all instances of `MkDocs-TACC`](https://github.com/search?q=repo%3ATACC%2Fmkdocs-tacc-client%20%22MkDocs-TACC%22&type=code) to `Your Project Name`.
     - Rename [`mkdocs_tacc_client` directory](https://github.com/TACC/mkdocs-tacc-client/tree/main/mkdocs_tacc_client) to `your_project_name`.
+    - Rename [all instances of `TACC/mkdocs-tacc-client`](https://github.com/search?q=repo%3ATACC%2Fmkdocs-tacc-client+%22TACC%2Fmkdocs-tacc-client%22&type=code) to `YourOrgOrUser/your-repo-name`.
+    - In `pyproject.toml`, change:
+        - the `name` to `your-project-name`
+        - the `description`
+        - the `homepage` URL
+    - In `CONTRIBUTING.md`, change:
+        - the `[issues]:` URL
+        - the `[proposals]:` URL
+    - In `README.md`, change the title.
 
 ## Install Theme Into Existing MkDocs Project
 
