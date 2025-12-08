@@ -12,7 +12,7 @@ A [TACC](https://www.tacc.utexas.edu/)-styled [MkDocs](https://www.mkdocs.org/) 
     - Rename [`mkdocs_tacc_client` directory](https://github.com/TACC/mkdocs-tacc-client/tree/main/mkdocs_tacc_client) to `your_project_name`.
     - Rename [all instances of `TACC/mkdocs-tacc-client`](https://github.com/search?q=repo%3ATACC%2Fmkdocs-tacc-client+%22TACC%2Fmkdocs-tacc-client%22&type=code) to `YourOrgOrUser/your-repo-name`.
     - In `pyproject.toml`, change:
-        - the `name` to `your_project_name`
+        - the `name` to `your-project-name`
         - the `description`
         - the `homepage` URL
     - In `CONTRIBUTING.md`, change:
