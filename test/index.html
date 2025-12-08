@@ -383,17 +383,17 @@
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
 <div class="tabbed-set" data-tabs="2:2"><input id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Test <code>mkdocs-tacc</code> Repo</label><div class="tabbed-content">
-<p><small>To test client instead, use <strong>Test on Client Repo</strong> tab.</small></p>
+<p><small>To test client instead, use <strong>Test Client Repo</strong> tab.</small></p>
 <pre class="highlight"><code class="language-shell">python -m venv venv
 source venv/bin/activate
-pip install -e ".[all]"
+pip install -e ".[all]" # The -e is optional; see "Test Theme in Real-Time"
 mkdocs serve</code></pre>
 </div>
-<input checked="checked" id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Test on Client Repo</label><div class="tabbed-content">
-<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
+<input checked="checked" id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Test Client Repo</label><div class="tabbed-content">
+<p><small>The client repo might require additional or different commands. Check its documentation.</small></p>
 <pre class="highlight"><code class="language-shell">python -m venv venv
 source venv/bin/activate
-pip install -e "."
+pip install "."
 mkdocs serve</code></pre>
 </div>
 </div>
@@ -412,12 +412,12 @@ mkdocs serve</code></pre>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
 <div class="tabbed-set" data-tabs="3:2"><input id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Test <code>mkdocs-tacc</code> Repo</label><div class="tabbed-content">
-<p><small>To test client instead, use <strong>Test on Client Repo</strong> tab.</small></p>
+<p><small>To test client instead, use <strong>Test Client Repo</strong> tab.</small></p>
 <pre class="highlight"><code class="language-shell">poetry install --sync --extras "all"
 poetry run mkdocs serve</code></pre>
 </div>
-<input checked="checked" id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Test on Client Repo</label><div class="tabbed-content">
-<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
+<input checked="checked" id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Test Client Repo</label><div class="tabbed-content">
+<p><small>The client repo might require additional or different commands. Check its documentation.</small></p>
 <pre class="highlight"><code class="language-shell">poetry install --sync
 poetry run mkdocs serve</code></pre>
 </div>
@@ -436,7 +436,7 @@ poetry run mkdocs serve</code></pre>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
-<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
+<p><small>The client repo might require additional or different commands. Check its documentation.</small></p>
 <pre class="highlight"><code class="language-shell">docker compose up</code></pre>
 </li>
 </ol>
@@ -451,7 +451,7 @@ poetry run mkdocs serve</code></pre>
 </li>
 <li>
 <p>To <strong>install</strong> dependencies and <strong>serve</strong> docs in isolation:</p>
-<p><small>The client repo might required additional or different commands. Check its documentation.</small></p>
+<p><small>The client repo might require additional or different commands. Check its documentation.</small></p>
 <pre class="highlight"><code class="language-shell">make start</code></pre>
 </li>
 </ol>
@@ -468,7 +468,7 @@ poetry run mkdocs serve</code></pre>
 <div class="tabbed-set" data-tabs="4:2"><input id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Test <code>mkdocs-tacc</code> Repo</label><div class="tabbed-content">
 <p>Ignore this tab. <strong>Read the other tab.</strong></p>
 </div>
-<input checked="checked" id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Test on Client Repo</label><div class="tabbed-content">
+<input checked="checked" id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Test Client Repo</label><div class="tabbed-content">
 <p><strong>Read this tab.</strong> Ignore the other tab.</p>
 </div>
 </div>
@@ -505,7 +505,7 @@ poetry run mkdocs serve</code></pre>
 <p>Install the theme in editable mode, e.g.</p>
 <div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">PIP</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">pip install -e "../mkdocs-tacc[all]"</code></pre>
-<p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
+<p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of the <code>mkdocs-tacc</code> repository.</small></p>
 <div class="admonition tip">
 <p>If changes since that command are not reflected, try:</p>
 <pre class="highlight"><code class="language-shell">pip uninstall mkdocs-tacc
@@ -514,7 +514,7 @@ pip install -e "../mkdocs-tacc[all]"</code></pre>
 </div>
 <input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">Poetry</label><div class="tabbed-content">
 <pre class="highlight"><code class="language-shell">poetry add --editable ../mkdocs-tacc --extras=all</code></pre>
-<p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of this repository.</small></p>
+<p><small>Where <code>../mkdocs-tacc</code> is the path to your clone of the <code>mkdocs-tacc</code> repository.</small></p>
 <div class="admonition tip">
 <p class="admonition-title">If changes since that command are not reflected, try:</p>
 <pre class="highlight"><code class="language-shell">poetry remove mkdocs-tacc

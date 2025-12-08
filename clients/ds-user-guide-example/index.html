@@ -360,7 +360,7 @@
 <pre class="highlight"><code class="language-yaml">theme:
   name: tacc_readthedocs
   # "ReadTheDocs" Theme Features
-  logo: img/NSF_NHERI-DS.svg
+  logo: img/logo.svg
   hljs_languages:
     - python
     - json
@@ -373,18 +373,11 @@
   - css/ds-docs.css</code></pre>
 <h2 id="custom-javascript">Custom JavaScript<a class="headerlink fa fa-link" href="#custom-javascript" title="Link to Heading"></a></h2>
 <pre class="highlight"><code class="language-yaml">extra_javascript:
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js</code></pre>
-<div class="admonition tip">
-<p>Try Markdown Extension <code>pymdownx.arithmatex</code> instead of <code>mathjax</code> to render LaTeX math equations.</p>
-</div>
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js # for pymdownx.arithmatex</code></pre>
 <h2 id="unique-markdown-extensions">Unique Markdown Extensions<a class="headerlink fa fa-link" href="#unique-markdown-extensions" title="Link to Heading"></a></h2>
 <pre class="highlight"><code class="language-yaml">markdown_extensions:
   - pymdownx.arithmatex:
-      generic: true</code></pre>
-<div class="admonition warning">
-<p>Untested.</p>
-</div>
+      generic: true # for mathjax</code></pre>
     </div>
     
   
