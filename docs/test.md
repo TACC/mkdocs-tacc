@@ -26,7 +26,7 @@ Some clients also support [Docker](https://docs.docker.com/) and [Make](https://
     ```shell
     python -m venv venv
     source venv/bin/activate
-    pip install -e ".[all]" # The -e is optional; see "Test Theme in Real-Time"
+    pip install -e ".[all]"
     mkdocs serve
     ```
 
