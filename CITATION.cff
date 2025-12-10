@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: MkDocs-TACC
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: Texas Advanced Computing Center
+    address: 10100 Burnet Rd (R8700)
+    city: Austin
+    country: US
+    post-code: '78758'
+    email: communications@tacc.utexas.edu
+    website: 'https://tacc.utexas.edu'
+identifiers:
+  - type: other
+    value: tacc/mkdocs-tacc
+    description: GitHub identity
+repository-code: 'https://github.com/tacc/mkdocs-tacc'
+url: 'https://tacc.github.io/mkdocs-tacc'
+abstract: >-
+  The theme for instances of MkDocs-software-powered
+  documentation maintained by Texas Advanced Computing
+  Center.
+keywords:
+  - tacc
+  - mkdocs
+commit: 5d121ed
+version: v1.0.0
+date-released: '2025-12-08'
