@@ -28,6 +28,6 @@ abstract: >-
 keywords:
   - tacc
   - mkdocs
-commit: 5d121ed
-version: v1.0.0
-date-released: '2025-12-08'
+commit: f0547e7
+version: v1.0.1
+date-released: '2025-12-11'
