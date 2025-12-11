@@ -20,7 +20,7 @@ document.querySelectorAll(`
 
 /* to add icon to external links in content */
 document.querySelectorAll(`
-  .rst-content a[href^="http"]
+  .rst-content a[href^="http"]:not(:has(img))
 `).forEach( a => {
   const icon = createIcon();
 
