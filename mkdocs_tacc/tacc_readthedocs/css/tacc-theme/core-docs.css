@@ -88,3 +88,26 @@ u {
   font-size: var(--global-font-size--x-large);
   font-weight: var(--bold);
 }
+
+
+/* Icons */
+
+/* `fa-external-link` applied by `../js/tacc-theme/addIconToExternalLinks.js` */
+:is(main, [role="main"]) a {
+  &:not([class*="card"], .c-card) > .fa-external-link {
+    margin-left: 0.25em;
+  }
+  &:is([class*="card"], .c-card) {
+    &:has(.fa-external-link) {
+      position: relative;
+    }
+    & > .fa-external-link {
+      position: absolute;
+      right: 0.25em;
+      top: 0.25em;
+    }
+    &:not(:hover) > .fa-external-link {
+      opacity: 0.5;
+    }
+  }
+}
