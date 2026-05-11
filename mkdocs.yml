@@ -27,6 +27,7 @@ nav:
     - Customization: customize.md
     - Extensions: extensions.md
     - Testing: test.md
+    - Ext Link Icon (temp): test-ext-link-icon.md
   - Examples:
     - Basic: clients/basic-example.md
     - TACC Docs: clients/tacc-docs-example.md
