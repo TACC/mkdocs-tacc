@@ -22,7 +22,7 @@ Publish relies on [Poetry](https://python-poetry.org/).
     poetry publish --build
     ```
 8. Wait for console to log success.
-9. Load https://pypi.org/project/mkdocs-tacc/.
+9. Check https://pypi.org/project/mkdocs-tacc/.
 
 # Related
 
