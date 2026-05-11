@@ -24,14 +24,5 @@ document.querySelectorAll(`
 `).forEach( a => {
   const icon = createIcon();
 
-  /* to style external links */
-  const style = document.createElement('style');
-  style.textContent = `
-  .rst-content a > .${ICON_GLYPH_CLASSNAME} {
-      margin-left: 0.25em;
-  }
-  `;
-  document.head.appendChild(style);
-
   a.append(icon);
 });
