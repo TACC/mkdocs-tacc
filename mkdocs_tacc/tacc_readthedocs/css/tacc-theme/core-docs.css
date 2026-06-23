@@ -93,7 +93,7 @@ u {
 /* Icons */
 
 /* `fa-external-link` applied by `../js/tacc-theme/addIconToExternalLinks.js` */
-:is(main, [role="main"]) a {
+.rst-content a {
   &:not([class*="card"], .c-card) > .fa-external-link {
     margin-left: 0.25em;
   }
