@@ -26,14 +26,14 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
-.admonition:is(.caution)::before { content: "\f071"; }
+.admonition:is(.warning)::before { content: "\f071"; }
 .admonition:is(.important, .attention)::before { content: "\f12a"; }
-.admonition:is(.warning)::before { content: "\f00d"; }
+.admonition:is(.caution)::before { content: "\f00d"; }
 .admonition:is(.tip)::before { content: "\f0eb"; }
 .admonition:is(.note)::before { content: "\f040"; }
 .admonition:is(.hint)::before { content: "\f00c"; }
 .admonition:is(.error, .danger)::before { content: "\f00d"; }
-.admonition:is(.warning)::before {
+.admonition:is(.caution)::before {
   color: transparent;
   -webkit-text-stroke: var(--global-color-primary--xx-light) 2px;
 }

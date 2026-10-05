@@ -44,3 +44,15 @@
     margin: 0; /* overwrites core-styles, bootstrap, ReadTheDocs */
   }
 }
+
+/* Admonition: swap caution vs warning (overrides CDN until @tacc/core-styles bump) */
+.admonition:is(.warning, .important) {
+  --icon-color: var(--global-color-warning--dark);
+  background-color: var(--global-color-warning--x-light);
+  border-color: var(--global-color-warning--dark);
+}
+.admonition:is(.caution, .error, .danger) {
+  --icon-color: var(--global-color-danger--dark);
+  background-color: var(--global-color-danger--x-light);
+  border-color: var(--global-color-danger--dark);
+}
