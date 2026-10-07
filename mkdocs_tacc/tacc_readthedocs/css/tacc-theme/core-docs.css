@@ -63,8 +63,6 @@ u {
 
 /* to style text like an <h2>, <h3>, etc. */
 /* FAQ: Design wants <h3> on index page, but it should NOT show in nav */
-/* TODO: Either, find a solution that does not involve "fake header" class */
-/* TODO: Or, support fake headers in Core (must then define margins) */
 .h2 {
   /* to mimic browser */
   display: block;
@@ -72,10 +70,6 @@ u {
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-
-  /* to mimic core-styles.docs */
-  font-size: var(--global-font-size--xx-large);
-  font-weight: var(--bold);
 }
 .h3 {
   /* to mimic browser */
@@ -84,10 +78,6 @@ u {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-
-  /* to mimic core-styles.docs */
-  font-size: var(--global-font-size--x-large);
-  font-weight: var(--bold);
 }
 
 
