@@ -55,6 +55,7 @@ u {
   display: grid;
   gap: var(--global-space--grid-gap);
   grid-template-columns: 1fr 1fr;
+  margin-block: 1em; /* match .admonition spacing in pymdownx.css */
 }
 
 
