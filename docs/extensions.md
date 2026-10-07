@@ -279,7 +279,7 @@ I am in a `<div>` with markdown enabled.
 !!! note "Custom Title"
     This is a note with a custom title.
 
-!!! caution
+!!! tip
     You can include blocks in admonitions, e.g.
 
     ```shell
