@@ -265,7 +265,7 @@ I am in a `<div>` with markdown enabled.
 !!! note "Custom Title"
     This is a note with a custom title.
 
-!!! warning
+!!! caution
     You can include blocks in admonitions, e.g.
 
     ```shell
@@ -279,7 +279,7 @@ I am in a `<div>` with markdown enabled.
 !!! note "Custom Title"
     This is a note with a custom title.
 
-!!! tip
+!!! caution
     You can include blocks in admonitions, e.g.
 
     ```shell
@@ -460,7 +460,7 @@ Content for second tab
 
 #### Tabbed { #pymdownx-tabbed }
 
-/// caution | Deprecated
+/// warning | Deprecated
     attrs: { id: pymdownx-tabbed-warning }
 This extension is deprecated. Try the [`blocks.tab`](#pymdownx-tab) extension instead.
 ///
